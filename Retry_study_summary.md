@@ -201,18 +201,42 @@ Babai at n ≥ 150 was ≈ 0 in the probes even with BKZ-50, so it could not be 
 - **(a) Babai, n = 120:** the exact law was off in **0 of 8** cells; the independent model was off in 4. The count variance was 17.6 measured, 17.6 exact and 10.6 independent at η=1 (20.6% per attempt). It was 0.55 / 0.53 / 0.48 at η=2 (0.75% per attempt), where 65.2% of instances were never solved in 64, against 64.3% predicted.
 - **(b) Enumeration, n = 150:** independence was rejected at both η (p < 10⁻⁴). The fixed-norm law was off in **0 of 8** cells and the independent model in 7. The never-solved share in 32 attempts was 10.1% / 13.6% measured, 9.5% / 13.8% fixed-norm and 0.6% independent.
 
+### Robustness check (post hoc; `retry_calibration.py`, `retry_bkz10_multiset.py` and their logs)
+Two weaknesses of the cell tests above were checked on the saved R8 and exploratory BKZ data (16 lattices × 200 instances × 64 attempts):
+- **Shared lattices.** All 200 instances of a lattice are decoded on the same bases, so the Wilson intervals were too narrow. Every interval here is a lattice-level bootstrap.
+- **Aggregate cells.** The cells test pooled shares. Here each instance is tested on its own: a model gives the instance a success probability per attempt, its count is then Poisson-binomial, and the randomised PIT is uniform, with variance 1/12 = 0.0833, if the model is right. A variance above that means the model predicts too little spread.
+
+The comparison is against a "pooled" model: independent trials with the same mean per lattice and attempt.
+
+| Setting | Never solved in 64: measured / exact / pooled | PIT variance: exact / pooled (95% CI excludes 0.0833?) |
+|---|---|---|
+| BKZ-20 n=95 η=3 | 16.3% / 15.8% / 9.5% | 0.086 ok / 0.104 off |
+| BKZ-20 n=95 η=2 | 0.03% / 0.01% / 0.00% | 0.085 ok / 0.123 off |
+| BKZ-20 n=100 η=2 | 12.9% / 13.3% / 8.1% | 0.083 ok / 0.102 off |
+| BKZ-20 n=100 η=3 | 82.6% / 83.0% / 82.1% | 0.084 ok / 0.084 ok |
+| BKZ-10 n=85 η=2 | 0.0% / 0.0% / 0.0% | **0.091 off** / 0.132 off |
+| BKZ-10 n=85 η=3 | 1.25% / 1.37% / 0.18% | **0.090 off** / 0.120 off |
+
+- **Strengthened:** with lattice-level intervals, the exact law matches the never-solved share in all 6 settings, while the pooled model misses it in 3. At BKZ-20 the exact law passes the per-instance test as well.
+- **Weakened:** at BKZ-10 n=85 the exact law leaves a small, significant residual. It explains about 85% of the excess spread, not all of it. The R8 cell test was too coarse to see this.
+- **Block-multiset law at BKZ-10** (the law that fixed LLL): the PIT variance drops to 0.087 (η=2) and 0.088 (η=3), still outside the interval. So the secret-block weighting accounts for about half of the residual. About 8–12% of the excess spread at BKZ-10 remains unexplained, presumably the same-lattice alignment seen for LLL (ratio 1.04 at BKZ-10).
+
+**Threats to validity.**
+- **Order of the models.** The exact law was adopted after R5 failed, and R8 after R6 and R7 failed. Each later test was fixed before its own bases were reduced, on fresh instances. But the sequence R5→R8 is itself a search over models, and that should be said when this is published.
+- **Interpretation.** R10–R13 were all fixed in advance and all passed, which limits the concern. This check, however, is post hoc.
+
 ### Item 3. Remaining literature
 - **Kirshanova–May–Wiemer 2016** (ePrint 2016/380, read): they explicitly do not use re-randomise-and-repeat ("We do not consider the so-called Extreme Pruning strategy … re-randomizing an instance causes re-running the expensive BKZ reduction"). It has no retry success model.
 - **Wunderer's 2018 thesis:** not read. The file supplied (`thesis_published.pdf`) is a different TU Darmstadt thesis (J. Brendel, *Future-Proofing Key Exchange Protocols*, 2019).
 
 **What this shows:**
 1. **Repeated decoding attempts on one LWE instance are dependent.** This held in all 8 settings, 4 of them held out.
-2. **For BKZ-reduced bases the dependence is explained, with no fitted parameter, by the instance's error norm.** The exact fixed-norm law predicts the whole "solved within k attempts" curve and the never-solved share on held-out settings; the estimator's independent model does not.
+2. **For BKZ-reduced bases the dependence is explained, with no fitted parameter, by the instance's error norm.** The exact fixed-norm law predicts the whole "solved within k attempts" curve and the never-solved share on held-out settings; the estimator's independent model does not. At BKZ-20 this holds even instance by instance; at BKZ-10 a small residual remains (about 8–12% of the excess spread; see the robustness check).
 3. **For LLL-reduced bases there is further dependence beyond ‖e‖, so attempts are even more correlated.** It comes from LLL's weighting toward the secret block (success depends on ‖s‖ and ‖e‖ separately) plus a small same-lattice alignment under permutation-only re-randomisation. With scrambled re-randomisation, the block-multiset law explains it (R11, passed).
 4. **The estimator's prob.babai is right on average over instances, and biased upward for any one instance.** P1 and P2 prove both.
 5. **The same holds, more strongly, for pruned enumeration** (R12, passed): about one instance in six is never solved by re-randomising.
 
-The literature check now includes the full texts of 2025/2195 and Nearest Planes in Practice, plus a full-text search of Wunderer 2019. Wunderer states the property tested here as an assumption ("p(v) is equal to some constant probability p … for all v ∈ S", Assumption 1) and charges repetitions as T_hyb/p_succ. Neither he nor de Perthuis–Trenkić measures it for decoding. Liu–Nguyen 2013 is paywalled and was not read. Details are in `research_notes/novelty_check_phase2.md`.
+The literature check now includes the full texts of 2025/2195 and Nearest Planes in Practice, plus a full-text search of Wunderer 2019. Wunderer states the property tested here as an assumption ("p(v) is equal to some constant probability p … for all v ∈ S", Assumption 1) and charges repetitions as T_hyb/p_succ. Neither he nor de Perthuis–Trenkić measures it for decoding. Liu–Nguyen 2013 was read first-hand (see Prior work checked). Details are in `research_notes/novelty_check_phase2.md`.
 
 ## Impact on real estimates (lattice estimator, exploratory, `retry_impact.py`)
 
@@ -234,7 +258,7 @@ They neither measure nor model per-instance dependence, so the claim below stand
 
 - **New, to the extent checked:** a direct measurement showing that re-randomized decoding attempts on one LWE instance are significantly dependent, with the dependence tied to ‖e‖. As a result, the estimator's independent-trials amplification overstates multi-attempt success; at one setting the share of instances never solved is 25× the model's prediction.
 - **Not new:** the idea of fixing the vector's length and integrating over it; that is 2025/2195's, for uSVP.
-- **Also new, confirmed by a test fixed in advance (R8) on fresh instances:** for BKZ-reduced bases, conditioning on each instance's own error norm, through the exact joint fixed-norm law, accounts for all of the dependence between repeated attempts; the estimator's constant-p model does not (off in 12 of 16 cells). The fixed-norm computation itself follows the Gama–Nguyen–Regev style of analysis and is not claimed as new. What is new is measuring it against repeated decoding and showing that it is the missing ingredient in the lattice estimator's repetition model. This also explains why the estimator's per-level formula is right on average but biased for any fixed instance.
+- **Also new, confirmed by a test fixed in advance (R8) on fresh instances:** for BKZ-reduced bases, conditioning on each instance's own error norm, through the exact joint fixed-norm law, accounts for the dependence between repeated attempts in every cell test; the estimator's constant-p model does not (off in 12 of 16 cells). A stricter per-instance test (post hoc) confirms this at BKZ-20 and finds a small residual at BKZ-10. The fixed-norm computation itself follows the Gama–Nguyen–Regev style of analysis and is not claimed as new. What is new is measuring it against repeated decoding and showing that it is the missing ingredient in the lattice estimator's repetition model. This also explains why the estimator's per-level formula is right on average but biased for any fixed instance.
 - **Also new (8 Nov follow-up):**
   - Proofs that the per-level product is biased upward per instance and right on average (P1, P2), and that amplify() undercounts (P3).
   - The same dependence for pruned enumeration (R12).
@@ -253,5 +277,7 @@ They neither measure nor model per-instance dependence, so the claim below stand
 1. Read Wunderer's 2018 thesis.
 2. Check the GPU hybrid attack paper (ePrint 2025/1990) for the same pattern in its predicted versus observed success rates.
 3. Model the MitM step's dependence on σ in the estimator patch.
+4. Explain the BKZ-10 residual. Rerun BKZ-10 with scrambled re-randomisation, as in R11: if the residual disappears, it was same-lattice alignment. Fix the per-instance PIT test in advance as the criterion.
+5. Use the per-instance PIT test with lattice-level intervals as the criterion in future pre-registered rules, rather than pooled cells.
 
 Files: `retry_study.py` (rules and code), `retry_study_results.json`, `retry_study_log.txt`, `retry_impact.py`.

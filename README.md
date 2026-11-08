@@ -5,7 +5,7 @@ This repo tests how well decoding attacks on LWE are predicted, using toy parame
 ## Main result
 Retrying the decoding attack on re-randomised bases is **not** independent per instance. That independence is assumed by Liu–Nguyen 2013, Wunderer 2019 and the lattice estimator's `amplify()`.
 
-For BKZ bases, conditioning on each instance's own error norm ‖e‖ explains the dependence. This was confirmed by rule R8, which was fixed before the run and tested on fresh instances: the model was off in 0 of 16 cells, against 12 of 16 for the independent model.
+For BKZ bases, conditioning on each instance's own error norm ‖e‖ explains the dependence. This was confirmed by rule R8, which was fixed before the run and tested on fresh instances: the model was off in 0 of 16 cells, against 12 of 16 for the independent model. A stricter per-instance check finds a small unexplained residual at BKZ-10 (about 8–12% of the excess spread).
 
 The full write-up, including the tests that failed (R5, R6, R7 and R9 on LLL), is in [Retry_study_summary.md](Retry_study_summary.md).
 
@@ -20,6 +20,7 @@ The full write-up, including the tests that failed (R5, R6, R7 and R9 on LLL), i
 | `retry_cost.py` | Attempts needed for 99% success and the give-up rule |
 | `retry_lll.py` | LLL mechanism and scrambled re-randomisation (rule R11) |
 | `retry_enum.py` | Pruned enumeration retries (rule R12) |
+| `retry_calibration.py`, `retry_bkz10_multiset.py` | Post-hoc robustness check: lattice-level bootstrap and per-instance (PIT) test |
 | `retry_scale.py` | Scale-up to n = 120 (Babai) and n = 150 (enumeration) (rule R10) |
 | `lwe_challenge.py`, `lwe_challenge/` | TU Darmstadt LWE challenge instances (rule R13) |
 | `estimator_fixed_error.patch`, `retry_impact2.py` | Lattice-estimator option `repetition_model="fixed_error"` and its effect |

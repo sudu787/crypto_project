@@ -1,0 +1,22 @@
+Lattice-level bootstrap, 2000 resamples of the 16 lattices; uniform PIT has var 1/12 = 0.0833
+
+BKZ-20 n=95 (R8) eta=2: 19.58% per attempt, never solved in 64 measured 0.03% [0.   0.09]
+    exact  never pred  0.01%  diff CI [-0.01  0.08] pts   PIT var 0.0849 CI [0.0814 0.0881]   ok
+    pooled never pred  0.00%  diff CI [-0.    0.09] pts   PIT var 0.1228 CI [0.1198 0.126 ]   OFF
+BKZ-20 n=95 (R8) eta=3: 3.68% per attempt, never solved in 64 measured 16.34% [15.59 17.09]
+    exact  never pred 15.81%  diff CI [-0.19  1.23] pts   PIT var 0.0858 CI [0.0833 0.0883]   ok
+    pooled never pred  9.52%  diff CI [6.01 7.66] pts   PIT var 0.1040 CI [0.101  0.1068]   OFF
+BKZ-10 n=85 (R8) eta=2: 33.61% per attempt, never solved in 64 measured 0.00% [0. 0.]
+    exact  never pred  0.00%  diff CI [-0. -0.] pts   PIT var 0.0906 CI [0.0876 0.0936]   OFF
+    pooled never pred  0.00%  diff CI [-0. -0.] pts   PIT var 0.1321 CI [0.1285 0.1358]   OFF
+BKZ-10 n=85 (R8) eta=3: 9.54% per attempt, never solved in 64 measured 1.25% [0.75 1.78]
+    exact  never pred  1.37%  diff CI [-0.62  0.46] pts   PIT var 0.0896 CI [0.0877 0.0914]   OFF
+    pooled never pred  0.18%  diff CI [0.58 1.66] pts   PIT var 0.1197 CI [0.1163 0.1232]   OFF
+BKZ-20 n=100 (expl.) eta=2: 3.86% per attempt, never solved in 64 measured 12.94% [11.62 14.16]
+    exact  never pred 13.29%  diff CI [-1.44  0.72] pts   PIT var 0.0834 CI [0.0814 0.0851]   ok
+    pooled never pred  8.14%  diff CI [3.67 5.94] pts   PIT var 0.1018 CI [0.0984 0.1053]   OFF
+BKZ-20 n=100 (expl.) eta=3: 0.31% per attempt, never solved in 64 measured 82.56% [81.   84.19]
+    exact  never pred 82.99%  diff CI [-1.85  1.02] pts   PIT var 0.0841 CI [0.082 0.086]   ok
+    pooled never pred 82.10%  diff CI [-0.98  2.02] pts   PIT var 0.0842 CI [0.081  0.0873]   ok
+
+settings off (never-solved diff or PIT variance CI excludes the model value): {'exact': 2.0, 'pooled': 5.0}

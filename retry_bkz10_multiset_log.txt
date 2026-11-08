@@ -1,0 +1,23 @@
+﻿  lattice 0 done
+  lattice 1 done
+  lattice 2 done
+  lattice 3 done
+  lattice 4 done
+  lattice 5 done
+  lattice 6 done
+  lattice 7 done
+  lattice 8 done
+  lattice 9 done
+  lattice 10 done
+  lattice 11 done
+  lattice 12 done
+  lattice 13 done
+  lattice 14 done
+  lattice 15 done
+BKZ-10 n=85 eta=2: per attempt measured 0.3361, exact 0.3398, multiset 0.3397
+    exact    PIT var 0.0907 CI [0.0876 0.0937]  OFF
+    multiset PIT var 0.0870 CI [0.0841 0.0899]  OFF
+BKZ-10 n=85 eta=3: per attempt measured 0.0954, exact 0.0943, multiset 0.0945
+    exact    PIT var 0.0896 CI [0.0876 0.0916]  OFF
+    multiset PIT var 0.0877 CI [0.0858 0.0895]  OFF
+exit: 0
