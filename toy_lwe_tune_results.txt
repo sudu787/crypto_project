@@ -1,0 +1,427 @@
+﻿[tune] 36 jobs on 1 workers
+  ... 60s, 36 of 36 jobs still running
+  ... 120s, 36 of 36 jobs still running
+  ... 180s, 36 of 36 jobs still running
+  ... 240s, 36 of 36 jobs still running
+  [1/36]   260s  LLL     n=70   lattice 0   reduced in    2.1s
+  ... 320s, 35 of 36 jobs still running
+  ... 380s, 35 of 36 jobs still running
+  ... 440s, 35 of 36 jobs still running
+  ... 500s, 35 of 36 jobs still running
+  [2/36]   510s  LLL     n=70   lattice 1   reduced in    1.7s
+  ... 570s, 34 of 36 jobs still running
+  ... 630s, 34 of 36 jobs still running
+  ... 690s, 34 of 36 jobs still running
+  ... 750s, 34 of 36 jobs still running
+  [3/36]   768s  LLL     n=70   lattice 2   reduced in    2.3s
+  ... 828s, 33 of 36 jobs still running
+  ... 888s, 33 of 36 jobs still running
+  ... 948s, 33 of 36 jobs still running
+  ... 1008s, 33 of 36 jobs still running
+  [4/36]  1023s  LLL     n=70   lattice 3   reduced in    1.7s
+  ... 1083s, 32 of 36 jobs still running
+  ... 1143s, 32 of 36 jobs still running
+  ... 1203s, 32 of 36 jobs still running
+  ... 1263s, 32 of 36 jobs still running
+  [5/36]  1263s  LLL     n=70   lattice 4   reduced in    2.1s
+  ... 1323s, 31 of 36 jobs still running
+  ... 1383s, 31 of 36 jobs still running
+  ... 1443s, 31 of 36 jobs still running
+  [6/36]  1503s  LLL     n=70   lattice 5   reduced in    1.7s
+  ... 1563s, 30 of 36 jobs still running
+  ... 1623s, 30 of 36 jobs still running
+  ... 1683s, 30 of 36 jobs still running
+  ... 1743s, 30 of 36 jobs still running
+  ... 1803s, 30 of 36 jobs still running
+  ... 1863s, 30 of 36 jobs still running
+  [7/36]  1877s  LLL     n=80   lattice 0   reduced in    2.7s
+  ... 1937s, 29 of 36 jobs still running
+  ... 1997s, 29 of 36 jobs still running
+  ... 2057s, 29 of 36 jobs still running
+  ... 2117s, 29 of 36 jobs still running
+  ... 2177s, 29 of 36 jobs still running
+  ... 2237s, 29 of 36 jobs still running
+  [8/36]  2244s  LLL     n=80   lattice 1   reduced in    3.8s
+  ... 2304s, 28 of 36 jobs still running
+  ... 2364s, 28 of 36 jobs still running
+  ... 2424s, 28 of 36 jobs still running
+  ... 2484s, 28 of 36 jobs still running
+  ... 2544s, 28 of 36 jobs still running
+  ... 2604s, 28 of 36 jobs still running
+  [9/36]  2615s  LLL     n=80   lattice 2   reduced in    2.5s
+  ... 2675s, 27 of 36 jobs still running
+  ... 2735s, 27 of 36 jobs still running
+  ... 2795s, 27 of 36 jobs still running
+  ... 2855s, 27 of 36 jobs still running
+  ... 2915s, 27 of 36 jobs still running
+  ... 2975s, 27 of 36 jobs still running
+  [10/36]  2979s  LLL     n=80   lattice 3   reduced in    2.7s
+  ... 3039s, 26 of 36 jobs still running
+  ... 3099s, 26 of 36 jobs still running
+  ... 3159s, 26 of 36 jobs still running
+  ... 3219s, 26 of 36 jobs still running
+  ... 3279s, 26 of 36 jobs still running
+  ... 3339s, 26 of 36 jobs still running
+  [11/36]  3345s  LLL     n=80   lattice 4   reduced in    3.5s
+  ... 3405s, 25 of 36 jobs still running
+  ... 3465s, 25 of 36 jobs still running
+  ... 3525s, 25 of 36 jobs still running
+  ... 3585s, 25 of 36 jobs still running
+  ... 3645s, 25 of 36 jobs still running
+  ... 3705s, 25 of 36 jobs still running
+  [12/36]  3718s  LLL     n=80   lattice 5   reduced in    2.5s
+  ... 3778s, 24 of 36 jobs still running
+  ... 3838s, 24 of 36 jobs still running
+  ... 3898s, 24 of 36 jobs still running
+  ... 3958s, 24 of 36 jobs still running
+  ... 4018s, 24 of 36 jobs still running
+  [13/36]  4071s  BKZ-10  n=80   lattice 0   reduced in   10.1s
+  ... 4132s, 23 of 36 jobs still running
+  ... 4192s, 23 of 36 jobs still running
+  ... 4252s, 23 of 36 jobs still running
+  ... 4312s, 23 of 36 jobs still running
+  ... 4372s, 23 of 36 jobs still running
+  [14/36]  4427s  BKZ-10  n=80   lattice 1   reduced in    8.9s
+  ... 4487s, 22 of 36 jobs still running
+  ... 4547s, 22 of 36 jobs still running
+  ... 4607s, 22 of 36 jobs still running
+  ... 4667s, 22 of 36 jobs still running
+  ... 4727s, 22 of 36 jobs still running
+  ... 4787s, 22 of 36 jobs still running
+  [15/36]  4792s  BKZ-10  n=80   lattice 2   reduced in   10.3s
+  ... 4852s, 21 of 36 jobs still running
+  ... 4912s, 21 of 36 jobs still running
+  ... 4972s, 21 of 36 jobs still running
+  ... 5032s, 21 of 36 jobs still running
+  ... 5092s, 21 of 36 jobs still running
+  ... 5152s, 21 of 36 jobs still running
+  [16/36]  5153s  BKZ-10  n=80   lattice 3   reduced in   11.2s
+  ... 5213s, 20 of 36 jobs still running
+  ... 5273s, 20 of 36 jobs still running
+  ... 5333s, 20 of 36 jobs still running
+  ... 5393s, 20 of 36 jobs still running
+  ... 5453s, 20 of 36 jobs still running
+  ... 5513s, 20 of 36 jobs still running
+  [17/36]  5515s  BKZ-10  n=80   lattice 4   reduced in   11.0s
+  ... 5575s, 19 of 36 jobs still running
+  ... 5635s, 19 of 36 jobs still running
+  ... 5695s, 19 of 36 jobs still running
+  ... 5755s, 19 of 36 jobs still running
+  ... 5815s, 19 of 36 jobs still running
+  ... 5875s, 19 of 36 jobs still running
+  [18/36]  5896s  BKZ-10  n=80   lattice 5   reduced in   11.1s
+  ... 5956s, 18 of 36 jobs still running
+  ... 6016s, 18 of 36 jobs still running
+  ... 6076s, 18 of 36 jobs still running
+  ... 6136s, 18 of 36 jobs still running
+  ... 6196s, 18 of 36 jobs still running
+  ... 6256s, 18 of 36 jobs still running
+  ... 6316s, 18 of 36 jobs still running
+  ... 6376s, 18 of 36 jobs still running
+  ... 6436s, 18 of 36 jobs still running
+  ... 6496s, 18 of 36 jobs still running
+  ... 6556s, 18 of 36 jobs still running
+  ... 6616s, 18 of 36 jobs still running
+  ... 6676s, 18 of 36 jobs still running
+  ... 6736s, 18 of 36 jobs still running
+  ... 6796s, 18 of 36 jobs still running
+  [19/36]  6803s  BKZ-10  n=100  lattice 0   reduced in   19.3s
+  ... 6863s, 17 of 36 jobs still running
+  ... 6923s, 17 of 36 jobs still running
+  ... 6983s, 17 of 36 jobs still running
+  ... 7043s, 17 of 36 jobs still running
+  ... 7103s, 17 of 36 jobs still running
+  ... 7163s, 17 of 36 jobs still running
+  ... 7223s, 17 of 36 jobs still running
+  ... 7283s, 17 of 36 jobs still running
+  ... 7343s, 17 of 36 jobs still running
+  ... 7403s, 17 of 36 jobs still running
+  ... 7463s, 17 of 36 jobs still running
+  ... 7523s, 17 of 36 jobs still running
+  ... 7583s, 17 of 36 jobs still running
+  ... 7643s, 17 of 36 jobs still running
+  [20/36]  7698s  BKZ-10  n=100  lattice 1   reduced in   18.9s
+  ... 7758s, 16 of 36 jobs still running
+  ... 7818s, 16 of 36 jobs still running
+  ... 7878s, 16 of 36 jobs still running
+  ... 7938s, 16 of 36 jobs still running
+  ... 7998s, 16 of 36 jobs still running
+  ... 8058s, 16 of 36 jobs still running
+  ... 8118s, 16 of 36 jobs still running
+  ... 8178s, 16 of 36 jobs still running
+  ... 8239s, 16 of 36 jobs still running
+  ... 8299s, 16 of 36 jobs still running
+  ... 8359s, 16 of 36 jobs still running
+  ... 8419s, 16 of 36 jobs still running
+  ... 8479s, 16 of 36 jobs still running
+  ... 8539s, 16 of 36 jobs still running
+  ... 8599s, 16 of 36 jobs still running
+  [21/36]  8609s  BKZ-10  n=100  lattice 2   reduced in   21.3s
+  ... 8669s, 15 of 36 jobs still running
+  ... 8729s, 15 of 36 jobs still running
+  ... 8789s, 15 of 36 jobs still running
+  ... 8849s, 15 of 36 jobs still running
+  ... 8909s, 15 of 36 jobs still running
+  ... 8969s, 15 of 36 jobs still running
+  ... 9029s, 15 of 36 jobs still running
+  ... 9089s, 15 of 36 jobs still running
+  ... 9149s, 15 of 36 jobs still running
+  ... 9209s, 15 of 36 jobs still running
+  ... 9269s, 15 of 36 jobs still running
+  ... 9329s, 15 of 36 jobs still running
+  ... 9389s, 15 of 36 jobs still running
+  ... 9449s, 15 of 36 jobs still running
+  ... 9509s, 15 of 36 jobs still running
+  [22/36]  9532s  BKZ-10  n=100  lattice 3   reduced in   20.8s
+  ... 9592s, 14 of 36 jobs still running
+  ... 9652s, 14 of 36 jobs still running
+  ... 9712s, 14 of 36 jobs still running
+  ... 9772s, 14 of 36 jobs still running
+  ... 9832s, 14 of 36 jobs still running
+  ... 9892s, 14 of 36 jobs still running
+  ... 9952s, 14 of 36 jobs still running
+  ... 10012s, 14 of 36 jobs still running
+  ... 10072s, 14 of 36 jobs still running
+  ... 10132s, 14 of 36 jobs still running
+  ... 10192s, 14 of 36 jobs still running
+  ... 10252s, 14 of 36 jobs still running
+  ... 10312s, 14 of 36 jobs still running
+  ... 10372s, 14 of 36 jobs still running
+  ... 10432s, 14 of 36 jobs still running
+  [23/36] 10434s  BKZ-10  n=100  lattice 4   reduced in   19.4s
+  ... 10494s, 13 of 36 jobs still running
+  ... 10554s, 13 of 36 jobs still running
+  ... 10614s, 13 of 36 jobs still running
+  ... 10674s, 13 of 36 jobs still running
+  ... 10734s, 13 of 36 jobs still running
+  ... 10794s, 13 of 36 jobs still running
+  ... 10854s, 13 of 36 jobs still running
+  ... 10914s, 13 of 36 jobs still running
+  ... 10974s, 13 of 36 jobs still running
+  ... 11034s, 13 of 36 jobs still running
+  ... 11094s, 13 of 36 jobs still running
+  ... 11154s, 13 of 36 jobs still running
+  ... 11214s, 13 of 36 jobs still running
+  ... 11274s, 13 of 36 jobs still running
+  ... 11334s, 13 of 36 jobs still running
+  [24/36] 11354s  BKZ-10  n=100  lattice 5   reduced in   39.0s
+  ... 11414s, 12 of 36 jobs still running
+  ... 11474s, 12 of 36 jobs still running
+  ... 11534s, 12 of 36 jobs still running
+  ... 11594s, 12 of 36 jobs still running
+  ... 11654s, 12 of 36 jobs still running
+  ... 11714s, 12 of 36 jobs still running
+  ... 11774s, 12 of 36 jobs still running
+  [25/36] 11811s  BKZ-20  n=90   lattice 0   reduced in   17.7s
+  ... 11871s, 11 of 36 jobs still running
+  ... 11931s, 11 of 36 jobs still running
+  ... 11991s, 11 of 36 jobs still running
+  ... 12051s, 11 of 36 jobs still running
+  ... 12111s, 11 of 36 jobs still running
+  ... 12171s, 11 of 36 jobs still running
+  ... 12231s, 11 of 36 jobs still running
+  [26/36] 12264s  BKZ-20  n=90   lattice 1   reduced in   19.3s
+  ... 12324s, 10 of 36 jobs still running
+  ... 12384s, 10 of 36 jobs still running
+  ... 12444s, 10 of 36 jobs still running
+  ... 12504s, 10 of 36 jobs still running
+  ... 12564s, 10 of 36 jobs still running
+  ... 12624s, 10 of 36 jobs still running
+  ... 12684s, 10 of 36 jobs still running
+  [27/36] 12718s  BKZ-20  n=90   lattice 2   reduced in   19.1s
+  ... 12778s, 9 of 36 jobs still running
+  ... 12838s, 9 of 36 jobs still running
+  ... 12898s, 9 of 36 jobs still running
+  ... 12958s, 9 of 36 jobs still running
+  ... 13018s, 9 of 36 jobs still running
+  ... 13078s, 9 of 36 jobs still running
+  ... 13138s, 9 of 36 jobs still running
+  [28/36] 13174s  BKZ-20  n=90   lattice 3   reduced in   25.0s
+  ... 13234s, 8 of 36 jobs still running
+  ... 13294s, 8 of 36 jobs still running
+  ... 13354s, 8 of 36 jobs still running
+  ... 13414s, 8 of 36 jobs still running
+  ... 13474s, 8 of 36 jobs still running
+  ... 13535s, 8 of 36 jobs still running
+  ... 13595s, 8 of 36 jobs still running
+  [29/36] 13629s  BKZ-20  n=90   lattice 4   reduced in   19.2s
+  ... 13690s, 7 of 36 jobs still running
+  ... 13750s, 7 of 36 jobs still running
+  ... 13810s, 7 of 36 jobs still running
+  ... 13870s, 7 of 36 jobs still running
+  ... 13930s, 7 of 36 jobs still running
+  ... 13990s, 7 of 36 jobs still running
+  ... 14050s, 7 of 36 jobs still running
+  [30/36] 14086s  BKZ-20  n=90   lattice 5   reduced in   19.3s
+  ... 14147s, 6 of 36 jobs still running
+  ... 14207s, 6 of 36 jobs still running
+  ... 14267s, 6 of 36 jobs still running
+  ... 14327s, 6 of 36 jobs still running
+  ... 14387s, 6 of 36 jobs still running
+  ... 14447s, 6 of 36 jobs still running
+  STOPPED at the 14400s budget with 6 jobs unfinished
+
+LLL n=70: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)              98.7%      18735 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)              99.3%      19021 nodes
+  ANP fixed list        ('anp', 0.2, 2)             97.3%      36772 nodes
+  VA-ANP fixed list     ('va', 8.0, 2)              99.3%      37518 nodes
+  Beam adaptive         ('beam_T', 2, 12.0, 64)     98.7%       2875 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     99.3%       3525 nodes
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)     99.3%       3359 nodes
+  LP per-level          cannot reach the target
+
+LLL n=80: best tuning recovery 86.0%, target 83.0%
+  Babai                 cannot reach the target
+  Beam fixed list       cannot reach the target
+  Beam k=3 fixed list   ('beam', 3, 64)             86.0%    1556081 nodes
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     cannot reach the target
+  Beam adaptive         cannot reach the target
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     85.3%     193428 nodes
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)     85.3%     193266 nodes
+  LP per-level          cannot reach the target
+
+BKZ-10 n=80: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)             100.0%      24575 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)             100.0%      24921 nodes
+  ANP fixed list        ('anp', 0.5, 2)             98.0%      46506 nodes
+  VA-ANP fixed list     ('va', 4.0, 2)              98.0%      42657 nodes
+  Beam adaptive         ('beam_T', 2, 4.0, 64)      97.3%        178 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 4.0, 64)      97.3%        178 nodes
+  VA-ANP adaptive       ('va_T', 4.0, 4.0, 64)      97.3%        178 nodes
+  LP per-level          ('lp', 4096)                97.3%     609620 nodes
+
+BKZ-10 n=100: best tuning recovery 22.7%, target 19.7%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 64)             20.0%    2397183 nodes
+  Beam k=3 fixed list   ('beam', 3, 64)             22.7%    2454641 nodes
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     cannot reach the target
+  Beam adaptive         ('beam_T', 2, 16.0, 64)     20.0%     453698 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     22.7%     453016 nodes
+  VA-ANP adaptive       ('va_T', 2.2, 12.0, 64)     20.7%     412836 nodes
+  LP per-level          cannot reach the target
+
+BKZ-20 n=90: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)             100.0%      31215 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)             100.0%      31621 nodes
+  ANP fixed list        ('anp', 0.5, 2)             98.0%      59834 nodes
+  VA-ANP fixed list     ('va', 4.0, 2)              98.7%      59573 nodes
+  Beam adaptive         ('beam_T', 2, 8.0, 64)      98.7%        507 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 8.0, 64)      98.7%        521 nodes
+  VA-ANP adaptive       ('va_T', 4.0, 8.0, 64)      97.3%        408 nodes
+  LP per-level          ('lp', 65536)               97.3%   10797055 nodes
+uv : D:\ABHILASH CRYPTO PROJECT\toy_lwe_test.py:437: RuntimeWarning: Mean of empty slice
+At line:1 char:359
++ ... BUFFERED=1; uv run --no-project --python 3.12 --with numpy --with "to ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\ABHILASH CRY... of empty slice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  stats[c] = (100 * t["got"].mean(), t["nodes"].mean())
+C:\Users\sudu\AppData\Local\uv\cache\archive-v0\B13hD0OHRdXABG3y\Lib\site-packages\numpy\_core\_methods.py:142: 
+RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+BKZ-20 n=100: best tuning recovery nan%, target nan%
+  Babai                 cannot reach the target
+  Beam fixed list       cannot reach the target
+  Beam k=3 fixed list   cannot reach the target
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     cannot reach the target
+  Beam adaptive         cannot reach the target
+  Beam k=3 adaptive     cannot reach the target
+  VA-ANP adaptive       cannot reach the target
+  LP per-level          cannot reach the target
+exit: 0
+
+=== resumed: the 6 unfinished BKZ-20 n=100 lattices ===
+[tune] 6 jobs on 1 workers
+  ... 60s, 6 of 6 jobs still running
+  ... 120s, 6 of 6 jobs still running
+
+=== resumed: the 6 unfinished BKZ-20 n=100 lattices ===
+[tune] 6 jobs on 1 workers
+  ... 60s, 6 of 6 jobs still running
+  [1/6]   120s  BKZ-20  n=100  lattice 0   reduced in   27.6s
+  ... 180s, 5 of 6 jobs still running
+  [2/6]   235s  BKZ-20  n=100  lattice 1   reduced in   27.7s
+  ... 296s, 4 of 6 jobs still running
+  [3/6]   351s  BKZ-20  n=100  lattice 2   reduced in   30.4s
+  ... 411s, 3 of 6 jobs still running
+  [4/6]   466s  BKZ-20  n=100  lattice 3   reduced in   27.8s
+  ... 526s, 2 of 6 jobs still running
+  [5/6]   580s  BKZ-20  n=100  lattice 4   reduced in   28.9s
+  ... 640s, 1 of 6 jobs still running
+  [6/6]   695s  BKZ-20  n=100  lattice 5   reduced in   56.0s
+
+LLL n=70: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)              98.7%      18735 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)              99.3%      19021 nodes
+  ANP fixed list        ('anp', 0.2, 2)             97.3%      36772 nodes
+  VA-ANP fixed list     ('va', 8.0, 2)              99.3%      37518 nodes
+  Beam adaptive         ('beam_T', 2, 12.0, 64)     98.7%       2875 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     99.3%       3525 nodes
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)     99.3%       3359 nodes
+  LP per-level          cannot reach the target
+
+LLL n=80: best tuning recovery 86.0%, target 83.0%
+  Babai                 cannot reach the target
+  Beam fixed list       cannot reach the target
+  Beam k=3 fixed list   ('beam', 3, 64)             86.0%    1556081 nodes
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     cannot reach the target
+  Beam adaptive         cannot reach the target
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     85.3%     193428 nodes
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)     85.3%     193266 nodes
+  LP per-level          cannot reach the target
+
+BKZ-10 n=80: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)             100.0%      24575 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)             100.0%      24921 nodes
+  ANP fixed list        ('anp', 0.5, 2)             98.0%      46506 nodes
+  VA-ANP fixed list     ('va', 4.0, 2)              98.0%      42657 nodes
+  Beam adaptive         ('beam_T', 2, 4.0, 64)      97.3%        178 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 4.0, 64)      97.3%        178 nodes
+  VA-ANP adaptive       ('va_T', 4.0, 4.0, 64)      97.3%        178 nodes
+  LP per-level          ('lp', 4096)                97.3%     609620 nodes
+
+BKZ-10 n=100: best tuning recovery 22.7%, target 19.7%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 64)             20.0%    2397183 nodes
+  Beam k=3 fixed list   ('beam', 3, 64)             22.7%    2454641 nodes
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     cannot reach the target
+  Beam adaptive         ('beam_T', 2, 16.0, 64)     20.0%     453698 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     22.7%     453016 nodes
+  VA-ANP adaptive       ('va_T', 2.2, 12.0, 64)     20.7%     412836 nodes
+  LP per-level          cannot reach the target
+
+BKZ-20 n=90: best tuning recovery 100.0%, target 97.0%
+  Babai                 cannot reach the target
+  Beam fixed list       ('beam', 2, 1)             100.0%      31215 nodes
+  Beam k=3 fixed list   ('beam', 3, 1)             100.0%      31621 nodes
+  ANP fixed list        ('anp', 0.5, 2)             98.0%      59834 nodes
+  VA-ANP fixed list     ('va', 4.0, 2)              98.7%      59573 nodes
+  Beam adaptive         ('beam_T', 2, 8.0, 64)      98.7%        507 nodes
+  Beam k=3 adaptive     ('beam_T', 3, 8.0, 64)      98.7%        521 nodes
+  VA-ANP adaptive       ('va_T', 4.0, 8.0, 64)      97.3%        408 nodes
+  LP per-level          ('lp', 65536)               97.3%   10797055 nodes
+
+BKZ-20 n=100: best tuning recovery 92.0%, target 89.0%
+  Babai                 cannot reach the target
+  Beam fixed list       cannot reach the target
+  Beam k=3 fixed list   ('beam', 3, 32)             90.7%    1232080 nodes
+  ANP fixed list        cannot reach the target
+  VA-ANP fixed list     ('va', 8.0, 32)             90.7%    1232051 nodes
+  Beam adaptive         cannot reach the target
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)     92.0%     244093 nodes
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)     92.0%     243765 nodes
+  LP per-level          cannot reach the target
+exit: 0

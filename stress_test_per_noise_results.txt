@@ -1,0 +1,144 @@
+
+[0] Reproduce notebook (seed 42) - exact counts must be 253 / 252
+    LLL dim=10 x1 on cpu: 0s
+    LLL dim=12 x1 on cpu: 1s
+    LLL dim=14 x1 on cpu: 1s
+    LLL dim=16 x1 on cpu: 1s
+  GPU LLL matches notebook lll_reduce
+    LLL dim=10 x90 on cpu: 1s
+    LLL dim=12 x90 on cpu: 1s
+    LLL dim=14 x90 on cpu: 2s
+    LLL dim=16 x90 on cpu: 4s
+  ANP 253/360, VA-ANP 252/360
+
+Building tuning and held-out sets (4200 each)
+    LLL dim=10 x1050 on cuda: 4s
+    LLL dim=12 x1050 on cuda: 5s
+    LLL dim=14 x1050 on cuda: 8s
+    LLL dim=16 x1050 on cuda: 28s
+    LLL dim=10 x1050 on cuda: 9s
+    LLL dim=12 x1050 on cuda: 15s
+    LLL dim=14 x1050 on cuda: 29s
+    LLL dim=16 x1050 on cuda: 40s
+
+Held-out curves per noise: accuracy, ms, planes per node
+ noise=0.1
+  ANP thr=0.35                    100.0%    3.222 ms   1.57
+  ANP thr=0.5                     100.0%    0.925 ms   1.28
+  ANP thr=0.6                     100.0%    0.511 ms   1.09
+  ANP thr=0.65                    100.0%    0.478 ms   1.05
+  ANP thr=0.7                     100.0%    0.422 ms   1.01
+  ANP thr=0.75                    100.0%    0.409 ms   1.00
+  ANP thr=0.8                     100.0%    0.411 ms   1.00
+  ANP thr=0.85                    100.0%    0.409 ms   1.00
+  ANP thr=0.9                     100.0%    0.403 ms   1.00
+  ANP thr=0.95                    100.0%    0.401 ms   1.00
+  VA llr=2.2                      100.0%    0.456 ms   1.00
+  VA llr=1.5                      100.0%    0.462 ms   1.00
+  VA llr=3.0                      100.0%    0.458 ms   1.00
+ noise=0.14
+  ANP thr=0.35                     99.5%    5.753 ms   1.62
+  ANP thr=0.5                      99.5%    2.614 ms   1.43
+  ANP thr=0.6                      99.3%    1.301 ms   1.28
+  ANP thr=0.65                     99.3%    0.945 ms   1.20
+  ANP thr=0.7                      99.3%    0.737 ms   1.14
+  ANP thr=0.75                     99.3%    0.574 ms   1.07
+  ANP thr=0.8                      99.3%    0.506 ms   1.03
+  ANP thr=0.85                     99.3%    0.460 ms   1.01
+  ANP thr=0.9                      99.3%    0.448 ms   1.01
+  ANP thr=0.95                     99.2%    0.440 ms   1.00
+  VA llr=2.2                       99.3%    0.500 ms   1.00
+  VA llr=1.5                       99.3%    0.499 ms   1.00
+  VA llr=3.0                       99.3%    0.502 ms   1.00
+ noise=0.18
+  ANP thr=0.35                     97.7%    7.168 ms   1.63
+  ANP thr=0.5                      97.7%    4.457 ms   1.47
+  ANP thr=0.6                      97.7%    2.640 ms   1.35
+  ANP thr=0.65                     97.7%    1.960 ms   1.29
+  ANP thr=0.7                      97.7%    1.436 ms   1.23
+  ANP thr=0.75                     97.3%    1.014 ms   1.16
+  ANP thr=0.8                      96.7%    0.756 ms   1.10
+  ANP thr=0.85                     96.7%    0.626 ms   1.06
+  ANP thr=0.9                      95.7%    0.517 ms   1.03
+  ANP thr=0.95                     94.2%    0.501 ms   1.01
+  VA llr=2.2                       96.5%    0.651 ms   1.02
+  VA llr=1.5                       95.8%    0.583 ms   1.01
+  VA llr=3.0                       97.3%    0.764 ms   1.02
+ noise=0.21
+  ANP thr=0.35                     89.8%    6.598 ms   1.64
+  ANP thr=0.5                      89.7%    4.480 ms   1.48
+  ANP thr=0.6                      89.7%    2.846 ms   1.37
+  ANP thr=0.65                     89.5%    2.156 ms   1.31
+  ANP thr=0.7                      89.0%    1.580 ms   1.25
+  ANP thr=0.75                     88.7%    1.130 ms   1.19
+  ANP thr=0.8                      88.2%    0.863 ms   1.13
+  ANP thr=0.85                     86.0%    0.651 ms   1.09
+  ANP thr=0.9                      82.3%    0.517 ms   1.05
+  ANP thr=0.95                     79.0%    0.452 ms   1.02
+  VA llr=2.2                       88.5%    0.936 ms   1.08
+  VA llr=1.5                       86.0%    0.703 ms   1.06
+  VA llr=3.0                       89.3%    1.377 ms   1.10
+ noise=0.24
+  ANP thr=0.35                     74.0%    7.262 ms   1.64
+  ANP thr=0.5                      73.8%    5.138 ms   1.48
+  ANP thr=0.6                      73.5%    3.632 ms   1.38
+  ANP thr=0.65                     73.3%    2.985 ms   1.33
+  ANP thr=0.7                      72.3%    2.293 ms   1.28
+  ANP thr=0.75                     71.5%    1.629 ms   1.22
+  ANP thr=0.8                      69.8%    1.132 ms   1.16
+  ANP thr=0.85                     68.3%    0.818 ms   1.11
+  ANP thr=0.9                      68.0%    0.611 ms   1.07
+  ANP thr=0.95                     65.8%    0.489 ms   1.03
+  VA llr=2.2                       72.5%    2.055 ms   1.18
+  VA llr=1.5                       70.0%    1.159 ms   1.13
+  VA llr=3.0                       73.5%    3.587 ms   1.26
+ noise=0.27
+  ANP thr=0.35                     55.3%    7.443 ms   1.65
+  ANP thr=0.5                      55.3%    5.566 ms   1.49
+  ANP thr=0.6                      55.0%    4.085 ms   1.39
+  ANP thr=0.65                     54.8%    3.342 ms   1.34
+  ANP thr=0.7                      54.0%    2.561 ms   1.29
+  ANP thr=0.75                     53.0%    1.811 ms   1.23
+  ANP thr=0.8                      52.0%    1.302 ms   1.18
+  ANP thr=0.85                     50.3%    0.914 ms   1.13
+  ANP thr=0.9                      49.3%    0.693 ms   1.08
+  ANP thr=0.95                     46.5%    0.516 ms   1.04
+  VA llr=2.2                       54.5%    3.717 ms   1.28
+  VA llr=1.5                       52.8%    1.880 ms   1.18
+  VA llr=3.0                       55.7%    5.713 ms   1.39
+ noise=0.3
+  ANP thr=0.35                     33.5%    8.159 ms   1.65
+  ANP thr=0.5                      33.0%    6.315 ms   1.49
+  ANP thr=0.6                      32.7%    4.707 ms   1.39
+  ANP thr=0.65                     32.2%    3.757 ms   1.34
+  ANP thr=0.7                      31.7%    2.940 ms   1.29
+  ANP thr=0.75                     32.0%    2.149 ms   1.24
+  ANP thr=0.8                      31.7%    1.548 ms   1.19
+  ANP thr=0.85                     32.2%    1.042 ms   1.14
+  ANP thr=0.9                      31.3%    0.775 ms   1.09
+  ANP thr=0.95                     29.7%    0.586 ms   1.05
+  VA llr=2.2                       33.2%    5.654 ms   1.36
+  VA llr=1.5                       32.2%    3.136 ms   1.24
+  VA llr=3.0                       33.5%    8.127 ms   1.50
+
+[1] One fixed ANP threshold vs VA llr=2.2 (picked on tuning set: ANP thr=0.7)
+    tuning accuracy: VA 76.9%, ANP 77.1%; held-out: VA 77.8%, ANP 77.7%
+  noise  ANP            ANPacc  VAacc  ANPpl VApl   work   time   ANP-only/VA-only
+  0.1    ANP thr=0.7     100.0%  100.0%   1.01  1.00   1.04x  0.93x    0/0   p=1.0000
+  0.14   ANP thr=0.7      99.3%   99.3%   1.14  1.00   1.87x  1.48x    0/0   p=1.0000
+  0.18   ANP thr=0.7      97.7%   96.5%   1.23  1.02   2.86x  2.21x    8/1   p=0.0391
+  0.21   ANP thr=0.7      89.0%   88.5%   1.25  1.08   2.11x  1.69x    4/1   p=0.3750
+  0.24   ANP thr=0.7      72.3%   72.5%   1.28  1.18   1.30x  1.12x    4/5   p=1.0000
+  0.27   ANP thr=0.7      54.0%   54.5%   1.29  1.28   0.78x  0.69x    2/5   p=0.4531
+  0.3    ANP thr=0.7      31.7%   33.2%   1.29  1.36   0.56x  0.52x    0/9   p=0.0039
+  all    work 0.97x
+
+[2] ANP threshold re-picked at each noise level, to match VA accuracy there
+  noise  ANP            ANPacc  VAacc  ANPpl VApl   work   time   ANP-only/VA-only
+  0.1    ANP thr=0.8     100.0%  100.0%   1.00  1.00   1.00x  0.90x    0/0   p=1.0000
+  0.14   ANP thr=0.9      99.3%   99.3%   1.01  1.00   1.03x  0.90x    0/0   p=1.0000
+  0.18   ANP thr=0.8      96.7%   96.5%   1.10  1.02   1.39x  1.16x    1/0   p=1.0000
+  0.21   ANP thr=0.75     88.7%   88.5%   1.19  1.08   1.46x  1.21x    2/1   p=1.0000
+  0.24   ANP thr=0.65     73.3%   72.5%   1.33  1.18   1.71x  1.45x    7/2   p=0.1797
+  0.27   ANP thr=0.65     54.8%   54.5%   1.34  1.28   1.04x  0.90x    3/1   p=0.6250
+  0.3    ANP thr=0.35     33.5%   33.2%   1.65  1.36   1.71x  1.44x    3/1   p=0.6250

@@ -1,0 +1,194 @@
+
+[0] Reproduce notebook (seed 42) - exact counts must be 253 / 252
+    LLL dim=10 x1 on cpu: 2s
+    LLL dim=12 x1 on cpu: 3s
+    LLL dim=14 x1 on cpu: 5s
+    LLL dim=16 x1 on cpu: 7s
+  GPU LLL matches notebook lll_reduce
+    LLL dim=10 x90 on cpu: 3s
+    LLL dim=12 x90 on cpu: 5s
+    LLL dim=14 x90 on cpu: 7s
+    LLL dim=16 x90 on cpu: 12s
+  ANP 253/360, VA-ANP 252/360
+  [exp0 done at 68s]
+
+[A] 10 fresh seeds, 3600 paired instances
+    LLL dim=10 x900 on cuda: 10s
+    LLL dim=12 x900 on cuda: 20s
+    LLL dim=14 x900 on cuda: 26s
+    LLL dim=16 x900 on cuda: 34s
+  Babai-NP                         59.3%    0.071 ms   1.00
+  LP k=2                           68.8%    2.321 ms      -
+  ANP (0.35)                       68.8%    1.578 ms   1.64
+  VA-ANP                           67.7%    0.608 ms   1.29
+  ANP-only wins 54, VA-only wins 15, McNemar p=0.0000
+  overall speedup 2.59x
+  speedup per seed min/median/max 2.31/2.64/2.78
+  accuracy gap (ANP-VA) per seed min/median/max -0.56/+1.11/+2.22 pts
+  dim=10: speedup 3.23x, ANP 70.6% VA 70.3% Babai 67.3%
+  dim=12: speedup 3.09x, ANP 68.7% VA 68.0% Babai 60.9%
+  dim=14: speedup 2.53x, ANP 69.3% VA 67.8% Babai 57.8%
+  dim=16: speedup 2.36x, ANP 66.7% VA 64.8% Babai 51.1%
+  noise=0.18: speedup 10.42x, ANP 98.1% VA 95.8% Babai 91.8%
+  noise=0.24: speedup 3.57x, ANP 73.9% VA 73.2% Babai 59.5%
+  noise=0.3: speedup 1.39x, ANP 34.4% VA 34.2% Babai 26.5%
+
+  Exact CVP (is the ceiling real?)
+  true point IS the closest point: 68.8%  <- ceiling for any decoder
+    noise=0.18: 98.1%
+    noise=0.24: 74.0%
+    noise=0.3: 34.4%
+  Babai-NP       returned the true closest point: 71.3%
+  LP k=2         returned the true closest point: 100.0%
+  ANP (0.35)     returned the true closest point: 99.8%
+  VA-ANP         returned the true closest point: 96.9%
+  [expA done at 180s]
+
+[B] VA-ANP with wrong sigma (1080 instances)
+    LLL dim=10 x270 on cpu: 1s
+    LLL dim=12 x270 on cpu: 2s
+    LLL dim=14 x270 on cpu: 4s
+    LLL dim=16 x270 on cpu: 6s
+  sigma x 0.25                     59.4%    0.095 ms   1.00
+  sigma x 0.5                      59.8%    0.105 ms   1.00
+  sigma x 0.75                     66.6%    0.215 ms   1.10
+  sigma x 0.9                      67.9%    0.382 ms   1.21
+  sigma x 1.0                      68.5%    0.547 ms   1.28
+  sigma x 1.1                      68.3%    0.707 ms   1.36
+  sigma x 1.25                     68.7%    0.966 ms   1.47
+  sigma x 1.5                      69.2%    1.440 ms   1.66
+  sigma x 2.0                      69.1%    2.314 ms   2.09
+  sigma x 4.0                      69.1%    3.481 ms   2.98
+  ANP (0.35, needs no sigma)       69.1%    1.459 ms   1.64
+  [expB done at 206s]
+
+[C] Tune on one set, score on another (1080 each)
+    LLL dim=10 x270 on cpu: 1s
+    LLL dim=12 x270 on cpu: 2s
+    LLL dim=14 x270 on cpu: 6s
+    LLL dim=16 x270 on cpu: 20s
+    LLL dim=10 x270 on cpu: 3s
+    LLL dim=12 x270 on cpu: 7s
+    LLL dim=14 x270 on cpu: 11s
+    LLL dim=16 x270 on cpu: 18s
+  Curves on the tuning set:
+  ANP thr=0.2                      68.0%    4.897 ms   1.80
+  ANP thr=0.35                     68.0%    3.957 ms   1.64
+  ANP thr=0.5                      68.2%    2.744 ms   1.48
+  ANP thr=0.6                      68.1%    1.871 ms   1.38
+  ANP thr=0.7                      67.8%    1.141 ms   1.27
+  ANP thr=0.8                      67.0%    0.592 ms   1.16
+  ANP thr=0.85                     65.8%    0.419 ms   1.11
+  ANP thr=0.9                      63.9%    0.340 ms   1.07
+  ANP thr=0.95                     61.9%    0.292 ms   1.03
+  ANP thr=0.98                     60.3%    0.254 ms   1.01
+  VA llr=0.5 sph=2.0               62.8%    0.341 ms   1.05
+  VA llr=0.5 sph=2.8               62.8%    0.352 ms   1.05
+  VA llr=0.5 sph=4.0               62.8%    0.344 ms   1.05
+  VA llr=1.0 sph=2.0               65.6%    0.501 ms   1.11
+  VA llr=1.0 sph=2.8               65.6%    0.510 ms   1.11
+  VA llr=1.0 sph=4.0               65.6%    0.527 ms   1.12
+  VA llr=1.5 sph=2.0               67.2%    0.827 ms   1.17
+  VA llr=1.5 sph=2.8               67.2%    0.824 ms   1.19
+  VA llr=1.5 sph=4.0               67.2%    0.848 ms   1.19
+  VA llr=2.2 sph=2.0               67.5%    1.386 ms   1.26
+  VA llr=2.2 sph=2.8               67.5%    1.479 ms   1.29
+  VA llr=2.2 sph=4.0               67.5%    1.507 ms   1.30
+  VA llr=3.0 sph=2.0               68.1%    1.999 ms   1.35
+  VA llr=3.0 sph=2.8               68.1%    2.171 ms   1.40
+  VA llr=3.0 sph=4.0               68.1%    2.194 ms   1.41
+  VA llr=4.0 sph=2.0               68.1%    2.565 ms   1.44
+  VA llr=4.0 sph=2.8               68.0%    2.982 ms   1.53
+  VA llr=4.0 sph=4.0               68.0%    3.050 ms   1.54
+  VA full (2.2, 2.8)               67.5%    1.499 ms   1.29
+  VA LLR only (2.2, no sphere)     67.5%    1.485 ms   1.30
+  VA sphere only (no LLR, 2.8)     68.0%    5.810 ms   2.09
+  VA neither                       68.0%    9.351 ms   3.00
+  Picked on tuning set: ANP thr=0.7 | VA llr=3.0 sph=2.0
+  Held-out test set:
+  ANP thr=0.7                      68.3%    2.026 ms   1.27
+  ANP thr=0.35 (notebook)          69.5%    7.210 ms   1.64
+  VA llr=3.0 sph=2.0               69.3%    3.583 ms   1.35
+  VA notebook (2.2, 2.8)           68.3%    2.725 ms   1.29
+  tuned ANP vs tuned VA: ANP-only 6, VA-only 16, p=0.0525, speedup 0.57x
+  [expC done at 356s]
+
+[E1] Lower noise (360 per ratio); 0.02 is about ML-KEM-512's sigma of 1.22
+    LLL dim=10 x90 on cpu: 2s
+    LLL dim=12 x90 on cpu: 4s
+    LLL dim=14 x90 on cpu: 7s
+    LLL dim=16 x90 on cpu: 11s
+  ratio=0.02
+  Babai-NP                        100.0%    0.289 ms   1.00
+  ANP (0.35)                      100.0%    0.394 ms   1.00
+  VA-ANP                          100.0%    0.386 ms   1.00
+    speedup 1.02x
+    LLL dim=10 x90 on cpu: 2s
+    LLL dim=12 x90 on cpu: 4s
+    LLL dim=14 x90 on cpu: 7s
+    LLL dim=16 x90 on cpu: 10s
+  ratio=0.06
+  Babai-NP                        100.0%    0.283 ms   1.00
+  ANP (0.35)                      100.0%    0.657 ms   1.26
+  VA-ANP                          100.0%    0.436 ms   1.00
+    speedup 1.51x
+    LLL dim=10 x90 on cpu: 2s
+    LLL dim=12 x90 on cpu: 4s
+    LLL dim=14 x90 on cpu: 7s
+    LLL dim=16 x90 on cpu: 11s
+  ratio=0.1
+  Babai-NP                        100.0%    0.298 ms   1.00
+  ANP (0.35)                      100.0%    2.942 ms   1.57
+  VA-ANP                          100.0%    0.444 ms   1.00
+    speedup 6.62x
+    LLL dim=10 x90 on cpu: 2s
+    LLL dim=12 x90 on cpu: 4s
+    LLL dim=14 x90 on cpu: 6s
+    LLL dim=16 x90 on cpu: 3s
+  ratio=0.14
+  Babai-NP                         99.7%    0.052 ms   1.00
+  ANP (0.35)                      100.0%    0.889 ms   1.62
+  VA-ANP                          100.0%    0.078 ms   1.00
+    speedup 11.35x
+
+[E2] Scaled centered binomial noise, eta=3 (1080)
+    LLL dim=10 x270 on cpu: 1s
+    LLL dim=12 x270 on cpu: 2s
+    LLL dim=14 x270 on cpu: 5s
+    LLL dim=16 x270 on cpu: 8s
+  Babai-NP                         58.0%    0.084 ms   1.00
+  ANP (0.35)                       68.1%    1.987 ms   1.64
+  VA-ANP                           67.8%    0.745 ms   1.29
+    speedup 2.67x
+  [expE done at 467s]
+
+[D] Larger dimensions (6 lattices x 3 noises x 25 targets per dim)
+    LLL dim=20 x6 on cpu: 5s
+  dim=20 (LLL 5s)
+  Babai-NP                         38.0%    0.109 ms   1.00
+  LP k=2                           62.0%    6.008 ms      -
+  ANP (0.35)                       61.1%    4.627 ms   1.64
+  VA-ANP                           57.1%    2.504 ms   1.27
+    speedup 1.85x; ANP-only 20, VA-only 2, p=0.0001
+    LLL dim=24 x6 on cpu: 38s
+  dim=24 (LLL 38s)
+  Babai-NP                         34.0%    0.352 ms   1.00
+  LP k=2                           63.1%   22.904 ms      -
+  ANP (0.35)                       62.0%   18.845 ms   1.65
+  VA-ANP                           57.3%   11.460 ms   1.27
+    speedup 1.64x; ANP-only 26, VA-only 5, p=0.0002
+    LLL dim=30 x6 on cpu: 42s
+  dim=30 (LLL 42s)
+  Babai-NP                         21.6%    0.200 ms   1.00
+  LP k=2                           58.9%   17.702 ms      -
+  ANP (0.35)                       57.8%   14.475 ms   1.65
+  VA-ANP                           51.3%   11.053 ms   1.27
+    speedup 1.31x; ANP-only 36, VA-only 7, p=0.0000
+    LLL dim=40 x6 on cpu: 92s
+  dim=40 (LLL 92s)
+  Babai-NP                         11.1%    0.188 ms   1.00
+  LP k=2                           47.3%   23.223 ms      -
+  ANP (0.35)                       44.4%   19.428 ms   1.65
+  VA-ANP                           40.2%   18.050 ms   1.29
+    speedup 1.08x; ANP-only 26, VA-only 7, p=0.0013
+  [expD done at 721s]

@@ -1,0 +1,1094 @@
+[
+ {
+  "dim": 16,
+  "noise": 0.18,
+  "margin": 0.01,
+  "target": 97.83333333333333,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.5, 0.25)",
+    "tune_acc": 98.0,
+    "test_acc": 98.16666666666667,
+    "nodes": 46.44
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.25)",
+    "tune_acc": 98.16666666666667,
+    "test_acc": 98.33333333333333,
+    "nodes": 59.0
+   },
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": null,
+   "Beam adaptive": {
+    "cfg": "('beam_T', 6)",
+    "tune_acc": 98.5,
+    "test_acc": 98.5,
+    "nodes": 24.25
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 16,
+  "noise": 0.18,
+  "margin": 0.03,
+  "target": 95.83333333333333,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.7, 0.25)",
+    "tune_acc": 96.83333333333334,
+    "test_acc": 97.83333333333334,
+    "nodes": 31.99
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.125)",
+    "tune_acc": 96.0,
+    "test_acc": 97.5,
+    "nodes": 31.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 2.2, 0.5)",
+    "tune_acc": 95.83333333333334,
+    "test_acc": 95.5,
+    "nodes": 25.158333333333335
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 3)",
+    "tune_acc": 96.16666666666667,
+    "test_acc": 96.5,
+    "nodes": 17.715
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 3)",
+    "tune_acc": 96.16666666666667,
+    "test_acc": 96.5,
+    "nodes": 17.715
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 1.2715468698244452,
+    "ratio_ci": [
+     1.2084910840696224,
+     1.3456844958775755
+    ],
+    "acc_ci": [
+     1.3333333333333335,
+     3.5000000000000004
+    ],
+    "base_only": 14,
+    "va_only": 0,
+    "p": 0.0001220703125,
+    "passes": false
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.2321960914210004,
+    "ratio_ci": [
+     1.1555648057051244,
+     1.3131906828598638
+    ],
+    "acc_ci": [
+     0.6666666666666667,
+     3.5000000000000004
+    ],
+    "base_only": 17,
+    "va_only": 5,
+    "p": 0.01690053939819336,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 1.8058142816821903,
+    "ratio_ci": [
+     1.715496379698467,
+     1.9039255176680936
+    ],
+    "acc_ci": [
+     0.5,
+     2.3333333333333335
+    ],
+    "base_only": 8,
+    "va_only": 0,
+    "p": 0.0078125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 1.7499294383290995,
+    "ratio_ci": [
+     1.7218993664507498,
+     1.7726145353551424
+    ],
+    "acc_ci": [
+     0.0,
+     2.166666666666667
+    ],
+    "base_only": 11,
+    "va_only": 5,
+    "p": 0.210113525390625,
+    "passes": true
+   }
+  }
+ },
+ {
+  "dim": 16,
+  "noise": 0.24,
+  "margin": 0.01,
+  "target": 73.16666666666667,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.5, 0.25)",
+    "tune_acc": 73.16666666666667,
+    "test_acc": 75.5,
+    "nodes": 51.56666666666667
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.5)",
+    "tune_acc": 74.0,
+    "test_acc": 77.33333333333333,
+    "nodes": 111.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 3.0, 0.5)",
+    "tune_acc": 73.16666666666667,
+    "test_acc": 76.16666666666667,
+    "nodes": 80.96333333333334
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 4)",
+    "tune_acc": 73.66666666666667,
+    "test_acc": 76.83333333333333,
+    "nodes": 50.79
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 4)",
+    "tune_acc": 73.66666666666667,
+    "test_acc": 76.83333333333333,
+    "nodes": 50.79
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 0.6369138293054469,
+    "ratio_ci": [
+     0.6219562024845493,
+     0.6528013619967697
+    ],
+    "acc_ci": [
+     -2.0,
+     0.6666666666666667
+    ],
+    "base_only": 5,
+    "va_only": 9,
+    "p": 0.4239501953125,
+    "passes": false
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.3709909835728107,
+    "ratio_ci": [
+     1.3305590050639837,
+     1.412755206890144
+    ],
+    "acc_ci": [
+     0.16666666666666669,
+     2.166666666666667
+    ],
+    "base_only": 9,
+    "va_only": 2,
+    "p": 0.0654296875,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 1.015291724092669,
+    "ratio_ci": [
+     0.9559705342455148,
+     1.0778210354606195
+    ],
+    "acc_ci": [
+     -2.833333333333333,
+     0.16666666666666669
+    ],
+    "base_only": 6,
+    "va_only": 14,
+    "p": 0.11531829833984375,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 2.1854695806261075,
+    "ratio_ci": [
+     2.0458881035756273,
+     2.329734372080492
+    ],
+    "acc_ci": [
+     -0.5,
+     1.8333333333333333
+    ],
+    "base_only": 8,
+    "va_only": 5,
+    "p": 0.5810546875,
+    "passes": true
+   }
+  }
+ },
+ {
+  "dim": 16,
+  "noise": 0.24,
+  "margin": 0.03,
+  "target": 71.16666666666667,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.5, 0.25)",
+    "tune_acc": 73.16666666666667,
+    "test_acc": 75.5,
+    "nodes": 51.56666666666667
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.25)",
+    "tune_acc": 73.0,
+    "test_acc": 75.5,
+    "nodes": 59.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 3.0, 0.25)",
+    "tune_acc": 72.83333333333334,
+    "test_acc": 75.0,
+    "nodes": 48.695
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 3)",
+    "tune_acc": 72.33333333333334,
+    "test_acc": 74.83333333333333,
+    "nodes": 33.68333333333333
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 3)",
+    "tune_acc": 72.33333333333334,
+    "test_acc": 74.83333333333333,
+    "nodes": 33.68333333333333
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 1.0589725160009584,
+    "ratio_ci": [
+     1.044375184414035,
+     1.0743802876638884
+    ],
+    "acc_ci": [
+     -0.16666666666666669,
+     1.1666666666666667
+    ],
+    "base_only": 4,
+    "va_only": 1,
+    "p": 0.375,
+    "passes": false
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.2116233699558476,
+    "ratio_ci": [
+     1.1883152361566713,
+     1.234914593941611
+    ],
+    "acc_ci": [
+     -0.33333333333333337,
+     1.3333333333333335
+    ],
+    "base_only": 5,
+    "va_only": 2,
+    "p": 0.453125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 1.5309252845126176,
+    "ratio_ci": [
+     1.4552830108440808,
+     1.6080463403438712
+    ],
+    "acc_ci": [
+     -0.6666666666666667,
+     2.166666666666667
+    ],
+    "base_only": 12,
+    "va_only": 8,
+    "p": 0.5034446716308594,
+    "passes": true
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 1.751608114794656,
+    "ratio_ci": [
+     1.6593931510343414,
+     1.8464547707881371
+    ],
+    "acc_ci": [
+     -0.8333333333333334,
+     2.166666666666667
+    ],
+    "base_only": 14,
+    "va_only": 10,
+    "p": 0.5412561893463135,
+    "passes": true
+   }
+  }
+ },
+ {
+  "dim": 16,
+  "noise": 0.3,
+  "margin": 0.01,
+  "target": 32.0,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.5, 0.5)",
+    "tune_acc": 32.33333333333333,
+    "test_acc": 29.166666666666668,
+    "nodes": 94.92333333333333
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.5)",
+    "tune_acc": 32.83333333333333,
+    "test_acc": 29.666666666666668,
+    "nodes": 111.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 1.5, 0.5)",
+    "tune_acc": 32.666666666666664,
+    "test_acc": 27.666666666666668,
+    "nodes": 77.61166666666666
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 3)",
+    "tune_acc": 32.5,
+    "test_acc": 30.166666666666668,
+    "nodes": 95.93
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 3)",
+    "tune_acc": 32.5,
+    "test_acc": 30.166666666666668,
+    "nodes": 95.93
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 1.2230549530783603,
+    "ratio_ci": [
+     1.1902929808401643,
+     1.2579998469434701
+    ],
+    "acc_ci": [
+     0.5,
+     2.5
+    ],
+    "base_only": 13,
+    "va_only": 4,
+    "p": 0.049041748046875,
+    "passes": false
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.4301973500547598,
+    "ratio_ci": [
+     1.3858535770931077,
+     1.4776210387263111
+    ],
+    "acc_ci": [
+     0.6666666666666667,
+     3.3333333333333335
+    ],
+    "base_only": 16,
+    "va_only": 4,
+    "p": 0.01181793212890625,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 0.9895062371868376,
+    "ratio_ci": [
+     0.9311160893249635,
+     1.0512569486170065
+    ],
+    "acc_ci": [
+     -1.8333333333333333,
+     -0.16666666666666669
+    ],
+    "base_only": 1,
+    "va_only": 7,
+    "p": 0.0703125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 1.1570937141665798,
+    "ratio_ci": [
+     1.0868252644549805,
+     1.2314872427762507
+    ],
+    "acc_ci": [
+     -1.3333333333333335,
+     0.33333333333333337
+    ],
+    "base_only": 2,
+    "va_only": 5,
+    "p": 0.453125,
+    "passes": false
+   }
+  }
+ },
+ {
+  "dim": 16,
+  "noise": 0.3,
+  "margin": 0.03,
+  "target": 30.000000000000004,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.7, 0.25)",
+    "tune_acc": 30.833333333333336,
+    "test_acc": 27.333333333333332,
+    "nodes": 47.15833333333333
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 0.25)",
+    "tune_acc": 31.5,
+    "test_acc": 28.000000000000004,
+    "nodes": 59.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 1.5, 0.25)",
+    "tune_acc": 31.333333333333336,
+    "test_acc": 27.166666666666668,
+    "nodes": 48.388333333333335
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 2.2, 2)",
+    "tune_acc": 31.0,
+    "test_acc": 27.833333333333332,
+    "nodes": 46.395
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 2)",
+    "tune_acc": 31.0,
+    "test_acc": 27.833333333333332,
+    "nodes": 46.395
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 0.9745806496056212,
+    "ratio_ci": [
+     0.9645626142687715,
+     0.9848780194029991
+    ],
+    "acc_ci": [
+     -1.0,
+     1.3333333333333335
+    ],
+    "base_only": 6,
+    "va_only": 5,
+    "p": 1.0,
+    "passes": false
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.2193021733889022,
+    "ratio_ci": [
+     1.1933646900911308,
+     1.2478079682495016
+    ],
+    "acc_ci": [
+     0.0,
+     1.8333333333333333
+    ],
+    "base_only": 11,
+    "va_only": 6,
+    "p": 0.332305908203125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 1.0164529223695082,
+    "ratio_ci": [
+     0.9733067797779157,
+     1.0600213604379758
+    ],
+    "acc_ci": [
+     -2.3333333333333335,
+     1.3333333333333335
+    ],
+    "base_only": 12,
+    "va_only": 15,
+    "p": 0.7011080384254456,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 1.2716887595646083,
+    "ratio_ci": [
+     1.2105047189167009,
+     1.3368100466532484
+    ],
+    "acc_ci": [
+     -1.5,
+     1.8333333333333333
+    ],
+    "base_only": 14,
+    "va_only": 13,
+    "p": 1.0,
+    "passes": false
+   }
+  }
+ },
+ {
+  "dim": 30,
+  "noise": 0.18,
+  "margin": 0.01,
+  "target": 98.66666666666667,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 2)",
+    "tune_acc": 99.33333333333333,
+    "test_acc": 99.5,
+    "nodes": 1503.0
+   },
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": null,
+   "Beam adaptive": {
+    "cfg": "('beam_T', 12)",
+    "tune_acc": 99.66666666666667,
+    "test_acc": 99.66666666666667,
+    "nodes": 1396.2983333333334
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 30,
+  "noise": 0.18,
+  "margin": 0.03,
+  "target": 96.66666666666667,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.35, 1)",
+    "tune_acc": 96.66666666666667,
+    "test_acc": 98.5,
+    "nodes": 721.4383333333334
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 1)",
+    "tune_acc": 98.33333333333333,
+    "test_acc": 99.0,
+    "nodes": 781.0
+   },
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": null,
+   "Beam adaptive": {
+    "cfg": "('beam_T', 8)",
+    "tune_acc": 98.16666666666667,
+    "test_acc": 99.5,
+    "nodes": 349.885
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 30,
+  "noise": 0.24,
+  "margin": 0.01,
+  "target": 73.16666666666667,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 16)",
+    "tune_acc": 73.83333333333333,
+    "test_acc": 71.5,
+    "nodes": 10591.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 4.0, 8)",
+    "tune_acc": 73.16666666666667,
+    "test_acc": 70.5,
+    "nodes": 5567.131666666667
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 8)",
+    "tune_acc": 74.0,
+    "test_acc": 70.33333333333334,
+    "nodes": 4753.595
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 8)",
+    "tune_acc": 74.0,
+    "test_acc": 71.0,
+    "nodes": 4954.2733333333335
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.9024159359143353,
+    "ratio_ci": [
+     1.890566146901506,
+     1.913983726242921
+    ],
+    "acc_ci": [
+     -0.16666666666666669,
+     2.166666666666667
+    ],
+    "base_only": 9,
+    "va_only": 3,
+    "p": 0.14599609375,
+    "passes": true
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 2.227997967853803,
+    "ratio_ci": [
+     2.0423892971318995,
+     2.4380429471061205
+    ],
+    "acc_ci": [
+     0.0,
+     2.3333333333333335
+    ],
+    "base_only": 10,
+    "va_only": 3,
+    "p": 0.09228515625,
+    "passes": true
+   }
+  }
+ },
+ {
+  "dim": 30,
+  "noise": 0.24,
+  "margin": 0.03,
+  "target": 71.16666666666667,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 4)",
+    "tune_acc": 71.16666666666667,
+    "test_acc": 70.16666666666667,
+    "nodes": 2887.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 4.0, 4)",
+    "tune_acc": 71.33333333333334,
+    "test_acc": 69.66666666666667,
+    "nodes": 2910.483333333333
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 8)",
+    "tune_acc": 74.0,
+    "test_acc": 70.33333333333334,
+    "nodes": 4753.595
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 8)",
+    "tune_acc": 74.0,
+    "test_acc": 71.0,
+    "nodes": 4954.2733333333335
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 0.9919314661367814,
+    "ratio_ci": [
+     0.9868786220481086,
+     0.9970028759454722
+    ],
+    "acc_ci": [
+     -0.5,
+     1.5
+    ],
+    "base_only": 7,
+    "va_only": 4,
+    "p": 0.548828125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 0.6073298209039685,
+    "ratio_ci": [
+     0.5567347654442257,
+     0.6645859681139996
+    ],
+    "acc_ci": [
+     -1.5,
+     1.0
+    ],
+    "base_only": 10,
+    "va_only": 11,
+    "p": 1.0,
+    "passes": false
+   }
+  }
+ },
+ {
+  "dim": 30,
+  "noise": 0.3,
+  "margin": 0.01,
+  "target": 14.499999999999998,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 8)",
+    "tune_acc": 14.833333333333334,
+    "test_acc": 14.166666666666666,
+    "nodes": 5535.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 3.0, 8)",
+    "tune_acc": 14.666666666666666,
+    "test_acc": 14.333333333333334,
+    "nodes": 5736.973333333333
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 6)",
+    "tune_acc": 15.5,
+    "test_acc": 13.833333333333334,
+    "nodes": 12534.096666666666
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 6)",
+    "tune_acc": 15.0,
+    "test_acc": 13.666666666666666,
+    "nodes": 10701.421666666667
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 0.9647944444573562,
+    "ratio_ci": [
+     0.9592529161670633,
+     0.9706269323210092
+    ],
+    "acc_ci": [
+     -0.8333333333333334,
+     0.33333333333333337
+    ],
+    "base_only": 1,
+    "va_only": 2,
+    "p": 1.0,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 0.4415954453837785,
+    "ratio_ci": [
+     0.42502605365476065,
+     0.4595925505923927
+    ],
+    "acc_ci": [
+     -0.33333333333333337,
+     1.004166666666644
+    ],
+    "base_only": 5,
+    "va_only": 3,
+    "p": 0.7265625,
+    "passes": false
+   }
+  }
+ },
+ {
+  "dim": 30,
+  "noise": 0.3,
+  "margin": 0.03,
+  "target": 12.5,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.35, 4)",
+    "tune_acc": 12.666666666666668,
+    "test_acc": 13.333333333333334,
+    "nodes": 2598.7966666666666
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 2)",
+    "tune_acc": 12.666666666666668,
+    "test_acc": 14.000000000000002,
+    "nodes": 1503.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 3.0, 1)",
+    "tune_acc": 12.5,
+    "test_acc": 11.833333333333334,
+    "nodes": 796.3666666666667
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 2.2, 4)",
+    "tune_acc": 13.333333333333334,
+    "test_acc": 13.0,
+    "nodes": 1886.3333333333333
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 4)",
+    "tune_acc": 13.833333333333334,
+    "test_acc": 13.5,
+    "nodes": 2113.8133333333335
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 3.2633167301494286,
+    "ratio_ci": [
+     3.242712315925155,
+     3.284930604840605
+    ],
+    "acc_ci": [
+     0.0,
+     3.0
+    ],
+    "base_only": 22,
+    "va_only": 13,
+    "p": 0.17546524899080396,
+    "passes": true
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 1.8873215855343015,
+    "ratio_ci": [
+     1.8811322776785104,
+     1.8941560989014405
+    ],
+    "acc_ci": [
+     1.0,
+     3.5000000000000004
+    ],
+    "base_only": 16,
+    "va_only": 3,
+    "p": 0.004425048828125,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 1.377697473051776,
+    "ratio_ci": [
+     1.2872890785141868,
+     1.4802302532163252
+    ],
+    "acc_ci": [
+     -1.1666666666666667,
+     1.8333333333333333
+    ],
+    "base_only": 12,
+    "va_only": 10,
+    "p": 0.8318119049072266,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 0.7967838840784591,
+    "ratio_ci": [
+     0.7444361274314008,
+     0.8554003277978893
+    ],
+    "acc_ci": [
+     -0.16666666666666669,
+     2.166666666666667
+    ],
+    "base_only": 11,
+    "va_only": 5,
+    "p": 0.210113525390625,
+    "passes": false
+   }
+  }
+ },
+ {
+  "dim": 40,
+  "noise": 0.18,
+  "margin": 0.01,
+  "target": 96.33333333333334,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 16)",
+    "tune_acc": 97.0,
+    "test_acc": 97.0,
+    "nodes": 20223.0
+   },
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": null,
+   "Beam adaptive": {
+    "cfg": "('beam_T', 12)",
+    "tune_acc": 97.33333333333334,
+    "test_acc": 97.0,
+    "nodes": 10271.97
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 40,
+  "noise": 0.18,
+  "margin": 0.03,
+  "target": 94.33333333333334,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 4)",
+    "tune_acc": 94.66666666666667,
+    "test_acc": 95.5,
+    "nodes": 5375.0
+   },
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": null,
+   "Beam adaptive": {
+    "cfg": "('beam_T', 8)",
+    "tune_acc": 94.33333333333334,
+    "test_acc": 93.83333333333333,
+    "nodes": 1963.8483333333334
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 40,
+  "noise": 0.24,
+  "margin": 0.01,
+  "target": 59.0,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": null,
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 8)",
+    "tune_acc": 59.0,
+    "test_acc": 60.66666666666667,
+    "nodes": 24093.025
+   },
+   "Beam adaptive": null
+  },
+  "vs": {}
+ },
+ {
+  "dim": 40,
+  "noise": 0.24,
+  "margin": 0.03,
+  "target": 56.99999999999999,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": null,
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 4.0, 8)",
+    "tune_acc": 59.0,
+    "test_acc": 60.66666666666667,
+    "nodes": 24093.025
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 8)",
+    "tune_acc": 56.99999999999999,
+    "test_acc": 57.333333333333336,
+    "nodes": 21676.628333333334
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 40,
+  "noise": 0.3,
+  "margin": 0.01,
+  "target": 6.333333333333334,
+  "picks": {
+   "ANP fixed list": null,
+   "Beam fixed list": null,
+   "VA-ANP fixed list": null,
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 2.2, 6)",
+    "tune_acc": 7.166666666666667,
+    "test_acc": 7.333333333333333,
+    "nodes": 28293.181666666667
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 6)",
+    "tune_acc": 7.000000000000001,
+    "test_acc": 7.000000000000001,
+    "nodes": 26827.705
+   }
+  },
+  "vs": {}
+ },
+ {
+  "dim": 40,
+  "noise": 0.3,
+  "margin": 0.03,
+  "target": 4.333333333333334,
+  "picks": {
+   "ANP fixed list": {
+    "cfg": "('anp', 0.5, 8)",
+    "tune_acc": 4.333333333333334,
+    "test_acc": 2.833333333333333,
+    "nodes": 8722.358333333334
+   },
+   "Beam fixed list": {
+    "cfg": "('beam', 2, 4)",
+    "tune_acc": 4.333333333333334,
+    "test_acc": 4.5,
+    "nodes": 5375.0
+   },
+   "VA-ANP fixed list": {
+    "cfg": "('va', 4.0, 4)",
+    "tune_acc": 4.333333333333334,
+    "test_acc": 4.833333333333333,
+    "nodes": 5720.615
+   },
+   "VA-ANP adaptive": {
+    "cfg": "('va_T', 2.2, 4)",
+    "tune_acc": 5.166666666666667,
+    "test_acc": 5.5,
+    "nodes": 11706.351666666667
+   },
+   "Beam adaptive": {
+    "cfg": "('beam_T', 4)",
+    "tune_acc": 5.166666666666667,
+    "test_acc": 5.166666666666667,
+    "nodes": 10424.253333333334
+   }
+  },
+  "vs": {
+   "VA-ANP fixed list vs ANP fixed list": {
+    "ratio": 1.5247238860390593,
+    "ratio_ci": [
+     1.5167648977491144,
+     1.5332896860156053
+    ],
+    "acc_ci": [
+     -3.6666666666666665,
+     -0.33333333333333337
+    ],
+    "base_only": 5,
+    "va_only": 17,
+    "p": 0.01690053939819336,
+    "passes": true
+   },
+   "VA-ANP fixed list vs Beam fixed list": {
+    "ratio": 0.939584292947524,
+    "ratio_ci": [
+     0.9395210627512672,
+     0.9396669703709164
+    ],
+    "acc_ci": [
+     -1.0,
+     0.33333333333333337
+    ],
+    "base_only": 1,
+    "va_only": 3,
+    "p": 0.625,
+    "passes": false
+   },
+   "VA-ANP adaptive vs ANP fixed list": {
+    "ratio": 0.745096216284863,
+    "ratio_ci": [
+     0.6906822865214317,
+     0.8094561915908562
+    ],
+    "acc_ci": [
+     -4.5,
+     -1.0
+    ],
+    "base_only": 4,
+    "va_only": 20,
+    "p": 0.001543879508972168,
+    "passes": false
+   },
+   "VA-ANP adaptive vs Beam fixed list": {
+    "ratio": 0.45915244587304527,
+    "ratio_ci": [
+     0.42641593216073737,
+     0.49886737968972483
+    ],
+    "acc_ci": [
+     -2.5,
+     0.5
+    ],
+    "base_only": 6,
+    "va_only": 12,
+    "p": 0.237884521484375,
+    "passes": false
+   }
+  }
+ }
+]

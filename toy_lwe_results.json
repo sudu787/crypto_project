@@ -1,0 +1,989 @@
+{
+ "settings": [
+  {
+   "beta": 2,
+   "n": 70,
+   "best_tune": 100.0,
+   "target": 97.0,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": {
+     "cfg": "('beam', 2, 1)",
+     "tune": 98.66666666666667,
+     "held_out": 98.75,
+     "nodes": 18735.0,
+     "ms": 11.161137750004855
+    },
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 1)",
+     "tune": 99.33333333333333,
+     "held_out": 99.5,
+     "nodes": 19021.0,
+     "ms": 10.638253000006443
+    },
+    "ANP fixed list": {
+     "cfg": "('anp', 0.2, 2)",
+     "tune": 97.33333333333334,
+     "held_out": 98.0,
+     "nodes": 36765.37,
+     "ms": 12.844635249994099
+    },
+    "VA-ANP fixed list": {
+     "cfg": "('va', 8.0, 2)",
+     "tune": 99.33333333333333,
+     "held_out": 100.0,
+     "nodes": 37502.74,
+     "ms": 10.983578750010565
+    },
+    "Beam adaptive": {
+     "cfg": "('beam_T', 2, 12.0, 64)",
+     "tune": 98.66666666666667,
+     "held_out": 99.25,
+     "nodes": 2261.3325,
+     "ms": 6.955361000009361
+    },
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 12.0, 64)",
+     "tune": 99.33333333333333,
+     "held_out": 100.0,
+     "nodes": 2690.135,
+     "ms": 7.497445249964585
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 8.0, 12.0, 64)",
+     "tune": 99.33333333333333,
+     "held_out": 100.0,
+     "nodes": 2529.84,
+     "ms": 8.538825499999803
+    },
+    "LP per-level": null
+   },
+   "strongest": "('va_T', 8.0, 16.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 1.7133018137500002,
+   "hit_limit": 0,
+   "gs_min": 3.243634530991199,
+   "targets": 400,
+   "babai": 44.0,
+   "babai_formula": 45.80884930697074,
+   "q1": {
+    "cfg": "('va_T', 8.0, 16.0, 64)",
+    "strongest": 100.0,
+    "only_list": 224,
+    "only_babai": 0,
+    "p": 7.418412301374843e-68,
+    "diff_ci": [
+     52.25,
+     59.75
+    ],
+    "gain": true,
+    "nodes": 8708.035
+   },
+   "q2": {
+    "Beam fixed list": {
+     "ratio": 7.405606678683237,
+     "ratio_ci": [
+      6.043541818119301,
+      9.192129150891507
+     ],
+     "base_only": 0,
+     "va_only": 5,
+     "p": 0.0625,
+     "diff_ci": [
+      0.0,
+      2.75
+     ],
+     "significant_loss": false,
+     "win": true
+    },
+    "Beam adaptive": {
+     "ratio": 0.8938638411915378,
+     "ratio_ci": [
+      0.8721013912771614,
+      0.9168859608255701
+     ],
+     "base_only": 0,
+     "va_only": 3,
+     "p": 0.25,
+     "diff_ci": [
+      0.0,
+      1.5
+     ],
+     "significant_loss": false,
+     "win": false
+    },
+    "LP per-level": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    }
+   },
+   "q2_all_three": false
+  },
+  {
+   "beta": 2,
+   "n": 80,
+   "best_tune": 86.0,
+   "target": 83.0,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": null,
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 64)",
+     "tune": 86.0,
+     "held_out": 85.0,
+     "nodes": 1556081.0,
+     "ms": 147.59840399996392
+    },
+    "ANP fixed list": null,
+    "VA-ANP fixed list": null,
+    "Beam adaptive": null,
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 12.0, 64)",
+     "tune": 85.33333333333334,
+     "held_out": 84.0,
+     "nodes": 206346.81,
+     "ms": 24.61459074997947
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 8.0, 12.0, 64)",
+     "tune": 85.33333333333334,
+     "held_out": 84.0,
+     "nodes": 206186.8925,
+     "ms": 24.505537749992072
+    },
+    "LP per-level": null
+   },
+   "strongest": "('va_T', 8.0, 16.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 2.9549565202500148,
+   "hit_limit": 0,
+   "gs_min": 2.08137483739219,
+   "targets": 400,
+   "babai": 1.5,
+   "babai_formula": 2.9683386637767444,
+   "q1": {
+    "cfg": "('va_T', 8.0, 16.0, 64)",
+    "strongest": 85.0,
+    "only_list": 334,
+    "only_babai": 0,
+    "p": 5.714936956411375e-101,
+    "diff_ci": [
+     76.25,
+     89.75
+    ],
+    "gain": true,
+    "nodes": 269593.0575
+   },
+   "q2": {
+    "Beam fixed list": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    },
+    "Beam adaptive": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    },
+    "LP per-level": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    }
+   },
+   "q2_all_three": true
+  },
+  {
+   "beta": 10,
+   "n": 80,
+   "best_tune": 100.0,
+   "target": 97.0,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": {
+     "cfg": "('beam', 2, 1)",
+     "tune": 100.0,
+     "held_out": 100.0,
+     "nodes": 24575.0,
+     "ms": 11.662669499983167
+    },
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 1)",
+     "tune": 100.0,
+     "held_out": 100.0,
+     "nodes": 24921.0,
+     "ms": 12.028922749987029
+    },
+    "ANP fixed list": {
+     "cfg": "('anp', 0.5, 2)",
+     "tune": 98.0,
+     "held_out": 98.5,
+     "nodes": 46628.7475,
+     "ms": 16.138673999994353
+    },
+    "VA-ANP fixed list": {
+     "cfg": "('va', 4.0, 2)",
+     "tune": 98.0,
+     "held_out": 98.0,
+     "nodes": 41776.2925,
+     "ms": 12.15061874998355
+    },
+    "Beam adaptive": {
+     "cfg": "('beam_T', 2, 4.0, 64)",
+     "tune": 97.33333333333334,
+     "held_out": 95.0,
+     "nodes": 177.04,
+     "ms": 7.926197500019043
+    },
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 4.0, 64)",
+     "tune": 97.33333333333334,
+     "held_out": 95.0,
+     "nodes": 177.04,
+     "ms": 8.45535349999409
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 4.0, 4.0, 64)",
+     "tune": 97.33333333333334,
+     "held_out": 95.0,
+     "nodes": 177.04,
+     "ms": 8.602330750018156
+    },
+    "LP per-level": {
+     "cfg": "('lp', 4096)",
+     "tune": 97.33333333333334,
+     "held_out": 97.25,
+     "nodes": 609919.0,
+     "ms": 40.329983500005255
+    }
+   },
+   "strongest": "('va_T', 8.0, 12.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 11.332241700812517,
+   "hit_limit": 0,
+   "gs_min": 3.772618292772555,
+   "targets": 400,
+   "babai": 65.25,
+   "babai_formula": 66.84353486049332,
+   "q1": {
+    "cfg": "('va_T', 8.0, 12.0, 64)",
+    "strongest": 100.0,
+    "only_list": 139,
+    "only_babai": 0,
+    "p": 2.8698592549372254e-42,
+    "diff_ci": [
+     30.5,
+     39.25
+    ],
+    "gain": true,
+    "nodes": 647.285
+   },
+   "q2": {
+    "Beam fixed list": {
+     "ratio": 138.81043831902394,
+     "ratio_ci": [
+      137.1409119486446,
+      140.50082899777027
+     ],
+     "base_only": 20,
+     "va_only": 0,
+     "p": 1.9073486328125e-06,
+     "diff_ci": [
+      -7.0,
+      -3.0
+     ],
+     "significant_loss": true,
+     "win": false
+    },
+    "Beam adaptive": {
+     "ratio": 1.0,
+     "ratio_ci": [
+      1.0,
+      1.0
+     ],
+     "base_only": 0,
+     "va_only": 0,
+     "p": 1.0,
+     "diff_ci": [
+      0.0,
+      0.0
+     ],
+     "significant_loss": false,
+     "win": false
+    },
+    "LP per-level": {
+     "ratio": 3445.0915047446906,
+     "ratio_ci": [
+      3403.6124964351056,
+      3486.8341852142034
+     ],
+     "base_only": 17,
+     "va_only": 8,
+     "p": 0.10775214433670044,
+     "diff_ci": [
+      -4.0,
+      -0.75
+     ],
+     "significant_loss": false,
+     "win": true
+    }
+   },
+   "q2_all_three": false
+  },
+  {
+   "beta": 10,
+   "n": 100,
+   "best_tune": 22.666666666666664,
+   "target": 19.666666666666664,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": {
+     "cfg": "('beam', 2, 64)",
+     "tune": 20.0,
+     "held_out": 22.75,
+     "nodes": 2397183.0,
+     "ms": 223.44319650001125
+    },
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 64)",
+     "tune": 22.666666666666664,
+     "held_out": 25.5,
+     "nodes": 2454641.0,
+     "ms": 255.79661950002446
+    },
+    "ANP fixed list": null,
+    "VA-ANP fixed list": null,
+    "Beam adaptive": {
+     "cfg": "('beam_T', 2, 16.0, 64)",
+     "tune": 20.0,
+     "held_out": 22.75,
+     "nodes": 451978.8175,
+     "ms": 50.650523249978505
+    },
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 12.0, 64)",
+     "tune": 22.666666666666664,
+     "held_out": 25.5,
+     "nodes": 452170.16,
+     "ms": 53.39745649998804
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 2.2, 12.0, 64)",
+     "tune": 20.666666666666668,
+     "held_out": 21.75,
+     "nodes": 408860.7375,
+     "ms": 46.49346900000637
+    },
+    "LP per-level": null
+   },
+   "strongest": "('va_T', 4.0, 12.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 31.730527485750002,
+   "hit_limit": 0,
+   "gs_min": 1.6739380746430348,
+   "targets": 400,
+   "babai": 0.0,
+   "babai_formula": 0.05511537208252942,
+   "q1": {
+    "cfg": "('va_T', 4.0, 12.0, 64)",
+    "strongest": 25.25,
+    "only_list": 101,
+    "only_babai": 0,
+    "p": 7.888609052210118e-31,
+    "diff_ci": [
+     20.5,
+     30.75
+    ],
+    "gain": true,
+    "nodes": 450038.6675
+   },
+   "q2": {
+    "Beam fixed list": {
+     "ratio": 5.863079479476799,
+     "ratio_ci": [
+      5.762141618634532,
+      5.968669100638172
+     ],
+     "base_only": 14,
+     "va_only": 10,
+     "p": 0.5412561893463135,
+     "diff_ci": [
+      -3.5,
+      1.25
+     ],
+     "significant_loss": false,
+     "win": true
+    },
+    "Beam adaptive": {
+     "ratio": 1.1054590867874663,
+     "ratio_ci": [
+      1.094299197309139,
+      1.118069680441555
+     ],
+     "base_only": 14,
+     "va_only": 10,
+     "p": 0.5412561893463135,
+     "diff_ci": [
+      -3.5,
+      1.25
+     ],
+     "significant_loss": false,
+     "win": false
+    },
+    "LP per-level": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    }
+   },
+   "q2_all_three": false
+  },
+  {
+   "beta": 20,
+   "n": 90,
+   "best_tune": 100.0,
+   "target": 97.0,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": {
+     "cfg": "('beam', 2, 1)",
+     "tune": 100.0,
+     "held_out": 100.0,
+     "nodes": 31215.0,
+     "ms": 13.5782940000081
+    },
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 1)",
+     "tune": 100.0,
+     "held_out": 100.0,
+     "nodes": 31621.0,
+     "ms": 13.895016000005853
+    },
+    "ANP fixed list": {
+     "cfg": "('anp', 0.5, 2)",
+     "tune": 98.0,
+     "held_out": 94.0,
+     "nodes": 59715.845,
+     "ms": 15.732882500014966
+    },
+    "VA-ANP fixed list": {
+     "cfg": "('va', 4.0, 2)",
+     "tune": 98.66666666666667,
+     "held_out": 96.0,
+     "nodes": 59706.085,
+     "ms": 15.641367749994968
+    },
+    "Beam adaptive": {
+     "cfg": "('beam_T', 2, 8.0, 64)",
+     "tune": 98.66666666666667,
+     "held_out": 98.5,
+     "nodes": 553.855,
+     "ms": 9.968086250000852
+    },
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 8.0, 64)",
+     "tune": 98.66666666666667,
+     "held_out": 98.5,
+     "nodes": 568.2925,
+     "ms": 9.532583249992967
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 4.0, 8.0, 64)",
+     "tune": 97.33333333333334,
+     "held_out": 94.75,
+     "nodes": 441.12,
+     "ms": 10.687419749992841
+    },
+    "LP per-level": {
+     "cfg": "('lp', 65536)",
+     "tune": 97.33333333333334,
+     "held_out": 98.25,
+     "nodes": 10807295.0,
+     "ms": 762.5481317499725
+    }
+   },
+   "strongest": "('beam_T', 2, 12.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 21.287422508250017,
+   "hit_limit": 0,
+   "gs_min": 3.3251371995763677,
+   "targets": 400,
+   "babai": 49.5,
+   "babai_formula": 49.251612120769465,
+   "q1": {
+    "cfg": "('beam_T', 2, 12.0, 64)",
+    "strongest": 100.0,
+    "only_list": 202,
+    "only_babai": 0,
+    "p": 3.111507638930571e-61,
+    "diff_ci": [
+     46.25,
+     54.75
+    ],
+    "gain": true,
+    "nodes": 1898.2025
+   },
+   "q2": {
+    "Beam fixed list": {
+     "ratio": 70.76305767138194,
+     "ratio_ci": [
+      67.81224058212246,
+      74.65849168696927
+     ],
+     "base_only": 21,
+     "va_only": 0,
+     "p": 9.5367431640625e-07,
+     "diff_ci": [
+      -7.75,
+      -3.25
+     ],
+     "significant_loss": true,
+     "win": false
+    },
+    "Beam adaptive": {
+     "ratio": 1.255565379035183,
+     "ratio_ci": [
+      1.2439987169570474,
+      1.2690383393143998
+     ],
+     "base_only": 15,
+     "va_only": 0,
+     "p": 6.103515625e-05,
+     "diff_ci": [
+      -6.0,
+      -2.0
+     ],
+     "significant_loss": true,
+     "win": false
+    },
+    "LP per-level": {
+     "ratio": 24499.671291258615,
+     "ratio_ci": [
+      23486.82285982526,
+      25843.632878828084
+     ],
+     "base_only": 21,
+     "va_only": 7,
+     "p": 0.012540951371192932,
+     "diff_ci": [
+      -6.5,
+      -0.75
+     ],
+     "significant_loss": false,
+     "win": true
+    }
+   },
+   "q2_all_three": false
+  },
+  {
+   "beta": 20,
+   "n": 100,
+   "best_tune": 92.0,
+   "target": 89.0,
+   "families": {
+    "Babai": null,
+    "Beam fixed list": null,
+    "Beam k=3 fixed list": {
+     "cfg": "('beam', 3, 32)",
+     "tune": 90.66666666666666,
+     "held_out": 93.25,
+     "nodes": 1232080.0,
+     "ms": 129.527441500004
+    },
+    "ANP fixed list": null,
+    "VA-ANP fixed list": {
+     "cfg": "('va', 8.0, 32)",
+     "tune": 90.66666666666666,
+     "held_out": 93.25,
+     "nodes": 1232045.4975,
+     "ms": 109.06378925000354
+    },
+    "Beam adaptive": null,
+    "Beam k=3 adaptive": {
+     "cfg": "('beam_T', 3, 12.0, 64)",
+     "tune": 92.0,
+     "held_out": 94.25,
+     "nodes": 234687.1625,
+     "ms": 30.35591724998085
+    },
+    "VA-ANP adaptive": {
+     "cfg": "('va_T', 8.0, 12.0, 64)",
+     "tune": 92.0,
+     "held_out": 94.25,
+     "nodes": 234311.835,
+     "ms": 30.1478597500136
+    },
+    "LP per-level": null
+   },
+   "strongest": "('va_T', 8.0, 12.0, 64)",
+   "bad_points": 0,
+   "reduce_s": 33.44096691937501,
+   "hit_limit": 0,
+   "gs_min": 2.2873635024926884,
+   "targets": 400,
+   "babai": 4.0,
+   "babai_formula": 3.970148638417506,
+   "q1": {
+    "cfg": "('va_T', 8.0, 12.0, 64)",
+    "strongest": 94.25,
+    "only_list": 361,
+    "only_babai": 0,
+    "p": 4.257959840008151e-109,
+    "diff_ci": [
+     87.75,
+     92.75
+    ],
+    "gain": true,
+    "nodes": 234311.835
+   },
+   "q2": {
+    "Beam fixed list": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    },
+    "Beam adaptive": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    },
+    "LP per-level": {
+     "win": true,
+     "why": "baseline cannot reach the target"
+    }
+   },
+   "q2_all_three": true
+  }
+ ],
+ "alpha": 0.0020833333333333333,
+ "q1_gains": 6,
+ "q2_wins": 2,
+ "rule_passed": false,
+ "effort": [
+  {
+   "n": 70,
+   "beta": 2,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 44.0,
+   "reduce_s": 1.7133018137500002,
+   "decode_s": 0.0049458919999779034,
+   "sec_per_secret": 3.9051084221590413
+  },
+  {
+   "n": 70,
+   "beta": 2,
+   "decoder": "Beam adaptive",
+   "cfg": "('beam_T', 2, 12.0, 64)",
+   "recovery": 99.25,
+   "reduce_s": 1.7133018137500002,
+   "decode_s": 0.006955361000009362,
+   "sec_per_secret": 1.733256599244342
+  },
+  {
+   "n": 70,
+   "beta": 2,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 12.0, 64)",
+   "recovery": 100.0,
+   "reduce_s": 1.7133018137500002,
+   "decode_s": 0.007497445249964585,
+   "sec_per_secret": 1.7207992589999648
+  },
+  {
+   "n": 70,
+   "beta": 2,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 8.0, 12.0, 64)",
+   "recovery": 100.0,
+   "reduce_s": 1.7133018137500002,
+   "decode_s": 0.008538825499999802,
+   "sec_per_secret": 1.72184063925
+  },
+  {
+   "n": 70,
+   "beta": 2,
+   "decoder": "Strongest list",
+   "cfg": "('va_T', 8.0, 16.0, 64)",
+   "recovery": 100.0,
+   "reduce_s": 1.7133018137500002,
+   "decode_s": 0.008290313249972314,
+   "sec_per_secret": 1.7215921269999725
+  },
+  {
+   "n": 70,
+   "beta": 10,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 98.0,
+   "reduce_s": 6.269132904437512,
+   "decode_s": 0.004330610249990059,
+   "sec_per_secret": 6.401493382334187
+  },
+  {
+   "n": 70,
+   "beta": 20,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 99.75,
+   "reduce_s": 9.60873783825,
+   "decode_s": 0.004557439749996775,
+   "sec_per_secret": 9.637388749874683
+  },
+  {
+   "n": 80,
+   "beta": 2,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 1.5,
+   "reduce_s": 2.9549565202500148,
+   "decode_s": 0.0053131007499905535,
+   "sec_per_secret": 197.35130806666703
+  },
+  {
+   "n": 80,
+   "beta": 2,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 12.0, 64)",
+   "recovery": 84.0,
+   "reduce_s": 2.9549565202500148,
+   "decode_s": 0.02461459074997947,
+   "sec_per_secret": 3.5471084654761835
+  },
+  {
+   "n": 80,
+   "beta": 2,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 8.0, 12.0, 64)",
+   "recovery": 84.0,
+   "reduce_s": 2.9549565202500148,
+   "decode_s": 0.024505537749992073,
+   "sec_per_secret": 3.546978640476199
+  },
+  {
+   "n": 80,
+   "beta": 2,
+   "decoder": "Strongest list",
+   "cfg": "('va_T', 8.0, 16.0, 64)",
+   "recovery": 85.0,
+   "reduce_s": 2.9549565202500148,
+   "decode_s": 0.030636529499988678,
+   "sec_per_secret": 3.5124624114705925
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 65.25,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.00606301924998661,
+   "sec_per_secret": 17.37671221465518
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "Beam adaptive",
+   "cfg": "('beam_T', 2, 4.0, 64)",
+   "recovery": 95.0,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.007926197500019043,
+   "sec_per_secret": 11.937018840328987
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 4.0, 64)",
+   "recovery": 95.0,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.00845535349999409,
+   "sec_per_secret": 11.937575846644748
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 4.0, 4.0, 64)",
+   "recovery": 95.0,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.008602330750018157,
+   "sec_per_secret": 11.93773055953951
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "LP per-level",
+   "cfg": "('lp', 4096)",
+   "recovery": 97.25,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.04032998350000525,
+   "sec_per_secret": 11.694161114974316
+  },
+  {
+   "n": 80,
+   "beta": 10,
+   "decoder": "Strongest list",
+   "cfg": "('va_T', 8.0, 12.0, 64)",
+   "recovery": 100.0,
+   "reduce_s": 11.332241700812517,
+   "decode_s": 0.008976803500017923,
+   "sec_per_secret": 11.341218504312534
+  },
+  {
+   "n": 80,
+   "beta": 20,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 94.25,
+   "reduce_s": 14.416186703125007,
+   "decode_s": 0.005257717249987763,
+   "sec_per_secret": 15.30126728952254
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 49.5,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.005829020249993846,
+   "sec_per_secret": 43.016669754545475
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "Beam adaptive",
+   "cfg": "('beam_T', 2, 8.0, 64)",
+   "recovery": 98.5,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.009968086250000851,
+   "sec_per_secret": 21.621716339593927
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 8.0, 64)",
+   "recovery": 98.5,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.009532583249992968,
+   "sec_per_secret": 21.62127420456854
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 4.0, 8.0, 64)",
+   "recovery": 94.75,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.010687419749992842,
+   "sec_per_secret": 22.478216282849615
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "LP per-level",
+   "cfg": "('lp', 65536)",
+   "recovery": 98.25,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.7625481317499725,
+   "sec_per_secret": 22.44271820865139
+  },
+  {
+   "n": 90,
+   "beta": 20,
+   "decoder": "Strongest list",
+   "cfg": "('beam_T', 2, 12.0, 64)",
+   "recovery": 100.0,
+   "reduce_s": 21.287422508250017,
+   "decode_s": 0.009836228499962088,
+   "sec_per_secret": 21.29725873674998
+  },
+  {
+   "n": 100,
+   "beta": 10,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 0.0,
+   "reduce_s": 31.730527485750002,
+   "decode_s": 0.0065843280000081,
+   "sec_per_secret": null
+  },
+  {
+   "n": 100,
+   "beta": 10,
+   "decoder": "Beam adaptive",
+   "cfg": "('beam_T', 2, 16.0, 64)",
+   "recovery": 22.75,
+   "reduce_s": 31.730527485750002,
+   "decode_s": 0.050650523249978506,
+   "sec_per_secret": 139.69748575384605
+  },
+  {
+   "n": 100,
+   "beta": 10,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 12.0, 64)",
+   "recovery": 25.5,
+   "reduce_s": 31.730527485750002,
+   "decode_s": 0.05339745649998804,
+   "sec_per_secret": 124.64284291078427
+  },
+  {
+   "n": 100,
+   "beta": 10,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 2.2, 12.0, 64)",
+   "recovery": 21.75,
+   "reduce_s": 31.730527485750002,
+   "decode_s": 0.04649346900000637,
+   "sec_per_secret": 146.10124576896555
+  },
+  {
+   "n": 100,
+   "beta": 10,
+   "decoder": "Strongest list",
+   "cfg": "('va_T', 4.0, 12.0, 64)",
+   "recovery": 25.25,
+   "reduce_s": 31.730527485750002,
+   "decode_s": 0.05206231474999186,
+   "sec_per_secret": 125.87164277425741
+  },
+  {
+   "n": 100,
+   "beta": 20,
+   "decoder": "Babai",
+   "cfg": "('babai',)",
+   "recovery": 4.0,
+   "reduce_s": 33.44096691937501,
+   "decode_s": 0.006432363750027434,
+   "sec_per_secret": 836.1849820781259
+  },
+  {
+   "n": 100,
+   "beta": 20,
+   "decoder": "Beam k=3 adaptive",
+   "cfg": "('beam_T', 3, 12.0, 64)",
+   "recovery": 94.25,
+   "reduce_s": 33.44096691937501,
+   "decode_s": 0.030355917249980848,
+   "sec_per_secret": 35.513339879708205
+  },
+  {
+   "n": 100,
+   "beta": 20,
+   "decoder": "VA-ANP adaptive",
+   "cfg": "('va_T', 8.0, 12.0, 64)",
+   "recovery": 94.25,
+   "reduce_s": 33.44096691937501,
+   "decode_s": 0.0301478597500136,
+   "sec_per_secret": 35.513119129045116
+  },
+  {
+   "n": 100,
+   "beta": 20,
+   "decoder": "Strongest list",
+   "cfg": "('va_T', 8.0, 12.0, 64)",
+   "recovery": 94.25,
+   "reduce_s": 33.44096691937501,
+   "decode_s": 0.0301478597500136,
+   "sec_per_secret": 35.513119129045116
+  }
+ ],
+ "bad_points": 0
+}

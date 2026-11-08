@@ -1,0 +1,21 @@
+    LLL dim=40 x60 on cuda: 359s
+  ('beam', 2, 8)         tune  45.8%  held-out  49.2%     10431 nodes  vs VA-ANP T=8: this-only/VA-only 10/79 p=0.0000
+  ('beam', 2, 16)        tune  53.2%  held-out  54.7%     20223 nodes  vs VA-ANP T=8: this-only/VA-only 13/49 p=0.0000
+  ('beam', 2, 32)        tune  59.0%  held-out  59.0%     39167 nodes  vs VA-ANP T=8: this-only/VA-only 19/29 p=0.1934
+  ('beam', 2, 64)        tune  62.0%  held-out  61.3%     75775 nodes  vs VA-ANP T=8: this-only/VA-only 34/30 p=0.7080
+  ('beam', 3, 8)         tune  47.2%  held-out  50.5%     11244 nodes  vs VA-ANP T=8: this-only/VA-only 13/74 p=0.0000
+  ('beam', 3, 16)        tune  55.0%  held-out  57.5%     22124 nodes  vs VA-ANP T=8: this-only/VA-only 17/36 p=0.0127
+  ('beam', 3, 32)        tune  60.8%  held-out  63.3%     43333 nodes  vs VA-ANP T=8: this-only/VA-only 20/4 p=0.0015
+  ('beam', 3, 64)        tune  66.7%  held-out  66.7%     85200 nodes  vs VA-ANP T=8: this-only/VA-only 46/10 p=0.0000
+  ('beam_T', 8)          tune  57.0%  held-out  57.3%     21677 nodes  vs VA-ANP T=8: this-only/VA-only 7/27 p=0.0008
+  ('beam_T', 12)         tune  58.8%  held-out  59.0%     31139 nodes  vs VA-ANP T=8: this-only/VA-only 19/29 p=0.1934
+  ('beam3_T', 6)         tune  49.0%  held-out  51.3%     10690 nodes  vs VA-ANP T=8: this-only/VA-only 12/68 p=0.0000
+  ('beam3_T', 8)         tune  59.7%  held-out  61.5%     24872 nodes  vs VA-ANP T=8: this-only/VA-only 9/4 p=0.2668
+  ('beam3_T', 12)        tune  60.7%  held-out  63.3%     34896 nodes  vs VA-ANP T=8: this-only/VA-only 20/4 p=0.0015
+  ('va', 4.0, 8)         tune  46.8%  held-out  49.3%     11012 nodes  vs VA-ANP T=8: this-only/VA-only 6/74 p=0.0000
+  ('va', 4.0, 16)        tune  54.5%  held-out  56.3%     21512 nodes  vs VA-ANP T=8: this-only/VA-only 9/35 p=0.0001
+  ('va', 4.0, 32)        tune  60.2%  held-out  62.7%     41961 nodes  vs VA-ANP T=8: this-only/VA-only 14/2 p=0.0042
+  ('va', 4.0, 64)        tune  64.3%  held-out  65.2%     81722 nodes  vs VA-ANP T=8: this-only/VA-only 34/7 p=0.0000
+  ('va_T', 4.0, 6)       tune  48.5%  held-out  50.2%     10312 nodes  vs VA-ANP T=8: this-only/VA-only 5/68 p=0.0000
+  ('va_T', 4.0, 8)       tune  59.0%  held-out  60.7%     24093 nodes  vs VA-ANP T=8: this-only/VA-only 0/0 p=1.0000
+  ('va_T', 4.0, 12)      tune  60.0%  held-out  62.7%     33670 nodes  vs VA-ANP T=8: this-only/VA-only 14/2 p=0.0042

@@ -1,0 +1,279 @@
+﻿[heldout] 144 jobs on 1 workers
+  [1/144]     7s  LLL     n=70   lattice 0   reduced in    1.5s
+  [2/144]     9s  LLL     n=70   lattice 1   reduced in    1.5s
+  [3/144]    11s  LLL     n=70   lattice 2   reduced in    1.6s
+  [4/144]    13s  LLL     n=70   lattice 3   reduced in    1.7s
+  [5/144]    15s  LLL     n=70   lattice 4   reduced in    1.6s
+  [6/144]    17s  LLL     n=70   lattice 5   reduced in    1.7s
+  [7/144]    19s  LLL     n=70   lattice 6   reduced in    1.7s
+  [8/144]    21s  LLL     n=70   lattice 7   reduced in    1.6s
+  [9/144]    23s  LLL     n=70   lattice 8   reduced in    1.6s
+  [10/144]    25s  LLL     n=70   lattice 9   reduced in    2.0s
+  [11/144]    27s  LLL     n=70   lattice 10  reduced in    1.8s
+  [12/144]    30s  LLL     n=70   lattice 11  reduced in    1.6s
+  [13/144]    32s  LLL     n=70   lattice 12  reduced in    3.0s
+  [14/144]    34s  LLL     n=70   lattice 13  reduced in    1.5s
+  [15/144]    36s  LLL     n=70   lattice 14  reduced in    1.6s
+  [16/144]    38s  LLL     n=70   lattice 15  reduced in    1.6s
+  [17/144]    44s  LLL     n=80   lattice 0   reduced in    3.3s
+  [18/144]    50s  LLL     n=80   lattice 1   reduced in    2.5s
+  [19/144]    56s  LLL     n=80   lattice 2   reduced in    2.5s
+  [20/144]    62s  LLL     n=80   lattice 3   reduced in    2.6s
+  [21/144]    68s  LLL     n=80   lattice 4   reduced in    3.7s
+  [22/144]    73s  LLL     n=80   lattice 5   reduced in    2.6s
+  [23/144]    79s  LLL     n=80   lattice 6   reduced in    4.3s
+  [24/144]    84s  LLL     n=80   lattice 7   reduced in    2.6s
+  [25/144]    90s  LLL     n=80   lattice 8   reduced in    2.5s
+  [26/144]    96s  LLL     n=80   lattice 9   reduced in    3.8s
+  [27/144]   102s  LLL     n=80   lattice 10  reduced in    2.7s
+  [28/144]   108s  LLL     n=80   lattice 11  reduced in    2.6s
+  [29/144]   114s  LLL     n=80   lattice 12  reduced in    3.8s
+  [30/144]   120s  LLL     n=80   lattice 13  reduced in    2.8s
+  [31/144]   126s  LLL     n=80   lattice 14  reduced in    2.4s
+  [32/144]   131s  LLL     n=80   lattice 15  reduced in    2.6s
+  [33/144]   135s  BKZ-10  n=80   lattice 0   reduced in    9.0s
+  [34/144]   138s  BKZ-10  n=80   lattice 1   reduced in   13.4s
+  [35/144]   141s  BKZ-10  n=80   lattice 2   reduced in   14.3s
+  [36/144]   145s  BKZ-10  n=80   lattice 3   reduced in    9.4s
+  [37/144]   148s  BKZ-10  n=80   lattice 4   reduced in    9.2s
+  [38/144]   151s  BKZ-10  n=80   lattice 5   reduced in   13.0s
+  [39/144]   155s  BKZ-10  n=80   lattice 6   reduced in    8.9s
+  [40/144]   158s  BKZ-10  n=80   lattice 7   reduced in   14.3s
+  [41/144]   161s  BKZ-10  n=80   lattice 8   reduced in   14.9s
+  [42/144]   165s  BKZ-10  n=80   lattice 9   reduced in    8.9s
+  [43/144]   168s  BKZ-10  n=80   lattice 10  reduced in   15.0s
+  [44/144]   171s  BKZ-10  n=80   lattice 11  reduced in    9.0s
+  [45/144]   175s  BKZ-10  n=80   lattice 12  reduced in    9.3s
+  [46/144]   178s  BKZ-10  n=80   lattice 13  reduced in    8.6s
+  [47/144]   181s  BKZ-10  n=80   lattice 14  reduced in   15.6s
+  [48/144]   185s  BKZ-10  n=80   lattice 15  reduced in    8.4s
+  [49/144]   202s  BKZ-10  n=100  lattice 0   reduced in   33.1s
+  [50/144]   219s  BKZ-10  n=100  lattice 1   reduced in   36.0s
+  [51/144]   236s  BKZ-10  n=100  lattice 2   reduced in   25.0s
+  [52/144]   254s  BKZ-10  n=100  lattice 3   reduced in   31.8s
+  [53/144]   271s  BKZ-10  n=100  lattice 4   reduced in   25.1s
+  [54/144]   288s  BKZ-10  n=100  lattice 5   reduced in   31.2s
+  [55/144]   305s  BKZ-10  n=100  lattice 6   reduced in   43.8s
+  [56/144]   322s  BKZ-10  n=100  lattice 7   reduced in   38.0s
+  [57/144]   339s  BKZ-10  n=100  lattice 8   reduced in   22.3s
+  [58/144]   357s  BKZ-10  n=100  lattice 9   reduced in   22.3s
+  [59/144]   374s  BKZ-10  n=100  lattice 10  reduced in   35.9s
+  [60/144]   391s  BKZ-10  n=100  lattice 11  reduced in   36.4s
+  [61/144]   408s  BKZ-10  n=100  lattice 12  reduced in   29.2s
+  [62/144]   425s  BKZ-10  n=100  lattice 13  reduced in   31.9s
+  [63/144]   443s  BKZ-10  n=100  lattice 14  reduced in   33.4s
+  [64/144]   460s  BKZ-10  n=100  lattice 15  reduced in   32.2s
+  [65/144]   482s  BKZ-20  n=90   lattice 0   reduced in   21.0s
+  [66/144]   504s  BKZ-20  n=90   lattice 1   reduced in   22.6s
+  [67/144]   526s  BKZ-20  n=90   lattice 2   reduced in   20.0s
+  [68/144]   547s  BKZ-20  n=90   lattice 3   reduced in   21.4s
+  [69/144]   569s  BKZ-20  n=90   lattice 4   reduced in   20.6s
+  [70/144]   590s  BKZ-20  n=90   lattice 5   reduced in   27.0s
+  [71/144]   612s  BKZ-20  n=90   lattice 6   reduced in   19.8s
+  [72/144]   634s  BKZ-20  n=90   lattice 7   reduced in   20.4s
+  [73/144]   656s  BKZ-20  n=90   lattice 8   reduced in   19.5s
+  [74/144]   677s  BKZ-20  n=90   lattice 9   reduced in   21.0s
+  [75/144]   699s  BKZ-20  n=90   lattice 10  reduced in   21.8s
+  [76/144]   720s  BKZ-20  n=90   lattice 11  reduced in   22.4s
+  [77/144]   742s  BKZ-20  n=90   lattice 12  reduced in   22.4s
+  [78/144]   764s  BKZ-20  n=90   lattice 13  reduced in   19.9s
+  [79/144]   786s  BKZ-20  n=90   lattice 14  reduced in   19.8s
+  [80/144]   808s  BKZ-20  n=90   lattice 15  reduced in   21.0s
+  [81/144]   816s  BKZ-20  n=100  lattice 0   reduced in   41.3s
+  [82/144]   824s  BKZ-20  n=100  lattice 1   reduced in   46.8s
+  [83/144]   831s  BKZ-20  n=100  lattice 2   reduced in   29.5s
+  [84/144]   839s  BKZ-20  n=100  lattice 3   reduced in   39.3s
+  [85/144]   847s  BKZ-20  n=100  lattice 4   reduced in   29.4s
+  [86/144]   854s  BKZ-20  n=100  lattice 5   reduced in   36.4s
+  [87/144]   862s  BKZ-20  n=100  lattice 6   reduced in   36.5s
+  [88/144]   870s  BKZ-20  n=100  lattice 7   reduced in   38.6s
+  [89/144]   877s  BKZ-20  n=100  lattice 8   reduced in   29.2s
+  [90/144]   885s  BKZ-20  n=100  lattice 9   reduced in   26.6s
+  [91/144]   892s  BKZ-20  n=100  lattice 10  reduced in   37.9s
+  [92/144]   900s  BKZ-20  n=100  lattice 11  reduced in   30.0s
+  [93/144]   908s  BKZ-20  n=100  lattice 12  reduced in   26.6s
+  [94/144]   915s  BKZ-20  n=100  lattice 13  reduced in   28.8s
+  [95/144]   923s  BKZ-20  n=100  lattice 14  reduced in   29.5s
+  [96/144]   930s  BKZ-20  n=100  lattice 15  reduced in   28.7s
+  [97/144]   930s  BKZ-10  n=70   lattice 0   reduced in    5.8s
+  [98/144]   931s  BKZ-10  n=70   lattice 1   reduced in    6.0s
+  [99/144]   931s  BKZ-10  n=70   lattice 2   reduced in    7.3s
+  [100/144]   931s  BKZ-10  n=70   lattice 3   reduced in    6.0s
+  [101/144]   931s  BKZ-10  n=70   lattice 4   reduced in    6.9s
+  [102/144]   931s  BKZ-10  n=70   lattice 5   reduced in    5.6s
+  [103/144]   931s  BKZ-10  n=70   lattice 6   reduced in    5.7s
+  [104/144]   931s  BKZ-10  n=70   lattice 7   reduced in    7.1s
+  [105/144]   931s  BKZ-10  n=70   lattice 8   reduced in    6.0s
+  [106/144]   932s  BKZ-10  n=70   lattice 9   reduced in    5.7s
+  [107/144]   932s  BKZ-10  n=70   lattice 10  reduced in    7.1s
+  [108/144]   932s  BKZ-10  n=70   lattice 11  reduced in    5.8s
+  [109/144]   932s  BKZ-10  n=70   lattice 12  reduced in    6.6s
+  [110/144]   932s  BKZ-10  n=70   lattice 13  reduced in    6.1s
+  [111/144]   932s  BKZ-10  n=70   lattice 14  reduced in    6.6s
+  [112/144]   932s  BKZ-10  n=70   lattice 15  reduced in    6.0s
+  [113/144]   933s  BKZ-20  n=70   lattice 0   reduced in   15.1s
+  [114/144]   933s  BKZ-20  n=70   lattice 1   reduced in   12.2s
+  [115/144]   933s  BKZ-20  n=70   lattice 2   reduced in    9.1s
+  [116/144]   933s  BKZ-20  n=70   lattice 3   reduced in    9.0s
+  [117/144]   933s  BKZ-20  n=70   lattice 4   reduced in    9.8s
+  [118/144]   933s  BKZ-20  n=70   lattice 5   reduced in    8.7s
+  [119/144]   933s  BKZ-20  n=70   lattice 6   reduced in    9.0s
+  [120/144]   933s  BKZ-20  n=70   lattice 7   reduced in    8.6s
+  [121/144]   934s  BKZ-20  n=70   lattice 8   reduced in    8.7s
+  [122/144]   934s  BKZ-20  n=70   lattice 9   reduced in   10.2s
+  [123/144]   934s  BKZ-20  n=70   lattice 10  reduced in    8.4s
+  [124/144]   934s  BKZ-20  n=70   lattice 11  reduced in    9.7s
+  [125/144]   934s  BKZ-20  n=70   lattice 12  reduced in    9.1s
+  [126/144]   934s  BKZ-20  n=70   lattice 13  reduced in    8.7s
+  [127/144]   934s  BKZ-20  n=70   lattice 14  reduced in    8.6s
+  [128/144]   935s  BKZ-20  n=70   lattice 15  reduced in    9.0s
+  [129/144]   935s  BKZ-20  n=80   lattice 0   reduced in   14.6s
+  [130/144]   935s  BKZ-20  n=80   lattice 1   reduced in   14.8s
+  [131/144]   935s  BKZ-20  n=80   lattice 2   reduced in   14.0s
+  [132/144]   935s  BKZ-20  n=80   lattice 3   reduced in   15.1s
+  [133/144]   935s  BKZ-20  n=80   lattice 4   reduced in   13.6s
+  [134/144]   935s  BKZ-20  n=80   lattice 5   reduced in   13.8s
+  [135/144]   936s  BKZ-20  n=80   lattice 6   reduced in   15.1s
+  [136/144]   936s  BKZ-20  n=80   lattice 7   reduced in   14.9s
+  [137/144]   936s  BKZ-20  n=80   lattice 8   reduced in   15.5s
+  [138/144]   936s  BKZ-20  n=80   lattice 9   reduced in   14.2s
+  [139/144]   936s  BKZ-20  n=80   lattice 10  reduced in   13.5s
+  [140/144]   936s  BKZ-20  n=80   lattice 11  reduced in   14.7s
+  [141/144]   936s  BKZ-20  n=80   lattice 12  reduced in   13.7s
+  [142/144]   937s  BKZ-20  n=80   lattice 13  reduced in   15.7s
+  [143/144]   937s  BKZ-20  n=80   lattice 14  reduced in   13.4s
+  [144/144]   937s  BKZ-20  n=80   lattice 15  reduced in   14.1s
+
+Bonferroni alpha: 0.00208 (6 settings x 4 comparisons)
+
+=== LLL n=70 (d=140), 400 held-out targets, Babai 44.0% (formula 45.8%), reduction 1.7s, target on tuning 97.0%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       ('beam', 2, 1)            tune  98.7%  held-out  98.8%       18735 nodes       11.2 ms
+  Beam k=3 fixed list   ('beam', 3, 1)            tune  99.3%  held-out  99.5%       19021 nodes       10.6 ms
+  ANP fixed list        ('anp', 0.2, 2)           tune  97.3%  held-out  98.0%       36765 nodes       12.8 ms
+  VA-ANP fixed list     ('va', 8.0, 2)            tune  99.3%  held-out 100.0%       37503 nodes       11.0 ms
+  Beam adaptive         ('beam_T', 2, 12.0, 64)   tune  98.7%  held-out  99.2%        2261 nodes        7.0 ms
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)   tune  99.3%  held-out 100.0%        2690 nodes        7.5 ms
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)   tune  99.3%  held-out 100.0%        2530 nodes        8.5 ms
+  LP per-level          cannot reach the target on tuning data
+  Q1 strongest list ('va_T', 8.0, 16.0, 64): 100.0% vs Babai 44.0%, only list/only Babai 224/0, p=7.4e-68, diff CI +52.2 to +59.8 => significant gain
+  Q2 vs Beam fixed list  nodes 7.41x (CI 6.04-9.19), baseline-only/VA-only 0/5, p=0.062 => WIN
+  Q2 vs Beam adaptive    nodes 0.89x (CI 0.87-0.92), baseline-only/VA-only 0/3, p=0.25 => no win
+  Q2 vs LP per-level     baseline cannot reach the target => WIN
+
+=== LLL n=80 (d=160), 400 held-out targets, Babai 1.5% (formula 3.0%), reduction 3.0s, target on tuning 83.0%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       cannot reach the target on tuning data
+  Beam k=3 fixed list   ('beam', 3, 64)           tune  86.0%  held-out  85.0%     1556081 nodes      147.6 ms
+  ANP fixed list        cannot reach the target on tuning data
+  VA-ANP fixed list     cannot reach the target on tuning data
+  Beam adaptive         cannot reach the target on tuning data
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)   tune  85.3%  held-out  84.0%      206347 nodes       24.6 ms
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)   tune  85.3%  held-out  84.0%      206187 nodes       24.5 ms
+  LP per-level          cannot reach the target on tuning data
+  Q1 strongest list ('va_T', 8.0, 16.0, 64): 85.0% vs Babai 1.5%, only list/only Babai 334/0, p=5.7e-101, diff CI +76.2 to +89.8 => significant gain
+  Q2 vs Beam fixed list  baseline cannot reach the target => WIN
+  Q2 vs Beam adaptive    baseline cannot reach the target => WIN
+  Q2 vs LP per-level     baseline cannot reach the target => WIN
+
+=== BKZ-10 n=80 (d=160), 400 held-out targets, Babai 65.2% (formula 66.8%), reduction 11.3s, target on tuning 97.0%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       ('beam', 2, 1)            tune 100.0%  held-out 100.0%       24575 nodes       11.7 ms
+  Beam k=3 fixed list   ('beam', 3, 1)            tune 100.0%  held-out 100.0%       24921 nodes       12.0 ms
+  ANP fixed list        ('anp', 0.5, 2)           tune  98.0%  held-out  98.5%       46629 nodes       16.1 ms
+  VA-ANP fixed list     ('va', 4.0, 2)            tune  98.0%  held-out  98.0%       41776 nodes       12.2 ms
+  Beam adaptive         ('beam_T', 2, 4.0, 64)    tune  97.3%  held-out  95.0%         177 nodes        7.9 ms
+  Beam k=3 adaptive     ('beam_T', 3, 4.0, 64)    tune  97.3%  held-out  95.0%         177 nodes        8.5 ms
+  VA-ANP adaptive       ('va_T', 4.0, 4.0, 64)    tune  97.3%  held-out  95.0%         177 nodes        8.6 ms
+  LP per-level          ('lp', 4096)              tune  97.3%  held-out  97.2%      609919 nodes       40.3 ms
+  Q1 strongest list ('va_T', 8.0, 12.0, 64): 100.0% vs Babai 65.2%, only list/only Babai 139/0, p=2.9e-42, diff CI +30.5 to +39.2 => significant gain
+  Q2 vs Beam fixed list  nodes 138.81x (CI 137.14-140.50), baseline-only/VA-only 20/0, p=1.9e-06 => no win
+  Q2 vs Beam adaptive    nodes 1.00x (CI 1.00-1.00), baseline-only/VA-only 0/0, p=1 => no win
+  Q2 vs LP per-level     nodes 3445.09x (CI 3403.61-3486.83), baseline-only/VA-only 17/8, p=0.11 => WIN
+
+=== BKZ-10 n=100 (d=200), 400 held-out targets, Babai 0.0% (formula 0.1%), reduction 31.7s, target on tuning 19.7%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       ('beam', 2, 64)           tune  20.0%  held-out  22.8%     2397183 nodes      223.4 ms
+  Beam k=3 fixed list   ('beam', 3, 64)           tune  22.7%  held-out  25.5%     2454641 nodes      255.8 ms
+  ANP fixed list        cannot reach the target on tuning data
+  VA-ANP fixed list     cannot reach the target on tuning data
+  Beam adaptive         ('beam_T', 2, 16.0, 64)   tune  20.0%  held-out  22.8%      451979 nodes       50.7 ms
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)   tune  22.7%  held-out  25.5%      452170 nodes       53.4 ms
+  VA-ANP adaptive       ('va_T', 2.2, 12.0, 64)   tune  20.7%  held-out  21.8%      408861 nodes       46.5 ms
+  LP per-level          cannot reach the target on tuning data
+  Q1 strongest list ('va_T', 4.0, 12.0, 64): 25.2% vs Babai 0.0%, only list/only Babai 101/0, p=7.9e-31, diff CI +20.5 to +30.8 => significant gain
+  Q2 vs Beam fixed list  nodes 5.86x (CI 5.76-5.97), baseline-only/VA-only 14/10, p=0.54 => WIN
+  Q2 vs Beam adaptive    nodes 1.11x (CI 1.09-1.12), baseline-only/VA-only 14/10, p=0.54 => no win
+  Q2 vs LP per-level     baseline cannot reach the target => WIN
+
+=== BKZ-20 n=90 (d=180), 400 held-out targets, Babai 49.5% (formula 49.3%), reduction 21.3s, target on tuning 97.0%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       ('beam', 2, 1)            tune 100.0%  held-out 100.0%       31215 nodes       13.6 ms
+  Beam k=3 fixed list   ('beam', 3, 1)            tune 100.0%  held-out 100.0%       31621 nodes       13.9 ms
+  ANP fixed list        ('anp', 0.5, 2)           tune  98.0%  held-out  94.0%       59716 nodes       15.7 ms
+  VA-ANP fixed list     ('va', 4.0, 2)            tune  98.7%  held-out  96.0%       59706 nodes       15.6 ms
+  Beam adaptive         ('beam_T', 2, 8.0, 64)    tune  98.7%  held-out  98.5%         554 nodes       10.0 ms
+  Beam k=3 adaptive     ('beam_T', 3, 8.0, 64)    tune  98.7%  held-out  98.5%         568 nodes        9.5 ms
+  VA-ANP adaptive       ('va_T', 4.0, 8.0, 64)    tune  97.3%  held-out  94.8%         441 nodes       10.7 ms
+  LP per-level          ('lp', 65536)             tune  97.3%  held-out  98.2%    10807295 nodes      762.5 ms
+  Q1 strongest list ('beam_T', 2, 12.0, 64): 100.0% vs Babai 49.5%, only list/only Babai 202/0, p=3.1e-61, diff CI +46.2 to +54.8 => significant gain
+  Q2 vs Beam fixed list  nodes 70.76x (CI 67.81-74.66), baseline-only/VA-only 21/0, p=9.5e-07 => no win
+  Q2 vs Beam adaptive    nodes 1.26x (CI 1.24-1.27), baseline-only/VA-only 15/0, p=6.1e-05 => no win
+  Q2 vs LP per-level     nodes 24499.67x (CI 23486.82-25843.63), baseline-only/VA-only 21/7, p=0.013 => WIN
+
+=== BKZ-20 n=100 (d=200), 400 held-out targets, Babai 4.0% (formula 4.0%), reduction 33.4s, target on tuning 89.0%
+  Babai                 cannot reach the target on tuning data
+  Beam fixed list       cannot reach the target on tuning data
+  Beam k=3 fixed list   ('beam', 3, 32)           tune  90.7%  held-out  93.2%     1232080 nodes      129.5 ms
+  ANP fixed list        cannot reach the target on tuning data
+  VA-ANP fixed list     ('va', 8.0, 32)           tune  90.7%  held-out  93.2%     1232045 nodes      109.1 ms
+  Beam adaptive         cannot reach the target on tuning data
+  Beam k=3 adaptive     ('beam_T', 3, 12.0, 64)   tune  92.0%  held-out  94.2%      234687 nodes       30.4 ms
+  VA-ANP adaptive       ('va_T', 8.0, 12.0, 64)   tune  92.0%  held-out  94.2%      234312 nodes       30.1 ms
+  LP per-level          cannot reach the target on tuning data
+  Q1 strongest list ('va_T', 8.0, 12.0, 64): 94.2% vs Babai 4.0%, only list/only Babai 361/0, p=4.3e-109, diff CI +87.8 to +92.8 => significant gain
+  Q2 vs Beam fixed list  baseline cannot reach the target => WIN
+  Q2 vs Beam adaptive    baseline cannot reach the target => WIN
+  Q2 vs LP per-level     baseline cannot reach the target => WIN
+
+Q2 verdict: VA-ANP adaptive wins against all three baselines at 2 of 6 settings => rule FAILED
+Q1 verdict: a list decoder recovers significantly more than Babai at 6 of 6 settings
+
+Exploratory, not in the rule: seconds per recovered secret = (reduction + decoding) / recovery.
+Reduction and decoding times were measured while other jobs shared the machine.
+  n=70  LLL     Babai                 44.0%  reduce      1.7s  decode    0.005s        3.9s per secret
+  n=70  LLL     Beam adaptive         99.2%  reduce      1.7s  decode    0.007s        1.7s per secret
+  n=70  LLL     Beam k=3 adaptive    100.0%  reduce      1.7s  decode    0.007s        1.7s per secret
+  n=70  LLL     VA-ANP adaptive      100.0%  reduce      1.7s  decode    0.009s        1.7s per secret
+  n=70  LLL     Strongest list       100.0%  reduce      1.7s  decode    0.008s        1.7s per secret
+  n=70  BKZ-10  Babai                 98.0%  reduce      6.3s  decode    0.004s        6.4s per secret
+  n=70  BKZ-20  Babai                 99.8%  reduce      9.6s  decode    0.005s        9.6s per secret
+  n=80  LLL     Babai                  1.5%  reduce      3.0s  decode    0.005s      197.4s per secret
+  n=80  LLL     Beam k=3 adaptive     84.0%  reduce      3.0s  decode    0.025s        3.5s per secret
+  n=80  LLL     VA-ANP adaptive       84.0%  reduce      3.0s  decode    0.025s        3.5s per secret
+  n=80  LLL     Strongest list        85.0%  reduce      3.0s  decode    0.031s        3.5s per secret
+  n=80  BKZ-10  Babai                 65.2%  reduce     11.3s  decode    0.006s       17.4s per secret
+  n=80  BKZ-10  Beam adaptive         95.0%  reduce     11.3s  decode    0.008s       11.9s per secret
+  n=80  BKZ-10  Beam k=3 adaptive     95.0%  reduce     11.3s  decode    0.008s       11.9s per secret
+  n=80  BKZ-10  VA-ANP adaptive       95.0%  reduce     11.3s  decode    0.009s       11.9s per secret
+  n=80  BKZ-10  LP per-level          97.2%  reduce     11.3s  decode    0.040s       11.7s per secret
+  n=80  BKZ-10  Strongest list       100.0%  reduce     11.3s  decode    0.009s       11.3s per secret
+  n=80  BKZ-20  Babai                 94.2%  reduce     14.4s  decode    0.005s       15.3s per secret
+  n=90  BKZ-20  Babai                 49.5%  reduce     21.3s  decode    0.006s       43.0s per secret
+  n=90  BKZ-20  Beam adaptive         98.5%  reduce     21.3s  decode    0.010s       21.6s per secret
+  n=90  BKZ-20  Beam k=3 adaptive     98.5%  reduce     21.3s  decode    0.010s       21.6s per secret
+  n=90  BKZ-20  VA-ANP adaptive       94.8%  reduce     21.3s  decode    0.011s       22.5s per secret
+  n=90  BKZ-20  LP per-level          98.2%  reduce     21.3s  decode    0.763s       22.4s per secret
+  n=90  BKZ-20  Strongest list       100.0%  reduce     21.3s  decode    0.010s       21.3s per secret
+  n=100 BKZ-10  Babai                  0.0%  reduce     31.7s  decode    0.007s  no recoveries
+  n=100 BKZ-10  Beam adaptive         22.8%  reduce     31.7s  decode    0.051s      139.7s per secret
+  n=100 BKZ-10  Beam k=3 adaptive     25.5%  reduce     31.7s  decode    0.053s      124.6s per secret
+  n=100 BKZ-10  VA-ANP adaptive       21.8%  reduce     31.7s  decode    0.046s      146.1s per secret
+  n=100 BKZ-10  Strongest list        25.2%  reduce     31.7s  decode    0.052s      125.9s per secret
+  n=100 BKZ-20  Babai                  4.0%  reduce     33.4s  decode    0.006s      836.2s per secret
+  n=100 BKZ-20  Beam k=3 adaptive     94.2%  reduce     33.4s  decode    0.030s       35.5s per secret
+  n=100 BKZ-20  VA-ANP adaptive       94.2%  reduce     33.4s  decode    0.030s       35.5s per secret
+  n=100 BKZ-20  Strongest list        94.2%  reduce     33.4s  decode    0.030s       35.5s per secret
+
+Wrong points closer than the true one, plus points outside the lattice: 0
+exit: 0

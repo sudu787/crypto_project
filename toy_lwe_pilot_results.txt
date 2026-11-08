@@ -1,0 +1,142 @@
+[pilot] 112 jobs on 18 workers
+  [1/112]    21s  LLL     n=40   lattice 1  reduced in    0.5s  Babai 25/25
+  [2/112]    21s  LLL     n=40   lattice 2  reduced in    2.8s  Babai 25/25
+  [3/112]    22s  LLL     n=40   lattice 0  reduced in    0.4s  Babai 25/25
+  [4/112]    28s  LLL     n=50   lattice 1  reduced in    1.6s  Babai 25/25
+  [5/112]    36s  LLL     n=50   lattice 2  reduced in    3.3s  Babai 25/25
+  [6/112]    39s  LLL     n=50   lattice 0  reduced in    1.6s  Babai 25/25
+  [7/112]    45s  LLL     n=60   lattice 3  reduced in    3.6s  Babai 25/25
+  [8/112]    45s  LLL     n=40   lattice 3  reduced in    1.2s  Babai 25/25
+  [9/112]    49s  LLL     n=50   lattice 3  reduced in    6.2s  Babai 25/25
+  [10/112]    60s  LLL     n=60   lattice 0  reduced in   10.7s  Babai 23/25
+  [11/112]    61s  LLL     n=70   lattice 3  reduced in    6.8s  Babai 11/25
+  [12/112]    61s  LLL     n=70   lattice 1  reduced in    6.3s  Babai 14/25
+  [13/112]    63s  LLL     n=70   lattice 0  reduced in   12.7s  Babai 15/25
+  [14/112]    64s  LLL     n=70   lattice 2  reduced in    5.8s  Babai 17/25
+  [15/112]    85s  LLL     n=60   lattice 2  reduced in   10.2s  Babai 23/25
+  [16/112]    95s  LLL     n=60   lattice 1  reduced in    8.4s  Babai 24/25
+  ... 157s, 96 of 112 jobs still running
+  [17/112]   157s  BKZ-10  n=60   lattice 0  reduced in   13.8s  Babai 25/25
+  [18/112]   177s  LLL     n=80   lattice 0  reduced in   10.1s  Babai 2/25
+  [19/112]   186s  BKZ-10  n=60   lattice 1  reduced in   15.7s  Babai 25/25
+  [20/112]   189s  LLL     n=80   lattice 2  reduced in   18.9s  Babai 0/25
+  [21/112]   201s  BKZ-10  n=60   lattice 3  reduced in    5.4s  Babai 25/25
+  [22/112]   209s  BKZ-10  n=60   lattice 2  reduced in    5.2s  Babai 25/25
+  [23/112]   214s  LLL     n=80   lattice 3  reduced in   10.3s  Babai 0/25
+  [24/112]   228s  LLL     n=90   lattice 0  reduced in   21.6s  Babai 0/25
+  [25/112]   228s  BKZ-10  n=70   lattice 0  reduced in   11.3s  Babai 25/25
+  [26/112]   236s  LLL     n=80   lattice 1  reduced in   10.0s  Babai 0/25
+  [27/112]   240s  LLL     n=90   lattice 1  reduced in   16.0s  Babai 0/25
+  [28/112]   241s  BKZ-10  n=70   lattice 3  reduced in    9.2s  Babai 24/25
+  [29/112]   244s  LLL     n=90   lattice 3  reduced in   16.6s  Babai 0/25
+  [30/112]   245s  BKZ-10  n=70   lattice 2  reduced in    9.9s  Babai 25/25
+  [31/112]   257s  BKZ-10  n=70   lattice 1  reduced in   10.7s  Babai 25/25
+  ... 319s, 81 of 112 jobs still running
+  [32/112]   324s  LLL     n=90   lattice 2  reduced in   18.6s  Babai 0/25
+  [33/112]   326s  BKZ-10  n=80   lattice 1  reduced in   22.6s  Babai 21/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=100 beta=10 idx=0: RuntimeError('Aborted')
+  [34/112]   354s  BKZ-10  n=80   lattice 0  reduced in   47.3s  Babai 20/25
+  [35/112]   359s  BKZ-10  n=80   lattice 3  reduced in   21.2s  Babai 17/25
+  ... 419s, 76 of 112 jobs still running
+terminate called recursively
+  FAILED n=100 beta=10 idx=3: RuntimeError('Aborted')
+  [36/112]   425s  BKZ-10  n=80   lattice 2  reduced in   53.0s  Babai 16/25
+  [37/112]   449s  LLL     n=100  lattice 0  reduced in   33.3s  Babai 0/25
+  [38/112]   450s  BKZ-10  n=90   lattice 3  reduced in   69.1s  Babai 1/25
+  [39/112]   477s  BKZ-10  n=90   lattice 0  reduced in   26.9s  Babai 1/25
+  [40/112]   488s  LLL     n=100  lattice 1  reduced in   30.0s  Babai 0/25
+  [41/112]   497s  LLL     n=100  lattice 2  reduced in   34.9s  Babai 0/25
+  [42/112]   510s  BKZ-10  n=90   lattice 2  reduced in   61.9s  Babai 3/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=110 beta=10 idx=1: RuntimeError('Aborted')
+  [43/112]   537s  LLL     n=100  lattice 3  reduced in   58.7s  Babai 0/25
+  [44/112]   553s  BKZ-10  n=90   lattice 1  reduced in   25.6s  Babai 1/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=110 beta=10 idx=3: RuntimeError('Aborted')
+  [45/112]   621s  LLL     n=110  lattice 3  reduced in  139.4s  Babai 0/25
+
+=== resumed: BKZ now uses long double; grid narrowed to where recovery changes ===
+  centered binomial eta=2: mean 0, variance 1, range -2..2
+  b = A s + e mod q holds
+  LLL: basis spans the lattice, Gram-Schmidt matches fplll's
+  BKZ-10: basis spans the lattice, Gram-Schmidt matches fplll's
+  zero-error targets: all decoders return a lattice point at least as close as the true one
+  fplll exact CVP, dim 24: no decoder beat it on 30 targets; a large beam matched it on 30
+  negative control, uniform b: closest point found is at 282.7, a planted one would be near 10.0
+  easy instances, n=30 with LLL: every decoder recovers s on all 20 (smallest Gram-Schmidt norm 18.7)
+  all checks passed
+[pilot] 32 jobs on 18 workers
+  [1/32]    41s  BKZ-10  n=100  lattice 1  reduced in   93.0s  Babai 0/25
+  [2/32]    74s  BKZ-10  n=100  lattice 0  reduced in   19.7s  Babai 0/25
+  [3/32]    79s  BKZ-10  n=100  lattice 2  reduced in   60.8s  Babai 0/25
+  [4/32]    81s  BKZ-20  n=100  lattice 1  reduced in   29.1s  Babai 2/25
+  [5/32]    97s  BKZ-20  n=90   lattice 3  reduced in   41.7s  Babai 14/25
+  [6/32]    99s  BKZ-20  n=90   lattice 0  reduced in   41.2s  Babai 10/25
+  [7/32]   104s  BKZ-20  n=90   lattice 2  reduced in   44.3s  Babai 15/25
+  [8/32]   105s  BKZ-10  n=100  lattice 3  reduced in   28.4s  Babai 0/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=120 beta=10 idx=1: RuntimeError('Aborted')
+  [9/32]   109s  BKZ-20  n=90   lattice 1  reduced in   47.2s  Babai 10/25
+  [10/32]   145s  BKZ-20  n=100  lattice 0  reduced in   65.7s  Babai 1/25
+  [11/32]   150s  BKZ-20  n=100  lattice 2  reduced in   36.3s  Babai 2/25
+  [12/32]   167s  BKZ-20  n=100  lattice 3  reduced in   45.8s  Babai 1/25
+  [13/32]   173s  BKZ-10  n=110  lattice 1  reduced in   51.3s  Babai 0/25
+  [14/32]   189s  BKZ-10  n=110  lattice 2  reduced in   68.6s  Babai 0/25
+  [15/32]   191s  BKZ-10  n=110  lattice 0  reduced in   81.8s  Babai 0/25
+  [16/32]   213s  BKZ-10  n=110  lattice 3  reduced in  108.4s  Babai 0/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=120 beta=20 idx=1: RuntimeError('Aborted')
+  ... 277s, 14 of 32 jobs still running
+  [17/32]   296s  BKZ-20  n=110  lattice 1  reduced in  100.3s  Babai 0/25
+  [18/32]   297s  BKZ-20  n=110  lattice 0  reduced in  109.4s  Babai 0/25
+  [19/32]   300s  BKZ-20  n=110  lattice 3  reduced in   83.3s  Babai 0/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=130 beta=20 idx=0: RuntimeError('Aborted')
+  [20/32]   322s  BKZ-20  n=110  lattice 2  reduced in  119.2s  Babai 0/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=130 beta=20 idx=1: RuntimeError('Aborted')
+  [21/32]   325s  BKZ-10  n=120  lattice 0  reduced in  177.5s  Babai 0/25
+  [22/32]   329s  BKZ-10  n=120  lattice 3  reduced in  182.7s  Babai 0/25
+  [23/32]   333s  BKZ-10  n=120  lattice 2  reduced in  190.8s  Babai 0/25
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=130 beta=20 idx=3: RuntimeError('Aborted')
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  infinite loop in babai
+  FAILED n=130 beta=20 idx=2: RuntimeError('Aborted')
+  [24/32]   348s  BKZ-20  n=120  lattice 2  reduced in  127.9s  Babai 0/25
+  [25/32]   370s  BKZ-20  n=120  lattice 3  reduced in  203.8s  Babai 0/25
+  [26/32]   372s  BKZ-20  n=120  lattice 0  reduced in  211.9s  Babai 0/25
+
+Secret recovered, %, with mean nodes. 'Formula' is Babai's predicted success.
+reduction    n    d targets reduce s  GS min  Formula             Babai           LP 1024           Beam 8d         Beam3 T16            VA T16
+LLL         40   80     100      1.2   12.54    100.0   100.0        80   100.0     72319   100.0     45823   100.0        80   100.0        80
+LLL         50  100     100      3.2    7.73    100.0   100.0       100   100.0     93183   100.0     73023   100.0       100   100.0       100
+LLL         60  120     100      8.2    5.18     94.1    95.0       120   100.0    113343   100.0    106623   100.0       222   100.0       133
+LLL         70  140     100      7.9    3.36     47.5    57.0       140    92.0    134015   100.0    146527   100.0      8372    97.0      2015
+LLL         80  160     100     12.3    1.89      1.7     2.0       160    19.0    154495    46.0    192767    70.0    144532    68.0    139722
+LLL         90  180     100     18.2    1.31      0.0     0.0       180     0.0    174527     0.0    245407     2.0    229578     2.0    228525
+LLL        100  200     100     39.2    0.88      0.0     0.0       200     0.0    195071     0.0    304447     0.0    320389     0.0    319158
+LLL        110  220      25    139.4    0.64      0.0     0.0       220     0.0    216063     0.0    369887     0.0    413057     0.0    411855
+BKZ-10      60  120     100     10.1    8.49    100.0   100.0       120   100.0    113663   100.0    106623   100.0       120   100.0       120
+BKZ-10      70  140     100     10.3    5.70     98.1    99.0       140   100.0    134143   100.0    146527   100.0       163   100.0       142
+BKZ-10      80  160     100     36.0    3.89     67.8    74.0       160    95.0    154239   100.0    192767   100.0      1988    99.0       532
+BKZ-10      90  180     100     45.9    2.44      8.4     6.0       180    50.0    174975    95.0    245407   100.0    143250    92.0    119435
+BKZ-10     100  200     100     50.5    1.65      0.0     0.0       200     3.0    195583     8.0    304447    17.0    261409    18.0    259919
+BKZ-10     110  220     100     77.5    1.13      0.0     0.0       220     0.0    215679     0.0    369887     0.0    364437     0.0    362881
+BKZ-10     120  240      75    183.7    0.72      0.0     0.0       240     0.0    236543     0.0    441727     0.0    483290     0.0    481545
+BKZ-20      90  180     100     43.6    3.31     48.8    49.0       180    86.0    175103   100.0    245407   100.0      8590    99.0      2216
+BKZ-20     100  200     100     44.2    2.28      4.0     6.0       200    28.0    195199    83.0    304447    93.0    189758    84.0    171337
+BKZ-20     110  220     100    103.0    1.59      0.0     0.0       220     0.0    215935     4.0    369887     5.0    322208     5.0    320467
+BKZ-20     120  240      75    181.2    1.05      0.0     0.0       240     0.0    236543     0.0    441727     0.0    444658     0.0    442762
+
+Wrong points closer than the true one, plus points outside the lattice: 0
+exit code: 0

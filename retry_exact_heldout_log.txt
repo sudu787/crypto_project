@@ -1,0 +1,50 @@
+﻿  R6 LLL n=76 lattice 0 done
+  R6 LLL n=76 lattice 1 done
+  R6 LLL n=76 lattice 2 done
+  R6 LLL n=76 lattice 3 done
+  R6 LLL n=76 lattice 4 done
+  R6 LLL n=76 lattice 5 done
+  R6 LLL n=76 lattice 6 done
+  R6 LLL n=76 lattice 7 done
+  R6 LLL n=76 lattice 8 done
+  R6 LLL n=76 lattice 9 done
+  R6 LLL n=76 lattice 10 done
+  R6 LLL n=76 lattice 11 done
+  R6 LLL n=76 lattice 12 done
+  R6 LLL n=76 lattice 13 done
+  R6 LLL n=76 lattice 14 done
+  R6 LLL n=76 lattice 15 done
+R6 LLL n=76 eta=2 K=256: success/attempt measured 0.1078, count variance measured 185.238
+    independent  mean 0.1111  var 25.063  k=32: 97.7% vs 92.2% OFF  k=128: 100.0% vs 99.6% OFF  k=256: 100.0% vs 100.0% OFF  k=never: 0.0% vs 0.0% OFF
+    product      mean 0.1187  var 133.021  k=32: 96.3% vs 92.2% OFF  k=128: 100.0% vs 99.6% OFF  k=256: 100.0% vs 100.0% OFF  k=never: 0.0% vs 0.0% OFF
+    exact        mean 0.1099  var 125.802  k=32: 95.2% vs 92.2% OFF  k=128: 100.0% vs 99.6% OFF  k=256: 100.0% vs 100.0% OFF  k=never: 0.0% vs 0.0% OFF
+R6 LLL n=76 eta=3 K=256: success/attempt measured 0.0186, count variance measured 17.787
+    independent  mean 0.0192  var 4.793  k=32: 45.9% vs 38.8% OFF  k=128: 91.7% vs 78.9% OFF  k=256: 99.3% vs 90.9% OFF  k=never: 0.7% vs 9.1% OFF
+    product      mean 0.0219  var 15.089  k=32: 47.3% vs 38.8% OFF  k=128: 87.9% vs 78.9% OFF  k=256: 97.1% vs 90.9% OFF  k=never: 2.9% vs 9.1% OFF
+    exact        mean 0.0185  var 12.464  k=32: 41.8% vs 38.8% OFF  k=128: 83.5% vs 78.9% OFF  k=256: 95.1% vs 90.9% OFF  k=never: 4.9% vs 9.1% OFF
+  R6 BKZ-10 n=90 lattice 0 done
+  R6 BKZ-10 n=90 lattice 1 done
+  R6 BKZ-10 n=90 lattice 2 done
+  R6 BKZ-10 n=90 lattice 3 done
+  R6 BKZ-10 n=90 lattice 4 done
+  R6 BKZ-10 n=90 lattice 5 done
+  R6 BKZ-10 n=90 lattice 6 done
+  R6 BKZ-10 n=90 lattice 7 done
+  R6 BKZ-10 n=90 lattice 8 done
+  R6 BKZ-10 n=90 lattice 9 done
+  R6 BKZ-10 n=90 lattice 10 done
+  R6 BKZ-10 n=90 lattice 11 done
+  R6 BKZ-10 n=90 lattice 12 done
+  R6 BKZ-10 n=90 lattice 13 done
+  R6 BKZ-10 n=90 lattice 14 done
+  R6 BKZ-10 n=90 lattice 15 done
+R6 BKZ-10 n=90 eta=2 K=64: success/attempt measured 0.0936, count variance measured 11.578
+    independent  mean 0.0937  var 5.437  k=8: 54.3% vs 52.8%  k=32: 95.8% vs 92.1% OFF  k=64: 99.8% vs 98.5% OFF  k=never: 0.2% vs 1.5% OFF
+    product      mean 0.1001  var 11.339  k=8: 54.9% vs 52.8%  k=32: 93.9% vs 92.1% OFF  k=64: 99.2% vs 98.5% OFF  k=never: 0.8% vs 1.5% OFF
+    exact        mean 0.0919  var 10.584  k=8: 51.7% vs 52.8%  k=32: 92.2% vs 92.1%  k=64: 98.8% vs 98.5%  k=never: 1.2% vs 1.5%
+R6 BKZ-10 n=90 eta=3 K=64: success/attempt measured 0.0118, count variance measured 0.982
+    independent  mean 0.0120  var 0.756  k=8: 9.1% vs 8.9%  k=32: 32.1% vs 30.1%  k=64: 53.7% vs 48.7% OFF  k=never: 46.3% vs 51.3% OFF
+    product      mean 0.0141  var 1.187  k=8: 10.5% vs 8.9% OFF  k=32: 34.6% vs 30.1% OFF  k=64: 54.7% vs 48.7% OFF  k=never: 45.3% vs 51.3% OFF
+    exact        mean 0.0116  var 0.962  k=8: 8.7% vs 8.9%  k=32: 29.4% vs 30.1%  k=64: 48.0% vs 48.7%  k=never: 52.0% vs 51.3%
+R6 verdict: {'off': {'independent': 13, 'product': 15, 'exact': 8}, 'exact_var_within_25pct': False, 'R6_pass': False}
+exit: 0

@@ -1,0 +1,56 @@
+﻿  LLL n=80 lattice 0: eta=2 mean success 0.0238  eta=3 mean success 0.0023
+  LLL n=80 lattice 1: eta=2 mean success 0.0236  eta=3 mean success 0.0019
+  LLL n=80 lattice 2: eta=2 mean success 0.0239  eta=3 mean success 0.0022
+  LLL n=80 lattice 3: eta=2 mean success 0.0239  eta=3 mean success 0.0021
+  LLL n=80 lattice 4: eta=2 mean success 0.0272  eta=3 mean success 0.0025
+  LLL n=80 lattice 5: eta=2 mean success 0.0219  eta=3 mean success 0.0018
+  LLL n=80 lattice 6: eta=2 mean success 0.0229  eta=3 mean success 0.0022
+  LLL n=80 lattice 7: eta=2 mean success 0.0247  eta=3 mean success 0.0021
+  LLL n=80 lattice 8: eta=2 mean success 0.0238  eta=3 mean success 0.0021
+  LLL n=80 lattice 9: eta=2 mean success 0.0240  eta=3 mean success 0.0024
+  LLL n=80 lattice 10: eta=2 mean success 0.0249  eta=3 mean success 0.0020
+  LLL n=80 lattice 11: eta=2 mean success 0.0234  eta=3 mean success 0.0021
+  LLL n=80 lattice 12: eta=2 mean success 0.0246  eta=3 mean success 0.0024
+  LLL n=80 lattice 13: eta=2 mean success 0.0219  eta=3 mean success 0.0021
+  LLL n=80 lattice 14: eta=2 mean success 0.0254  eta=3 mean success 0.0022
+  LLL n=80 lattice 15: eta=2 mean success 0.0228  eta=3 mean success 0.0022
+LLL n=80 eta=2 K=256: success/attempt 0.0239; count variance 23.16 (independent 6.06, fixed-error 18.78); perm p=9.999e-05; Spearman(||o||, count) -0.618
+    k=   32: measured  48.8% (46.5-51.0)  independent  54.1% OFF  fixed-error  55.3% OFF
+    k=  128: measured  85.8% (84.1-87.3)  independent  95.4% OFF  fixed-error  92.8% OFF
+    k=  256: measured  95.0% (93.9-95.9)  independent  99.8% OFF  fixed-error  98.9% OFF
+    k=never: measured   5.0% (4.1-6.1)  independent   0.2% OFF  fixed-error   1.1% OFF
+LLL n=80 eta=3 K=256: success/attempt 0.0022; count variance 0.93 (independent 0.57, fixed-error 1.05); perm p=9.999e-05; Spearman(||o||, count) -0.391
+    k=   32: measured   6.4% (5.4-7.6)  independent   6.9%  fixed-error   8.6% OFF
+    k=  128: measured  21.2% (19.4-23.1)  independent  24.4% OFF  fixed-error  28.1% OFF
+    k=  256: measured  35.4% (33.2-37.6)  independent  43.5% OFF  fixed-error  46.4% OFF
+    k=never: measured  64.6% (62.4-66.8)  independent  56.5% OFF  fixed-error  53.6% OFF
+  identity checked on 1600 decodes
+  BKZ-20 n=100 lattice 0: eta=2 mean success 0.0380  eta=3 mean success 0.0043
+  BKZ-20 n=100 lattice 1: eta=2 mean success 0.0370  eta=3 mean success 0.0026
+  BKZ-20 n=100 lattice 2: eta=2 mean success 0.0404  eta=3 mean success 0.0043
+  BKZ-20 n=100 lattice 3: eta=2 mean success 0.0418  eta=3 mean success 0.0036
+  BKZ-20 n=100 lattice 4: eta=2 mean success 0.0389  eta=3 mean success 0.0032
+  BKZ-20 n=100 lattice 5: eta=2 mean success 0.0391  eta=3 mean success 0.0034
+  BKZ-20 n=100 lattice 6: eta=2 mean success 0.0399  eta=3 mean success 0.0031
+  BKZ-20 n=100 lattice 7: eta=2 mean success 0.0395  eta=3 mean success 0.0027
+  BKZ-20 n=100 lattice 8: eta=2 mean success 0.0407  eta=3 mean success 0.0032
+  BKZ-20 n=100 lattice 9: eta=2 mean success 0.0362  eta=3 mean success 0.0022
+  BKZ-20 n=100 lattice 10: eta=2 mean success 0.0375  eta=3 mean success 0.0023
+  BKZ-20 n=100 lattice 11: eta=2 mean success 0.0396  eta=3 mean success 0.0025
+  BKZ-20 n=100 lattice 12: eta=2 mean success 0.0373  eta=3 mean success 0.0034
+  BKZ-20 n=100 lattice 13: eta=2 mean success 0.0367  eta=3 mean success 0.0035
+  BKZ-20 n=100 lattice 14: eta=2 mean success 0.0365  eta=3 mean success 0.0030
+  BKZ-20 n=100 lattice 15: eta=2 mean success 0.0390  eta=3 mean success 0.0027
+BKZ-20 n=100 eta=2 K=64: success/attempt 0.0386; count variance 3.71 (independent 2.45, fixed-error 4.17); perm p=9.999e-05; Spearman(||o||, count) -0.552
+    k=    8: measured  26.9% (25.0-29.0)  independent  27.8%  fixed-error  29.2% OFF
+    k=   32: measured  67.8% (65.6-69.8)  independent  73.1% OFF  fixed-error  71.9% OFF
+    k=   64: measured  87.1% (85.5-88.5)  independent  92.6% OFF  fixed-error  89.8% OFF
+    k=never: measured  12.9% (11.5-14.5)  independent   7.4% OFF  fixed-error  10.2% OFF
+BKZ-20 n=100 eta=3 K=64: success/attempt 0.0031; count variance 0.22 (independent 0.20, fixed-error 0.29); perm p=0.0004; Spearman(||o||, count) -0.255
+    k=    8: measured   2.3% (1.7-3.1)  independent   2.5%  fixed-error   3.2% OFF
+    k=   32: measured   9.5% (8.3-11.0)  independent   9.8%  fixed-error  11.8% OFF
+    k=   64: measured  17.4% (15.8-19.2)  independent  18.4%  fixed-error  21.4% OFF
+    k=never: measured  82.6% (80.8-84.2)  independent  81.6%  fixed-error  78.6% OFF
+  identity checked on 1600 decodes
+verdict: {'R4_rejected': ['2,80,2', '2,80,3', '20,100,2', '20,100,3'], 'off': {'independent': 10, 'fixed': 16}, 'R5_fixed_wins': False}
+exit: 0

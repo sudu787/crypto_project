@@ -1,0 +1,28 @@
+﻿  R9 LLL n=78 lattice 0 done
+  R9 LLL n=78 lattice 1 done
+  R9 LLL n=78 lattice 2 done
+  R9 LLL n=78 lattice 3 done
+  R9 LLL n=78 lattice 4 done
+  R9 LLL n=78 lattice 5 done
+  R9 LLL n=78 lattice 6 done
+  R9 LLL n=78 lattice 7 done
+  R9 LLL n=78 lattice 8 done
+  R9 LLL n=78 lattice 9 done
+  R9 LLL n=78 lattice 10 done
+  R9 LLL n=78 lattice 11 done
+  R9 LLL n=78 lattice 12 done
+  R9 LLL n=78 lattice 13 done
+  R9 LLL n=78 lattice 14 done
+  R9 LLL n=78 lattice 15 done
+R9 LLL n=78 eta=2 K=128: success/attempt measured 0.0527, count variance measured 20.301
+    independent  mean 0.0551  var 6.688  k=16: 59.8% vs 53.2% OFF  k=64: 97.5% vs 89.9% OFF  k=128: 99.9% vs 96.5% OFF  k=never: 0.1% vs 3.5% OFF
+    product      mean 0.0600  var 16.793  k=16: 60.2% vs 53.2% OFF  k=64: 95.5% vs 89.9% OFF  k=128: 99.4% vs 96.5% OFF  k=never: 0.6% vs 3.5% OFF
+    exact        mean 0.0538  var 15.092  k=16: 56.2% vs 53.2% OFF  k=64: 93.8% vs 89.9% OFF  k=128: 99.1% vs 96.5% OFF  k=never: 0.9% vs 3.5% OFF
+    multiset     mean 0.0534  var 19.720  k=16: 54.5% vs 53.2%  k=64: 90.8% vs 89.9%  k=128: 97.3% vs 96.5% OFF  k=never: 2.7% vs 3.5% OFF
+R9 LLL n=78 eta=3 K=128: success/attempt measured 0.0066, count variance measured 1.317
+    independent  mean 0.0070  var 0.891  k=16: 10.8% vs 9.6%  k=64: 36.7% vs 32.5% OFF  k=128: 59.3% vs 49.2% OFF  k=never: 40.7% vs 50.8% OFF
+    product      mean 0.0084  var 1.544  k=16: 12.4% vs 9.6% OFF  k=64: 39.0% vs 32.5% OFF  k=128: 59.5% vs 49.2% OFF  k=never: 40.5% vs 50.8% OFF
+    exact        mean 0.0067  var 1.214  k=16: 10.1% vs 9.6%  k=64: 33.0% vs 32.5%  k=128: 52.0% vs 49.2% OFF  k=never: 48.0% vs 50.8% OFF
+    multiset     mean 0.0068  var 1.385  k=16: 10.1% vs 9.6%  k=64: 32.1% vs 32.5%  k=128: 49.9% vs 49.2%  k=never: 50.1% vs 50.8%
+R9 verdict: {'off': {'independent': 7, 'exact': 6, 'multiset': 2}, 'degenerate': [], 'successes': {'2,78,2': 21568.0, '2,78,3': 2713.0}, 'multiset_var_within_25pct': True, 'R9_pass': False}
+exit: 0

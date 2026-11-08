@@ -1,0 +1,34 @@
+BKZ-20 n=100 lattice 0: cached delta 1.01749
+  +  1 tours  delta 1.01737
+  +  2 tours  delta 1.01718
+  +  4 tours  delta 1.01691
+  +  8 tours  delta 1.01642
+  + 16 tours  delta 1.01577
+  + 32 tours  delta 1.01486
+  + 64 tours  delta 1.01439
+  +100 tours  delta 1.01390
+  +150 tours  delta 1.01388
+  +200 tours  delta 1.01364
+BKZ-10 n=100 lattice 0: cached delta 1.01916
+  +  1 tours  delta 1.01925
+  +  2 tours  delta 1.01914
+  +  4 tours  delta 1.01887
+  +  8 tours  delta 1.01841
+  + 16 tours  delta 1.01799
+  + 32 tours  delta 1.01730
+  + 64 tours  delta 1.01598
+  +100 tours  delta 1.01540
+  +150 tours  delta 1.01491
+  +200 tours  delta 1.01472
+BKZ-20 n=70 lattice 0: cached delta 1.01543
+  +  1 tours  delta 1.01523
+  +  2 tours  delta 1.01515
+  +  4 tours  delta 1.01491
+  +  8 tours  delta 1.01496
+  + 16 tours  delta 1.01472
+  + 32 tours  delta 1.01408
+  + 64 tours  delta 1.01383
+  +100 tours  delta 1.01371
+  +150 tours  delta 1.01349
+  +200 tours  delta 1.01356
+exit True

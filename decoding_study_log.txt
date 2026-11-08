@@ -1,0 +1,101 @@
+﻿=== GPU decoder self-check (keep_all added) ===
+  n=70 LLL ('babai',)                   same points and counts
+  n=70 LLL ('beam', 2, 8)               same points and counts
+  n=70 LLL ('beam', 3, 1)               same points and counts
+  n=70 LLL ('beam', 3, 16)              same points and counts
+  n=70 LLL ('anp', 0.2, 8)              same points and counts
+  n=70 LLL ('anp', 0.35, 32)            same points and counts
+  n=70 LLL ('anp', 0.7, 2)              same points and counts
+  n=70 LLL ('anp', 0.85, 8)             same points and counts
+  n=70 LLL ('va', 1.0, 32)              same points and counts
+  n=70 LLL ('va', 4.0, 2)               same points and counts
+  n=70 LLL ('va', 8.0, 8)               same points and counts
+  n=70 LLL ('beam_T', 2, 6.0, 64)       same points and counts
+  n=70 LLL ('beam_T', 2, 24.0, 64)      same points and counts
+  n=70 LLL ('beam_T', 3, 6.0, 64)       same points and counts
+  n=70 LLL ('beam_T', 3, 24.0, 64)      same points and counts
+  n=70 LLL ('va_T', 2.2, 6.0, 64)       same points and counts
+  n=70 LLL ('va_T', 2.2, 24.0, 64)      same points and counts
+  n=70 LLL ('va_T', 4.0, 6.0, 64)       same points and counts
+  n=70 LLL ('va_T', 4.0, 24.0, 64)      same points and counts
+  n=70 LLL ('va_T', 8.0, 6.0, 64)       same points and counts
+  n=70 LLL ('va_T', 8.0, 24.0, 64)      same points and counts
+  n=70 LLL ('lp', 64)                   same points and counts
+  n=70 LLL ('lp', 16384)                same points and counts
+  n=70 LLL ('babai',)                   same points and counts
+  n=70 LLL ('beam', 3, 8)               same points and counts
+  n=70 LLL ('va_T', 4.0, 16.0, 64)      same points and counts
+  n=70 LLL ('lp', 1024)                 same points and counts
+  n=90 BKZ-10 ('babai',)                   same points and counts
+  n=90 BKZ-10 ('beam', 2, 8)               same points and counts
+  n=90 BKZ-10 ('beam', 3, 1)               same points and counts
+  n=90 BKZ-10 ('beam', 3, 16)              same points and counts
+  n=90 BKZ-10 ('anp', 0.2, 8)              same points and counts
+  n=90 BKZ-10 ('anp', 0.35, 32)            same points and counts
+  n=90 BKZ-10 ('anp', 0.7, 2)              same points and counts
+  n=90 BKZ-10 ('anp', 0.85, 8)             same points and counts
+  n=90 BKZ-10 ('va', 1.0, 32)              same points and counts
+  n=90 BKZ-10 ('va', 4.0, 2)               same points and counts
+  n=90 BKZ-10 ('va', 8.0, 8)               same points and counts
+  n=90 BKZ-10 ('beam_T', 2, 6.0, 64)       same points and counts
+  n=90 BKZ-10 ('beam_T', 2, 24.0, 64)      same points and counts
+  n=90 BKZ-10 ('beam_T', 3, 6.0, 64)       same points and counts
+  n=90 BKZ-10 ('beam_T', 3, 24.0, 64)      same points and counts
+  n=90 BKZ-10 ('va_T', 2.2, 6.0, 64)       same points and counts
+  n=90 BKZ-10 ('va_T', 2.2, 24.0, 64)      same points and counts
+  n=90 BKZ-10 ('va_T', 4.0, 6.0, 64)       same points and counts
+  n=90 BKZ-10 ('va_T', 4.0, 24.0, 64)      same points and counts
+  n=90 BKZ-10 ('va_T', 8.0, 6.0, 64)       same points and counts
+  n=90 BKZ-10 ('va_T', 8.0, 24.0, 64)      same points and counts
+  n=90 BKZ-10 ('lp', 64)                   same points and counts
+  n=90 BKZ-10 ('lp', 16384)                same points and counts
+  n=90 BKZ-10 ('babai',)                   same points and counts
+  n=90 BKZ-10 ('beam', 3, 8)               same points and counts
+  n=90 BKZ-10 ('va_T', 4.0, 16.0, 64)      same points and counts
+  n=90 BKZ-10 ('lp', 1024)                 same points and counts
+  all 216 decodes match the CPU code
+=== profiles, calibration, lists ===
+  wrote 144 profiles
+     191s  LLL     n=70   eta=2  Babai  44.1%  gauss  45.8  sphere  46.1  cbd  45.6  LP16384  96.9%
+     382s  LLL     n=70   eta=3  Babai  17.6%  gauss  17.5  sphere  17.5  cbd  17.3  LP16384  85.5%
+     646s  LLL     n=80   eta=2  Babai   2.6%  gauss   3.0  sphere   2.9  cbd   2.8  LP16384  48.1%
+     909s  LLL     n=80   eta=3  Babai   0.2%  gauss   0.3  sphere   0.3  cbd   0.3  LP16384  16.2%
+    1102s  BKZ-10  n=70   eta=2  Babai  98.4%  gauss  98.2  sphere  98.4  cbd  98.2  LP16384 100.0%
+    1294s  BKZ-10  n=70   eta=3  Babai  90.4%  gauss  89.9  sphere  90.4  cbd  90.0  LP16384  99.9%
+    1558s  BKZ-10  n=80   eta=2  Babai  66.6%  gauss  66.8  sphere  67.3  cbd  66.8  LP16384  98.5%
+    1821s  BKZ-10  n=80   eta=3  Babai  32.6%  gauss  33.7  sphere  33.9  cbd  33.5  LP16384  89.8%
+    2209s  BKZ-10  n=100  eta=2  Babai   0.0%  gauss   0.1  sphere   0.1  cbd   0.1  LP16384   5.2%
+    2597s  BKZ-10  n=100  eta=3  Babai   0.0%  gauss   0.0  sphere   0.0  cbd   0.0  LP16384   0.4%
+    2789s  BKZ-20  n=70   eta=2  Babai  99.8%  gauss  99.9  sphere  99.9  cbd  99.9  LP16384 100.0%
+    2981s  BKZ-20  n=70   eta=3  Babai  98.6%  gauss  98.6  sphere  98.8  cbd  98.6  LP16384 100.0%
+    3244s  BKZ-20  n=80   eta=2  Babai  93.4%  gauss  93.5  sphere  93.8  cbd  93.5  LP16384  99.9%
+    3509s  BKZ-20  n=80   eta=3  Babai  76.0%  gauss  75.5  sphere  76.1  cbd  75.6  LP16384  99.1%
+    3860s  BKZ-20  n=90   eta=2  Babai  49.9%  gauss  49.3  sphere  49.6  cbd  49.2  LP16384  95.7%
+    4201s  BKZ-20  n=90   eta=3  Babai  19.2%  gauss  18.4  sphere  18.5  cbd  18.3  LP16384  79.4%
+    4592s  BKZ-20  n=100  eta=2  Babai   4.1%  gauss   4.0  sphere   4.0  cbd   3.8  LP16384  47.2%
+    4981s  BKZ-20  n=100  eta=3  Babai   0.3%  gauss   0.3  sphere   0.3  cbd   0.3  LP16384  14.1%
+      11s  LLL     n=80   eta=2 T=4.0   euclid  25.4%  box  25.4%  cbd  25.4%  in list  25.4%  list       1, inside box    0.3
+      25s  LLL     n=80   eta=2 T=8.0   euclid  71.0%  box  71.0%  cbd  71.0%  in list  71.0%  list       1, inside box    0.7
+      48s  LLL     n=80   eta=2 T=12.0  euclid  84.9%  box  84.9%  cbd  84.9%  in list  84.9%  list       1, inside box    0.8
+      58s  LLL     n=80   eta=3 T=4.0   euclid   9.8%  box   9.8%  cbd   9.8%  in list   9.8%  list       1, inside box    0.1
+      80s  LLL     n=80   eta=3 T=8.0   euclid  35.9%  box  35.9%  cbd  35.9%  in list  35.9%  list       1, inside box    0.4
+     109s  LLL     n=80   eta=3 T=12.0  euclid  42.5%  box  42.5%  cbd  42.5%  in list  42.5%  list       1, inside box    0.4
+     124s  BKZ-10  n=100  eta=2 T=4.0   euclid   2.9%  box   2.9%  cbd   2.9%  in list   2.9%  list       1, inside box    0.0
+     159s  BKZ-10  n=100  eta=2 T=8.0   euclid  20.9%  box  20.9%  cbd  20.9%  in list  20.9%  list       1, inside box    0.2
+     205s  BKZ-10  n=100  eta=2 T=12.0  euclid  24.9%  box  24.9%  cbd  24.9%  in list  24.9%  list       1, inside box    0.2
+     230s  BKZ-10  n=100  eta=3 T=4.0   euclid   0.1%  box   0.1%  cbd   0.1%  in list   0.1%  list       1, inside box    0.0
+     276s  BKZ-10  n=100  eta=3 T=8.0   euclid   2.6%  box   2.6%  cbd   2.6%  in list   2.6%  list       1, inside box    0.0
+     329s  BKZ-10  n=100  eta=3 T=12.0  euclid   2.9%  box   2.9%  cbd   2.9%  in list   2.9%  list       1, inside box    0.0
+     340s  BKZ-20  n=90   eta=2 T=4.0   euclid  87.0%  box  87.0%  cbd  87.0%  in list  87.0%  list       1, inside box    0.9
+     352s  BKZ-20  n=90   eta=2 T=8.0   euclid  98.2%  box  98.2%  cbd  98.2%  in list  98.2%  list       1, inside box    1.0
+     363s  BKZ-20  n=90   eta=2 T=12.0  euclid 100.0%  box 100.0%  cbd 100.0%  in list 100.0%  list       1, inside box    1.0
+     375s  BKZ-20  n=90   eta=3 T=4.0   euclid  62.9%  box  62.9%  cbd  62.9%  in list  62.9%  list       1, inside box    0.6
+     387s  BKZ-20  n=90   eta=3 T=8.0   euclid  93.0%  box  93.0%  cbd  93.0%  in list  93.0%  list       1, inside box    0.9
+     398s  BKZ-20  n=90   eta=3 T=12.0  euclid  99.4%  box  99.4%  cbd  99.4%  in list  99.4%  list       1, inside box    1.0
+     410s  BKZ-20  n=100  eta=2 T=4.0   euclid  31.8%  box  31.8%  cbd  31.8%  in list  31.8%  list       1, inside box    0.3
+     423s  BKZ-20  n=100  eta=2 T=8.0   euclid  76.6%  box  76.6%  cbd  76.6%  in list  76.6%  list       1, inside box    0.8
+     450s  BKZ-20  n=100  eta=2 T=12.0  euclid  94.5%  box  94.5%  cbd  94.5%  in list  94.5%  list       1, inside box    0.9
+     461s  BKZ-20  n=100  eta=3 T=4.0   euclid   8.4%  box   8.4%  cbd   8.4%  in list   8.4%  list       1, inside box    0.1
+     491s  BKZ-20  n=100  eta=3 T=8.0   euclid  40.0%  box  40.0%  cbd  40.0%  in list  40.0%  list       1, inside box    0.4
+     532s  BKZ-20  n=100  eta=3 T=12.0  euclid  49.6%  box  49.6%  cbd  49.6%  in list  49.6%  list       1, inside box    0.5
+exit: 0

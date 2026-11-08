@@ -1,0 +1,50 @@
+﻿  explore LLL n=80 lattice 0 done
+  explore LLL n=80 lattice 1 done
+  explore LLL n=80 lattice 2 done
+  explore LLL n=80 lattice 3 done
+  explore LLL n=80 lattice 4 done
+  explore LLL n=80 lattice 5 done
+  explore LLL n=80 lattice 6 done
+  explore LLL n=80 lattice 7 done
+  explore LLL n=80 lattice 8 done
+  explore LLL n=80 lattice 9 done
+  explore LLL n=80 lattice 10 done
+  explore LLL n=80 lattice 11 done
+  explore LLL n=80 lattice 12 done
+  explore LLL n=80 lattice 13 done
+  explore LLL n=80 lattice 14 done
+  explore LLL n=80 lattice 15 done
+explore LLL n=80 eta=2 K=256: success/attempt measured 0.0239, count variance measured 23.160
+    independent  mean 0.0242  var 6.055  k=32: 54.1% vs 48.8% OFF  k=128: 95.4% vs 85.8% OFF  k=256: 99.8% vs 95.0% OFF  k=never: 0.2% vs 5.0% OFF
+    product      mean 0.0274  var 18.782  k=32: 55.3% vs 48.8% OFF  k=128: 92.8% vs 85.8% OFF  k=256: 98.9% vs 95.0% OFF  k=never: 1.1% vs 5.0% OFF
+    exact        mean 0.0236  var 15.980  k=32: 50.1% vs 48.8%  k=128: 89.8% vs 85.8% OFF  k=256: 98.0% vs 95.0% OFF  k=never: 2.0% vs 5.0% OFF
+explore LLL n=80 eta=3 K=256: success/attempt measured 0.0022, count variance measured 0.925
+    independent  mean 0.0022  var 0.569  k=32: 6.9% vs 6.4%  k=128: 24.4% vs 21.2% OFF  k=256: 43.5% vs 35.4% OFF  k=never: 56.5% vs 64.6% OFF
+    product      mean 0.0029  var 1.052  k=32: 8.6% vs 6.4% OFF  k=128: 28.1% vs 21.2% OFF  k=256: 46.4% vs 35.4% OFF  k=never: 53.6% vs 64.6% OFF
+    exact        mean 0.0022  var 0.771  k=32: 6.6% vs 6.4%  k=128: 22.4% vs 21.2%  k=256: 38.2% vs 35.4% OFF  k=never: 61.8% vs 64.6% OFF
+  explore BKZ-20 n=100 lattice 0 done
+  explore BKZ-20 n=100 lattice 1 done
+  explore BKZ-20 n=100 lattice 2 done
+  explore BKZ-20 n=100 lattice 3 done
+  explore BKZ-20 n=100 lattice 4 done
+  explore BKZ-20 n=100 lattice 5 done
+  explore BKZ-20 n=100 lattice 6 done
+  explore BKZ-20 n=100 lattice 7 done
+  explore BKZ-20 n=100 lattice 8 done
+  explore BKZ-20 n=100 lattice 9 done
+  explore BKZ-20 n=100 lattice 10 done
+  explore BKZ-20 n=100 lattice 11 done
+  explore BKZ-20 n=100 lattice 12 done
+  explore BKZ-20 n=100 lattice 13 done
+  explore BKZ-20 n=100 lattice 14 done
+  explore BKZ-20 n=100 lattice 15 done
+explore BKZ-20 n=100 eta=2 K=64: success/attempt measured 0.0386, count variance measured 3.707
+    independent  mean 0.0398  var 2.447  k=8: 27.8% vs 26.9%  k=32: 73.1% vs 67.8% OFF  k=64: 92.6% vs 87.1% OFF  k=never: 7.4% vs 12.9% OFF
+    product      mean 0.0434  var 4.168  k=8: 29.2% vs 26.9% OFF  k=32: 71.9% vs 67.8% OFF  k=64: 89.8% vs 87.1% OFF  k=never: 10.2% vs 12.9% OFF
+    exact        mean 0.0385  var 3.696  k=8: 26.4% vs 26.9%  k=32: 67.5% vs 67.8%  k=64: 86.7% vs 87.1%  k=never: 13.3% vs 12.9%
+explore BKZ-20 n=100 eta=3 K=64: success/attempt measured 0.0031, count variance measured 0.218
+    independent  mean 0.0032  var 0.202  k=8: 2.5% vs 2.3%  k=32: 9.8% vs 9.5%  k=64: 18.4% vs 17.4%  k=never: 81.6% vs 82.6%
+    product      mean 0.0040  var 0.290  k=8: 3.2% vs 2.3% OFF  k=32: 11.8% vs 9.5% OFF  k=64: 21.4% vs 17.4% OFF  k=never: 78.6% vs 82.6% OFF
+    exact        mean 0.0031  var 0.220  k=8: 2.4% vs 2.3%  k=32: 9.3% vs 9.5%  k=64: 17.0% vs 17.4%  k=never: 83.0% vs 82.6%
+explore verdict: {'off': {'independent': 10, 'product': 16, 'exact': 5}, 'exact_var_within_25pct': False, 'R6_pass': False}
+exit: 0

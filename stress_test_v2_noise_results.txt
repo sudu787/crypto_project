@@ -1,0 +1,157 @@
+
+=== dim 16 ===
+    LLL dim=16 x60 on cpu: 10s
+  sweeps done at 144s
+  noise=0.18 target 97.8%
+    ANP fixed list     ('anp', 0.5, 0.25)     tune  98.0%  held-out  98.2%        46 nodes
+    Beam fixed list    ('beam', 2, 0.25)      tune  98.2%  held-out  98.3%        59 nodes
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    cannot reach the target
+    Beam adaptive      ('beam_T', 6)          tune  98.5%  held-out  98.5%        24 nodes
+  noise=0.18 target 95.8%
+    ANP fixed list     ('anp', 0.7, 0.25)     tune  96.8%  held-out  97.8%        32 nodes
+    Beam fixed list    ('beam', 2, 0.125)     tune  96.0%  held-out  97.5%        31 nodes
+    VA-ANP fixed list  ('va', 2.2, 0.5)       tune  95.8%  held-out  95.5%        25 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 3)       tune  96.2%  held-out  96.5%        18 nodes
+    Beam adaptive      ('beam_T', 3)          tune  96.2%  held-out  96.5%        18 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 1.27x (1.21-1.35), base-only/VA-only 14/0 p=0.0001 => FAIL
+    VA-ANP fixed list vs Beam fixed list: nodes 1.23x (1.16-1.31), base-only/VA-only 17/5 p=0.0169 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 1.81x (1.72-1.90), base-only/VA-only 8/0 p=0.0078 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 1.75x (1.72-1.77), base-only/VA-only 11/5 p=0.2101 => PASS
+  noise=0.24 target 73.2%
+    ANP fixed list     ('anp', 0.5, 0.25)     tune  73.2%  held-out  75.5%        52 nodes
+    Beam fixed list    ('beam', 2, 0.5)       tune  74.0%  held-out  77.3%       111 nodes
+    VA-ANP fixed list  ('va', 3.0, 0.5)       tune  73.2%  held-out  76.2%        81 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 4)       tune  73.7%  held-out  76.8%        51 nodes
+    Beam adaptive      ('beam_T', 4)          tune  73.7%  held-out  76.8%        51 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 0.64x (0.62-0.65), base-only/VA-only 5/9 p=0.4240 => FAIL
+    VA-ANP fixed list vs Beam fixed list: nodes 1.37x (1.33-1.41), base-only/VA-only 9/2 p=0.0654 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 1.02x (0.96-1.08), base-only/VA-only 6/14 p=0.1153 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 2.19x (2.05-2.33), base-only/VA-only 8/5 p=0.5811 => PASS
+  noise=0.24 target 71.2%
+    ANP fixed list     ('anp', 0.5, 0.25)     tune  73.2%  held-out  75.5%        52 nodes
+    Beam fixed list    ('beam', 2, 0.25)      tune  73.0%  held-out  75.5%        59 nodes
+    VA-ANP fixed list  ('va', 3.0, 0.25)      tune  72.8%  held-out  75.0%        49 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 3)       tune  72.3%  held-out  74.8%        34 nodes
+    Beam adaptive      ('beam_T', 3)          tune  72.3%  held-out  74.8%        34 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 1.06x (1.04-1.07), base-only/VA-only 4/1 p=0.3750 => FAIL
+    VA-ANP fixed list vs Beam fixed list: nodes 1.21x (1.19-1.23), base-only/VA-only 5/2 p=0.4531 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 1.53x (1.46-1.61), base-only/VA-only 12/8 p=0.5034 => PASS
+    VA-ANP adaptive vs Beam fixed list: nodes 1.75x (1.66-1.85), base-only/VA-only 14/10 p=0.5413 => PASS
+  noise=0.3 target 32.0%
+    ANP fixed list     ('anp', 0.5, 0.5)      tune  32.3%  held-out  29.2%        95 nodes
+    Beam fixed list    ('beam', 2, 0.5)       tune  32.8%  held-out  29.7%       111 nodes
+    VA-ANP fixed list  ('va', 1.5, 0.5)       tune  32.7%  held-out  27.7%        78 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 3)       tune  32.5%  held-out  30.2%        96 nodes
+    Beam adaptive      ('beam_T', 3)          tune  32.5%  held-out  30.2%        96 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 1.22x (1.19-1.26), base-only/VA-only 13/4 p=0.0490 => FAIL
+    VA-ANP fixed list vs Beam fixed list: nodes 1.43x (1.39-1.48), base-only/VA-only 16/4 p=0.0118 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 0.99x (0.93-1.05), base-only/VA-only 1/7 p=0.0703 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 1.16x (1.09-1.23), base-only/VA-only 2/5 p=0.4531 => FAIL
+  noise=0.3 target 30.0%
+    ANP fixed list     ('anp', 0.7, 0.25)     tune  30.8%  held-out  27.3%        47 nodes
+    Beam fixed list    ('beam', 2, 0.25)      tune  31.5%  held-out  28.0%        59 nodes
+    VA-ANP fixed list  ('va', 1.5, 0.25)      tune  31.3%  held-out  27.2%        48 nodes
+    VA-ANP adaptive    ('va_T', 2.2, 2)       tune  31.0%  held-out  27.8%        46 nodes
+    Beam adaptive      ('beam_T', 2)          tune  31.0%  held-out  27.8%        46 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 0.97x (0.96-0.98), base-only/VA-only 6/5 p=1.0000 => FAIL
+    VA-ANP fixed list vs Beam fixed list: nodes 1.22x (1.19-1.25), base-only/VA-only 11/6 p=0.3323 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 1.02x (0.97-1.06), base-only/VA-only 12/15 p=0.7011 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 1.27x (1.21-1.34), base-only/VA-only 14/13 p=1.0000 => FAIL
+  [dim 16 done in 145s]
+
+=== dim 30 ===
+    LLL dim=30 x60 on cpu: 161s
+  sweeps done at 511s
+  noise=0.18 target 98.7%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 2)         tune  99.3%  held-out  99.5%      1503 nodes
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    cannot reach the target
+    Beam adaptive      ('beam_T', 12)         tune  99.7%  held-out  99.7%      1396 nodes
+  noise=0.18 target 96.7%
+    ANP fixed list     ('anp', 0.35, 1)       tune  96.7%  held-out  98.5%       721 nodes
+    Beam fixed list    ('beam', 2, 1)         tune  98.3%  held-out  99.0%       781 nodes
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    cannot reach the target
+    Beam adaptive      ('beam_T', 8)          tune  98.2%  held-out  99.5%       350 nodes
+  noise=0.24 target 73.2%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 16)        tune  73.8%  held-out  71.5%     10591 nodes
+    VA-ANP fixed list  ('va', 4.0, 8)         tune  73.2%  held-out  70.5%      5567 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 8)       tune  74.0%  held-out  70.3%      4754 nodes
+    Beam adaptive      ('beam_T', 8)          tune  74.0%  held-out  71.0%      4954 nodes
+    VA-ANP fixed list vs Beam fixed list: nodes 1.90x (1.89-1.91), base-only/VA-only 9/3 p=0.1460 => PASS
+    VA-ANP adaptive vs Beam fixed list: nodes 2.23x (2.04-2.44), base-only/VA-only 10/3 p=0.0923 => PASS
+  noise=0.24 target 71.2%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 4)         tune  71.2%  held-out  70.2%      2887 nodes
+    VA-ANP fixed list  ('va', 4.0, 4)         tune  71.3%  held-out  69.7%      2910 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 8)       tune  74.0%  held-out  70.3%      4754 nodes
+    Beam adaptive      ('beam_T', 8)          tune  74.0%  held-out  71.0%      4954 nodes
+    VA-ANP fixed list vs Beam fixed list: nodes 0.99x (0.99-1.00), base-only/VA-only 7/4 p=0.5488 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 0.61x (0.56-0.66), base-only/VA-only 10/11 p=1.0000 => FAIL
+  noise=0.3 target 14.5%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 8)         tune  14.8%  held-out  14.2%      5535 nodes
+    VA-ANP fixed list  ('va', 3.0, 8)         tune  14.7%  held-out  14.3%      5737 nodes
+    VA-ANP adaptive    ('va_T', 4.0, 6)       tune  15.5%  held-out  13.8%     12534 nodes
+    Beam adaptive      ('beam_T', 6)          tune  15.0%  held-out  13.7%     10701 nodes
+    VA-ANP fixed list vs Beam fixed list: nodes 0.96x (0.96-0.97), base-only/VA-only 1/2 p=1.0000 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 0.44x (0.43-0.46), base-only/VA-only 5/3 p=0.7266 => FAIL
+  noise=0.3 target 12.5%
+    ANP fixed list     ('anp', 0.35, 4)       tune  12.7%  held-out  13.3%      2599 nodes
+    Beam fixed list    ('beam', 2, 2)         tune  12.7%  held-out  14.0%      1503 nodes
+    VA-ANP fixed list  ('va', 3.0, 1)         tune  12.5%  held-out  11.8%       796 nodes
+    VA-ANP adaptive    ('va_T', 2.2, 4)       tune  13.3%  held-out  13.0%      1886 nodes
+    Beam adaptive      ('beam_T', 4)          tune  13.8%  held-out  13.5%      2114 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 3.26x (3.24-3.28), base-only/VA-only 22/13 p=0.1755 => PASS
+    VA-ANP fixed list vs Beam fixed list: nodes 1.89x (1.88-1.89), base-only/VA-only 16/3 p=0.0044 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 1.38x (1.29-1.48), base-only/VA-only 12/10 p=0.8318 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 0.80x (0.74-0.86), base-only/VA-only 11/5 p=0.2101 => FAIL
+  [dim 30 done in 511s]
+
+=== dim 40 ===
+    LLL dim=40 x60 on cuda: 783s
+  sweeps done at 1494s
+  noise=0.18 target 96.3%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 16)        tune  97.0%  held-out  97.0%     20223 nodes
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    cannot reach the target
+    Beam adaptive      ('beam_T', 12)         tune  97.3%  held-out  97.0%     10272 nodes
+  noise=0.18 target 94.3%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    ('beam', 2, 4)         tune  94.7%  held-out  95.5%      5375 nodes
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    cannot reach the target
+    Beam adaptive      ('beam_T', 8)          tune  94.3%  held-out  93.8%      1964 nodes
+  noise=0.24 target 59.0%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    cannot reach the target
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    ('va_T', 4.0, 8)       tune  59.0%  held-out  60.7%     24093 nodes
+    Beam adaptive      cannot reach the target
+  noise=0.24 target 57.0%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    cannot reach the target
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    ('va_T', 4.0, 8)       tune  59.0%  held-out  60.7%     24093 nodes
+    Beam adaptive      ('beam_T', 8)          tune  57.0%  held-out  57.3%     21677 nodes
+  noise=0.3 target 6.3%
+    ANP fixed list     cannot reach the target
+    Beam fixed list    cannot reach the target
+    VA-ANP fixed list  cannot reach the target
+    VA-ANP adaptive    ('va_T', 2.2, 6)       tune   7.2%  held-out   7.3%     28293 nodes
+    Beam adaptive      ('beam_T', 6)          tune   7.0%  held-out   7.0%     26828 nodes
+  noise=0.3 target 4.3%
+    ANP fixed list     ('anp', 0.5, 8)        tune   4.3%  held-out   2.8%      8722 nodes
+    Beam fixed list    ('beam', 2, 4)         tune   4.3%  held-out   4.5%      5375 nodes
+    VA-ANP fixed list  ('va', 4.0, 4)         tune   4.3%  held-out   4.8%      5721 nodes
+    VA-ANP adaptive    ('va_T', 2.2, 4)       tune   5.2%  held-out   5.5%     11706 nodes
+    Beam adaptive      ('beam_T', 4)          tune   5.2%  held-out   5.2%     10424 nodes
+    VA-ANP fixed list vs ANP fixed list: nodes 1.52x (1.52-1.53), base-only/VA-only 5/17 p=0.0169 => PASS
+    VA-ANP fixed list vs Beam fixed list: nodes 0.94x (0.94-0.94), base-only/VA-only 1/3 p=0.6250 => FAIL
+    VA-ANP adaptive vs ANP fixed list: nodes 0.75x (0.69-0.81), base-only/VA-only 4/20 p=0.0015 => FAIL
+    VA-ANP adaptive vs Beam fixed list: nodes 0.46x (0.43-0.50), base-only/VA-only 6/12 p=0.2379 => FAIL
+  [dim 40 done in 1494s]
