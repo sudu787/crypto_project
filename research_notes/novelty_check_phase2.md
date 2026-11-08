@@ -54,5 +54,13 @@ Source: the user's copy of the proceedings, `978-3-642-36095-4.pdf`, pp. 293–3
 - *Not new:* the fixed-norm, uniform-direction computation, which comes from GNR/LN.
 - *New:* measuring that repeated attempts on one instance are dependent, and showing (R8, pre-registered) that conditioning on the instance's own ‖e‖ explains it for BKZ bases. The flaw this exposes is the "multiply by ℓ" / amplify() step used by LN13, Wunderer 2019 and the lattice estimator.
 
+## Kirshanova–May–Wiemer 2016 and Wunderer's thesis (8 Nov 2026, later)
+- **Kirshanova, May, Wiemer**, *Parallel Implementation of BDD Enumeration for LWE*, ACNS 2016 (ePrint 2016/380). Read from the user's copy, `2016-380.pdf`.
+  - They explicitly do not use extreme pruning or re-randomisation: "re-randomizing an instance causes re-running the expensive BKZ reduction".
+  - Their success model is per single enumeration (Lindner–Peikert d_k choice, length pruning).
+  - They have no model of repeated attempts, so nothing here changes the verdict.
+- **Wunderer's 2018 PhD thesis:** still not read. The file supplied, `thesis_published.pdf`, is J. Brendel, *Future-Proofing Key Exchange Protocols*, TU Darmstadt 2019 (TUprints 9642), not Wunderer's thesis.
+  - The thesis's content on hybrid attacks is expected to match Wunderer 2019 (JMC), which was searched in full text and states Assumption 1 (constant p).
+
 ## Earlier verdict
 Nothing read claims the validation we do. The check is not complete until the three unread texts above are checked.

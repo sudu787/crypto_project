@@ -64,7 +64,8 @@ HELDOUT = [(2, 76, 256), (10, 90, 64)]
 CONFIRM = [(15, 90, 64), (20, 110, 64)]
 CONFIRM2 = [(20, 95, 64), (10, 85, 64)]
 LLLCONFIRM = [(2, 78, 128)]
-TAGSETS = {5: HELDOUT, 6: CONFIRM, 7: CONFIRM2, 8: LLLCONFIRM}
+TAGSETS = {5: HELDOUT, 6: CONFIRM, 7: CONFIRM2, 8: LLLCONFIRM, 11: LLLCONFIRM}
+MULTISET_TAGS = (8, 11)  # tag 11: R11, scrambled LLL bases (retry_lll.py)
 M_DIRS = 200_000
 
 
@@ -86,7 +87,7 @@ def run(settings, tag, label):
         for eta in R.ETAS:
             S[eta] = np.zeros((R.LATTICES, R.TARGETS, K), bool)
             P[eta] = {m: np.zeros((R.LATTICES, R.TARGETS, K)) for m in ("independent", "product", "exact")}
-            if tag == 8:
+            if tag in MULTISET_TAGS:
                 P[eta]["multiset"] = np.zeros((R.LATTICES, R.TARGETS, K))
         for idx in range(R.LATTICES):
             offs = {eta: R.instance_offsets(n, idx, eta) for eta in R.ETAS}
@@ -107,7 +108,7 @@ def run(settings, tag, label):
                     P[eta]["exact"][idx, :, j] = F[at:at + R.TARGETS]
                     P[eta]["product"][idx, :, j] = R.p_sphere(nrm, radii[eta])
                     P[eta]["independent"][idx, :, j] = R.p_sphere(nrm, [d * eta / 2])[0]
-                    if tag == 8:
+                    if tag in MULTISET_TAGS:
                         P[eta]["multiset"][idx, :, j] = R.multiset_probs(Bs, nrm, n, o, 2000, seed=(idx * 1000 + j) * 10 + eta)
                     at += R.TARGETS
             print(f"  {label} {T.beta_name(beta)} n={n} lattice {idx} done", flush=True)
@@ -132,13 +133,13 @@ def run(settings, tag, label):
                 print(f"    {m:<12} mean {v['mean']:.4f}  var {v['var']:.3f}  " + "  ".join(
                     f"k={c['k']}: {100 * c['pred']:.1f}% vs {100 * c['measured']:.1f}%{' OFF' if c['off'] else ''}" for c in v["cells"]),
                     flush=True)
-    if tag == 8:  # R9
+    if tag in MULTISET_TAGS:  # R9 (tag 8), R11 (tag 11, scrambled LLL): same criteria
         succ = {k: r["mean_success"] * r["K"] * R.LATTICES * R.TARGETS for k, r in out.items()}
         degenerate = [k for k, v in succ.items() if v < 50]
         var_ok = all(abs(r["models"]["multiset"]["var"] / r["count_var"] - 1) <= 0.25 for k, r in out.items() if k not in degenerate)
         offs9 = {m: sum(c["off"] for r in out.values() for c in r["models"][m]["cells"]) for m in ("independent", "exact", "multiset")}
         out["verdict"] = {"off": offs9, "degenerate": degenerate, "successes": succ, "multiset_var_within_25pct": var_ok,
-                          "R9_pass": offs9["multiset"] <= 1 and offs9["multiset"] < offs9["independent"] and var_ok and not degenerate}
+                          f"{label}_pass": offs9["multiset"] <= 1 and offs9["multiset"] < offs9["independent"] and var_ok and not degenerate}
         print(label, "verdict:", out["verdict"], flush=True)
         return out
     if tag == 7:  # R8: degeneracy guard, fixed before the run
@@ -159,6 +160,8 @@ def run(settings, tag, label):
 
 
 def heldout_path(beta, n, idx, j, tag=5):
+    if tag == 11:  # scrambled LLL bases (retry_lll.py)
+        return R.RETRY / f"u{tag}_n{n}_i{idx}_j{j}.npy"
     return R.RETRY / f"t{tag}_b{beta}_n{n}_i{idx}_j{j}.npy"
 
 
@@ -201,7 +204,11 @@ if __name__ == "__main__":
     ap.add_argument("--confirm2", action="store_true")
     ap.add_argument("--reduce-lll", action="store_true")
     ap.add_argument("--confirm-lll", action="store_true")
+    ap.add_argument("--r11", action="store_true", help="rule R11 on the scrambled LLL bases of retry_lll.py")
     a = ap.parse_args()
+    if a.r11:
+        res = run(LLLCONFIRM, 11, "R11")
+        (HERE / "retry_r11.json").write_text(json.dumps(res))
     if a.reduce_lll:
         reduce_heldout(18, tag=8)
     if a.confirm_lll:

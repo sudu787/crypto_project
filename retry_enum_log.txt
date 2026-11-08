@@ -1,0 +1,54 @@
+﻿  BKZ-20 n=95 lattice 0 done
+  BKZ-20 n=95 lattice 1 done
+  BKZ-20 n=95 lattice 2 done
+  BKZ-20 n=95 lattice 3 done
+  BKZ-20 n=95 lattice 4 done
+  BKZ-20 n=95 lattice 5 done
+  BKZ-20 n=95 lattice 6 done
+  BKZ-20 n=95 lattice 7 done
+  BKZ-20 n=95 lattice 8 done
+  BKZ-20 n=95 lattice 9 done
+  BKZ-20 n=95 lattice 10 done
+  BKZ-20 n=95 lattice 11 done
+  BKZ-20 n=95 lattice 12 done
+  BKZ-20 n=95 lattice 13 done
+  BKZ-20 n=95 lattice 14 done
+  BKZ-20 n=95 lattice 15 done
+BKZ-20 n=95 eta=2: success/attempt 0.1585 (model 0.1575); count variance 58.59 (fixed-norm 56.92, independent 8.49); perm p=9.999e-05
+    k=    8: measured  62.0% (59.7-64.2)  fixed-norm  62.5%  independent  74.6% OFF
+    k=   32: measured  82.7% (80.9-84.4)  fixed-norm  82.8%  independent  99.6% OFF
+    k=   64: measured  86.0% (84.3-87.5)  fixed-norm  85.9%  independent 100.0% OFF
+    k=never: measured  14.0% (12.5-15.7)  fixed-norm  14.1%  independent   0.0% OFF
+BKZ-20 n=95 eta=3: success/attempt 0.1577 (model 0.1571); count variance 63.16 (fixed-norm 61.91, independent 8.48); perm p=9.999e-05
+    k=    8: measured  61.6% (59.4-63.8)  fixed-norm  61.2%  independent  74.5% OFF
+    k=   32: measured  80.2% (78.3-81.9)  fixed-norm  80.6%  independent  99.6% OFF
+    k=   64: measured  83.6% (81.9-85.2)  fixed-norm  83.7%  independent 100.0% OFF
+    k=never: measured  16.4% (14.8-18.1)  fixed-norm  16.3%  independent   0.0% OFF
+  BKZ-10 n=85 lattice 0 done
+  BKZ-10 n=85 lattice 1 done
+  BKZ-10 n=85 lattice 2 done
+  BKZ-10 n=85 lattice 3 done
+  BKZ-10 n=85 lattice 4 done
+  BKZ-10 n=85 lattice 5 done
+  BKZ-10 n=85 lattice 6 done
+  BKZ-10 n=85 lattice 7 done
+  BKZ-10 n=85 lattice 8 done
+  BKZ-10 n=85 lattice 9 done
+  BKZ-10 n=85 lattice 10 done
+  BKZ-10 n=85 lattice 11 done
+  BKZ-10 n=85 lattice 12 done
+  BKZ-10 n=85 lattice 13 done
+  BKZ-10 n=85 lattice 14 done
+  BKZ-10 n=85 lattice 15 done
+BKZ-10 n=85 eta=2: success/attempt 0.1548 (model 0.1565); count variance 63.04 (fixed-norm 63.05, independent 8.45); perm p=9.999e-05
+    k=    8: measured  60.2% (58.0-62.5)  fixed-norm  60.8%  independent  74.4% OFF
+    k=   32: measured  80.0% (78.1-81.7)  fixed-norm  80.2%  independent  99.6% OFF
+    k=   64: measured  83.3% (81.5-84.9)  fixed-norm  83.4%  independent 100.0% OFF
+    k=never: measured  16.7% (15.1-18.5)  fixed-norm  16.6%  independent   0.0% OFF
+BKZ-10 n=85 eta=3: success/attempt 0.1584 (model 0.1574); count variance 68.86 (fixed-norm 65.71, independent 8.49); perm p=9.999e-05
+    k=    8: measured  60.0% (57.8-62.2)  fixed-norm  60.3%  independent  74.6% OFF
+    k=   32: measured  78.2% (76.2-80.0)  fixed-norm  78.6%  independent  99.6% OFF
+    k=   64: measured  81.5% (79.6-83.2)  fixed-norm  81.5%  independent 100.0% OFF
+    k=never: measured  18.5% (16.8-20.4)  fixed-norm  18.5%  independent   0.0% OFF
+R12 verdict: {'independence_rejected_all': True, 'off': {'fixed_norm': 0, 'independent': 16}, 'R12_pass': True}
+exit: 0

@@ -1,0 +1,30 @@
+﻿  n=40 alpha=0.005: secret found by real Babai (block 0, basis 7); residual norm 327.1, expected about 320.2
+n=40 alpha=0.005 mm=120 BKZ-20: 13 instances x 64 attempts, success/attempt 0.172; real-Babai checks 72 (all agree); perm p 9.999e-05; X2 exact 16.8, independent 46.3 (dof 13)
+    block 11: ||e||^2/(mm sigma^2) 0.878  count 22  exact  17.6  independent  12.8
+    block 10: ||e||^2/(mm sigma^2) 0.913  count 21  exact  16.0  independent  13.0
+    block  3: ||e||^2/(mm sigma^2) 0.917  count 12  exact  15.6  independent  12.9
+    block  1: ||e||^2/(mm sigma^2) 0.946  count 16  exact  14.1  independent  12.8
+    block  9: ||e||^2/(mm sigma^2) 0.984  count 13  exact  12.5  independent  12.9
+    block  4: ||e||^2/(mm sigma^2) 1.042  count  4  exact  10.2  independent  12.8
+    block  5: ||e||^2/(mm sigma^2) 1.057  count 10  exact   9.6  independent  12.7
+    block  7: ||e||^2/(mm sigma^2) 1.062  count  7  exact   9.6  independent  12.8
+    block  2: ||e||^2/(mm sigma^2) 1.104  count 12  exact   8.2  independent  12.8
+    block  6: ||e||^2/(mm sigma^2) 1.122  count  9  exact   7.6  independent  12.7
+    block 12: ||e||^2/(mm sigma^2) 1.126  count  9  exact   7.6  independent  12.8
+    block  8: ||e||^2/(mm sigma^2) 1.179  count  2  exact   6.4  independent  13.0
+    block  0: ||e||^2/(mm sigma^2) 1.267  count  6  exact   4.6  independent  12.9
+  n=45 alpha=0.005: secret found by real Babai (block 0, basis 6); residual norm 463.1, expected about 456.1
+n=45 alpha=0.005 mm=135 BKZ-30: 11 instances x 64 attempts, success/attempt 0.053; real-Babai checks 71 (all agree); perm p 0.1169; X2 exact 16.7, independent 16.2 (dof 11)
+    block  5: ||e||^2/(mm sigma^2) 0.822  count  3  exact   6.7  independent   3.2
+    block  4: ||e||^2/(mm sigma^2) 0.899  count  7  exact   4.5  independent   3.2
+    block  0: ||e||^2/(mm sigma^2) 0.937  count  6  exact   3.6  independent   3.1
+    block  1: ||e||^2/(mm sigma^2) 0.955  count  2  exact   3.3  independent   3.1
+    block  7: ||e||^2/(mm sigma^2) 0.963  count  4  exact   3.1  independent   3.1
+    block  8: ||e||^2/(mm sigma^2) 0.979  count  4  exact   3.0  independent   3.2
+    block  6: ||e||^2/(mm sigma^2) 1.004  count  5  exact   2.7  independent   3.3
+    block 10: ||e||^2/(mm sigma^2) 1.026  count  0  exact   2.3  independent   3.1
+    block  9: ||e||^2/(mm sigma^2) 1.056  count  3  exact   1.9  independent   3.1
+    block  2: ||e||^2/(mm sigma^2) 1.169  count  0  exact   1.0  independent   3.1
+    block  3: ||e||^2/(mm sigma^2) 1.175  count  3  exact   1.0  independent   3.2
+R13 verdict: {'X2': {'exact': 33.44064203173518, 'independent': 62.52369037573543}, 'dof': 24, 'p_exact': 0.09511206192830408, 'p_independent': 2.7885933405370118e-05, 'R13_pass': True}
+exit: 0

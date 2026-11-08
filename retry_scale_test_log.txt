@@ -1,0 +1,55 @@
+﻿  R10a BKZ-40 n=120 lattice 0 done
+  R10a BKZ-40 n=120 lattice 1 done
+  R10a BKZ-40 n=120 lattice 2 done
+  R10a BKZ-40 n=120 lattice 3 done
+  R10a BKZ-40 n=120 lattice 4 done
+  R10a BKZ-40 n=120 lattice 5 done
+  R10a BKZ-40 n=120 lattice 6 done
+  R10a BKZ-40 n=120 lattice 7 done
+  R10a BKZ-40 n=120 lattice 8 done
+  R10a BKZ-40 n=120 lattice 9 done
+  R10a BKZ-40 n=120 lattice 10 done
+  R10a BKZ-40 n=120 lattice 11 done
+  R10a BKZ-40 n=120 lattice 12 done
+  R10a BKZ-40 n=120 lattice 13 done
+  R10a BKZ-40 n=120 lattice 14 done
+  R10a BKZ-40 n=120 lattice 15 done
+R10a BKZ-40 n=120 eta=1 K=64: success/attempt measured 0.2058, count variance measured 17.564
+    independent  mean 0.2087  var 10.581  k=8: 84.2% vs 82.0% OFF  k=32: 99.9% vs 99.7% OFF  k=64: 100.0% vs 100.0%  k=never: 0.0% vs 0.0%
+    product      mean 0.2127  var 17.956  k=8: 83.6% vs 82.0%  k=32: 99.9% vs 99.7% OFF  k=64: 100.0% vs 100.0%  k=never: 0.0% vs 0.0%
+    exact        mean 0.2049  var 17.646  k=8: 82.4% vs 82.0%  k=32: 99.8% vs 99.7%  k=64: 100.0% vs 100.0%  k=never: 0.0% vs 0.0%
+R10a BKZ-40 n=120 eta=2 K=64: success/attempt measured 0.0075, count variance measured 0.551
+    independent  mean 0.0075  var 0.476  k=8: 5.7% vs 5.6%  k=32: 21.4% vs 20.4%  k=64: 38.2% vs 35.7% OFF  k=never: 61.8% vs 64.3% OFF
+    product      mean 0.0086  var 0.636  k=8: 6.5% vs 5.6%  k=32: 23.3% vs 20.4% OFF  k=64: 40.1% vs 35.7% OFF  k=never: 59.9% vs 64.3% OFF
+    exact        mean 0.0072  var 0.527  k=8: 5.4% vs 5.6%  k=32: 19.9% vs 20.4%  k=64: 34.8% vs 35.7%  k=never: 65.2% vs 64.3%
+R10a verdict: {'off': {'independent': 4, 'product': 4, 'exact': 0}, 'exact_var_within_25pct': True, 'R6_pass': True}
+R10a verdict: {'off': {'independent': 4, 'exact': 0}, 'degenerate': [], 'successes': {'40,120,1': 42154.0, '40,120,2': 1527.0}, 'var_ok': True, 'pass': True}
+  R10b BKZ-40 n=150 lattice 0 done
+  R10b BKZ-40 n=150 lattice 1 done
+  R10b BKZ-40 n=150 lattice 2 done
+  R10b BKZ-40 n=150 lattice 3 done
+  R10b BKZ-40 n=150 lattice 4 done
+  R10b BKZ-40 n=150 lattice 5 done
+  R10b BKZ-40 n=150 lattice 6 done
+  R10b BKZ-40 n=150 lattice 7 done
+  R10b BKZ-40 n=150 lattice 8 done
+  R10b BKZ-40 n=150 lattice 9 done
+  R10b BKZ-40 n=150 lattice 10 done
+  R10b BKZ-40 n=150 lattice 11 done
+  R10b BKZ-40 n=150 lattice 12 done
+  R10b BKZ-40 n=150 lattice 13 done
+  R10b BKZ-40 n=150 lattice 14 done
+  R10b BKZ-40 n=150 lattice 15 done
+BKZ-40 n=150 eta=1: success/attempt 0.1482 (model 0.1467); count variance 10.73 (fixed-norm 10.19, independent 4.00); perm p=9.999e-05
+    k=    4: measured  45.3% (43.0-47.6)  fixed-norm  44.3%  independent  47.0%
+    k=   16: measured  80.5% (78.7-82.3)  fixed-norm  81.7%  independent  92.1% OFF
+    k=   32: measured  89.9% (88.5-91.2)  fixed-norm  90.5%  independent  99.4% OFF
+    k=never: measured  10.1% (8.8-11.5)  fixed-norm   9.5%  independent   0.6% OFF
+BKZ-40 n=150 eta=2: success/attempt 0.1502 (model 0.1486); count variance 13.29 (fixed-norm 12.68, independent 4.05); perm p=9.999e-05
+    k=    4: measured  44.5% (42.3-46.8)  fixed-norm  43.7%  independent  47.4% OFF
+    k=   16: measured  78.1% (76.2-79.9)  fixed-norm  78.1%  independent  92.4% OFF
+    k=   32: measured  86.4% (84.8-87.9)  fixed-norm  86.2%  independent  99.4% OFF
+    k=never: measured  13.6% (12.1-15.2)  fixed-norm  13.8%  independent   0.6% OFF
+R10b verdict: {'independence_rejected_all': True, 'off': {'fixed_norm': 0, 'independent': 7}, 'R12_pass': True}
+R10 verdict: {'R10a_pass': True, 'R10b_pass': True, 'R10_pass': True, 'R10a_off': {'independent': 4, 'exact': 0}, 'R10a_degenerate': []}
+exit: 0

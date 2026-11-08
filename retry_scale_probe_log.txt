@@ -1,0 +1,8 @@
+  [1/7]      84s  t9 BKZ-30 n=120 lattice 0 basis 0: 83s
+  [2/7]     116s  t9 BKZ-40 n=120 lattice 0 basis 0: 115s
+  [3/7]     240s  t9 BKZ-30 n=150 lattice 0 basis 0: 238s
+  [4/7]     290s  t9 BKZ-40 n=150 lattice 0 basis 0: 288s
+  [5/7]     760s  t9 BKZ-40 n=200 lattice 0 basis 0: 758s
+  [6/7]    1246s  t9 BKZ-50 n=150 lattice 0 basis 0: 1244s
+  [7/7]    2352s  t9 BKZ-50 n=200 lattice 0 basis 0: 2350s
+exit code: 0

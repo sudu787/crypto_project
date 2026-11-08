@@ -84,15 +84,133 @@ The failure comes entirely from LLL. Split by reduction type, which was not part
 
 **R9 failed narrowly.** It was off in 2 cells, where the rule allowed 1: the far tail at η = 2, with 3.5% never solved in 128 attempts against 2.7% predicted. The variance criterion passed (within 3% and 5%). So at LLL quality almost all of the dependence comes from the instance's own coordinates, and a small excess in the never-solved tail remains unexplained.
 
-Full record of the model tests, in order: R5 (product-over-levels fixed-norm model) **failed**; R6 (exact model, LLL and BKZ) **failed** on LLL; R7 (exact model, BKZ) **failed** on a degenerate setting; R8 (exact model, BKZ, with a degeneracy guard) **passed**; R9 (block-multiset law, LLL) **failed** narrowly (2 tail cells off, variance matched).
+Full record of the model tests, in order: R5 (product-over-levels fixed-norm model) **failed**; R6 (exact model, LLL and BKZ) **failed** on LLL; R7 (exact model, BKZ) **failed** on a degenerate setting; R8 (exact model, BKZ, with a degeneracy guard) **passed**; R9 (block-multiset law, LLL) **failed** narrowly (2 tail cells off, variance matched); R10 (scale-up: Babai n = 120, enumeration n = 150, BKZ-40) **passed**; R11 (block-multiset law, scrambled LLL) **passed**; R12 (fixed-norm law, pruned enumeration) **passed**; R13 (exact law, TU Darmstadt challenge instances) **passed**.
 
 **Exploratory, LLL:** the extra dependence at LLL correlates with how ‖e‖ splits between the secret part s and the error part e (Spearman −0.37 against the residual). Re-randomisation only permutes coordinates within each block, so the pair (‖s‖, ‖e‖) is invariant, not just ‖o‖. A two-block law (fixed ‖s‖ and ‖e‖, random direction within each block, no fitted parameter) removes that correlation (−0.05) and raises the predicted count variance from 16.0 to 18.3, against 24.4 measured, at LLL n = 80, η = 2 on 4 lattices. The remaining dependence at LLL is still unexplained.
+
+## Follow-up 2 (8 Nov): theory, cost, LLL, enumeration, estimator patch, scale, real challenge data
+
+### Theory (`Retry_theory.md`, checked by `theory_check.py`, log `theory_check_log.txt`)
+Three short results, each with a proof and a numerical check on real bases:
+- **P1. For one instance, the per-level product is biased upward.** At a fixed error norm, the exact law is at most the per-level product. Fixing the norm makes the levels negatively dependent; the proof conditions on one coordinate at a time.
+  - 0 violations on 4 bases × 33 radii.
+  - Π/F = 1.004–1.29, which explains the bias found by the sign test.
+- **P2. Averaged over instances, the product is right.** For Gaussian error, the Lindner–Peikert erf product equals the exact law averaged over ‖e‖ (E_r F(r)).
+  - On all 4 bases the two match to 0.001.
+  - The estimator's Π(dσ²) is within 1% of both.
+- **P3. Repeated attempts are positively dependent, so amplify() undercounts.**
+  - P(all K fail) ≥ ∏(1 − p̄), so the attempts needed for 99% are at least amplify(0.99, p̄).
+  - The chance that the next attempt succeeds, after k failures, never increases.
+  - If a fresh instance is available, restarting after every failure is optimal.
+
+### Item 2. What the dependence costs (`retry_cost.py`, `retry_cost_log.txt`; R8 and exploratory BKZ bases)
+The exact model reproduces the measured "solved within k" curve and the per-attempt success after k failures, up to k = 64 (log). Attempts needed for 99% of instances:
+
+| Setting | p per attempt | amplify(0.99, p) | Exact model | Ratio |
+|---|---|---|---|---|
+| BKZ-10 n=85 η=2 | 33.6% | 11.2 | 14 | 1.25 |
+| BKZ-20 n=95 η=2 | 19.6% | 21.1 | 27 | 1.28 |
+| BKZ-10 n=85 η=3 | 9.5% | 45.9 | 71 | 1.55 |
+| BKZ-20 n=100 η=2 | 3.9% | 116.9 | 189 | 1.62 |
+| BKZ-20 n=95 η=3 | 3.7% | 122.9 | 222 | 1.81 |
+| BKZ-20 n=100 η=3 | 0.31% | 1,467 | 4,097 | 2.79 |
+
+**Give-up rule.** Suppose fresh instances are available, for example a fresh subset of LWE samples, which gives a fresh e. Then abandoning an instance after one failed attempt minimises the attempts per solved instance, which equals 1/p̄. Retrying the same instance indefinitely costs 1.0–1.44× more:
+- 469 attempts instead of 325 at BKZ-20 n=100 η=3;
+- 36.2 instead of 27.7 at BKZ-20 n=95 η=3.
+
+The measured curves agree, up to k = 64.
+
+### Item 4. Why LLL differs, and a confirmed fix (`retry_lll.py`, rule R11)
+Exploratory, from basis geometry only (no decoding outcomes):
+- **The secret block carries more weight.** LLL's last Gram–Schmidt directions put 69% of their mass on the secret block, against 59% for BKZ-10 and 56% for BKZ-20. So on LLL bases, success depends on ‖s‖ and ‖e‖ separately. This is why the norm-only law failed (R6) and the block-aware law did better (R9).
+- **Same-lattice LLL bases are slightly more aligned** than bases of different lattices: ratio 1.07, against 1.04 for BKZ-10 and 1.00 for BKZ-20. My first comparison, against random subspaces, suggested 1.8×. That was mostly the block concentration above, not lattice-specific alignment.
+- **No q-vector Z-shape** appears in any basis checked.
+
+**R11** (fixed before its bases were reduced) adds scrambling: a random unimodular transform before LLL, as in GNR extreme pruning. It then reruns R9's test on 2,048 fresh LLL n=78 bases.
+
+**R11 passed.** The block-multiset law was off in **0 of 8** cells, against 7 for the independent model and 3 for the exact fixed-norm law. Its variance was within 2% (η=2: 18.49 vs 18.24 measured) and within 1% (η=3: 1.341 vs 1.331).
+
+So the R9 tail miss came from permutation-only re-randomisation. With scrambled LLL, the dependence is fully explained by the instance's own coordinates.
+
+### Item 8. Pruned enumeration (`retry_enum.py`, rule R12)
+Attempt: BDD enumeration with GNR linear pruning, R² = 1.1·d·σ², on the R8 bases. The radius was chosen from the model alone, for about 16% success per attempt. Success holds iff every projection of o onto the last k Gram–Schmidt directions has squared norm ≤ (k/d)R² (Liu–Nguyen Alg. 4).
+
+Under the fixed-norm model, this success probability doesn't depend on the basis at all, only on ‖o‖²/R². So retrying can only help through the random direction.
+
+**R12 passed** (fixed before any enumeration outcome was computed):
+- Independence was rejected in all 4 settings (p < 10⁻⁴).
+- The fixed-norm law was off in **0 of 16** cells; the independent model ("success multiplied by ℓ", Liu–Nguyen §3.5), with the *correct* mean, was off in **16 of 16**.
+
+| Setting | p per attempt | Count variance: measured / fixed-norm / independent | Never solved in 64: measured / fixed-norm / independent |
+|---|---|---|---|
+| BKZ-20 n=95 η=2 | 15.9% | 58.6 / 56.9 / 8.5 | 14.0% / 14.1% / 0.0% |
+| BKZ-20 n=95 η=3 | 15.8% | 63.2 / 61.9 / 8.5 | 16.4% / 16.3% / 0.0% |
+| BKZ-10 n=85 η=2 | 15.5% | 63.0 / 63.1 / 8.5 | 16.7% / 16.6% / 0.0% |
+| BKZ-10 n=85 η=3 | 15.8% | 68.9 / 65.7 / 8.5 | 18.5% / 18.5% / 0.0% |
+
+For pruned enumeration, the effect is much larger than for Babai. About one instance in six can never be solved by re-randomising the basis, whatever the number of attempts. The independent model says none are left after 64.
+
+### Item 5. Lattice estimator patch (`estimator_fixed_error.patch`, `retry_impact2.py`, `retry_impact2_log.txt`)
+The patch is on a local branch of malb/lattice-estimator (base commit d857637) and has not been submitted anywhere. It changes two things:
+- **New function:** `prob.amplify_fixed_error(target, r, stddev, other_probability)`. It returns the attempts k with E over ‖e‖² ~ σ²χ²_d of (1 − other·babai(r, ‖e‖))^k = 1 − target.
+- **New option:** `repetition_model="fixed_error"` for `primal_hybrid`. The default `"independent"` is unchanged and gives bit-identical outputs.
+- **Lower bound:** by P1 the result is a lower bound on the fixed-norm attempts, so it stays conservative for security estimates.
+- **Tests:** all 15 doctests pass, including a new one.
+
+Results, with the optimiser re-run under each model:
+- **Babai hybrid without MitM:**
+  - Kyber512 +4.99 bits (2^221.9 → 2^226.9).
+  - HES ternary +1.65.
+  - TFHE630 +1.02, Concrete_TFHE586 +1.18, TFHE1024 +0.65.
+  - SEAL20 +0.17, and ≤ 0.05 for HElib and CHHS.
+  - The smaller Babai's per-attempt probability, the larger the shift.
+- **With MitM:**
+  - Kyber512 +1.73, HES ternary +0.15, and ≤ 0.01 elsewhere.
+  - In most of these sets, Babai's per-attempt probability is near 1 and the failures come from guessing.
+  - The MitM success probability also depends on σ; it is kept norm-independent here, which is a limitation.
+- **No best-primal estimate moves:** where the shift is largest, uSVP/BDD is cheaper than the hybrid.
+
+### Item 7. Real challenge instances (`lwe_challenge.py`, rule R13; `lwe_challenge_analyse_log.txt`)
+**Data.** Public TU Darmstadt LWE challenge files: uniform secret, Gaussian error σ = αq, q ≈ n².
+- Each file's samples are split into disjoint blocks; each block is one instance with its own e.
+- Attempts permute the block's samples and reduce with BKZ.
+- The secret is not published. Real Babai found it for both files used, and the residual over all samples matched the expected Gaussian size (327 vs 320 for n = 40; 463 vs 456 for n = 45).
+- The projection identity agreed with real Babai on all 143 checks.
+- Only n = 40 and n = 45 at α = 0.005 had usable success rates on this machine; every α ≥ 0.010 file, and n ≥ 50, was ≈ 0 for BKZ ≤ 30.
+
+**R13 passed** (fixed before its bases were reduced). Pearson X² of per-instance success counts over 24 instances, 64 attempts each:
+- exact law: 33.4, p = 0.095;
+- independent model: 62.5, p = 3·10⁻⁵.
+
+The evidence comes almost entirely from **n = 40** (BKZ-20, 17% per attempt):
+- independence was rejected, p ≈ 10⁻⁴;
+- X² was 16.8 for the exact law against 46.3 for the independent model, on 13 instances;
+- the instance with ‖e‖² at 0.88 of the mean was solved 22 times out of 64; the one at 1.27 was solved 6 times; the independent model predicts about 13 for both.
+
+At **n = 45** (BKZ-30, 5% per attempt) the counts are too small to separate the models: X² 16.7 against 16.2, and the independence test gives p = 0.12.
+
+### Item 1. Scale-up (`retry_scale.py`, rule R10; `retry_scale_test_log.txt`)
+R10 was fixed before its bases were reduced. It used 1,536 fresh BKZ-40 bases (16 lattices each):
+- **(a)** Babai at n = 120, with R8's rule (64 attempts per instance).
+- **(b)** Pruned enumeration at n = 150, with R12's rule (32 attempts per instance).
+
+Babai at n ≥ 150 was ≈ 0 in the probes even with BKZ-50, so it could not be tested there.
+
+**R10 passed.**
+- **(a) Babai, n = 120:** the exact law was off in **0 of 8** cells; the independent model was off in 4. The count variance was 17.6 measured, 17.6 exact and 10.6 independent at η=1 (20.6% per attempt). It was 0.55 / 0.53 / 0.48 at η=2 (0.75% per attempt), where 65.2% of instances were never solved in 64, against 64.3% predicted.
+- **(b) Enumeration, n = 150:** independence was rejected at both η (p < 10⁻⁴). The fixed-norm law was off in **0 of 8** cells and the independent model in 7. The never-solved share in 32 attempts was 10.1% / 13.6% measured, 9.5% / 13.8% fixed-norm and 0.6% independent.
+
+### Item 3. Remaining literature
+- **Kirshanova–May–Wiemer 2016** (ePrint 2016/380, read): they explicitly do not use re-randomise-and-repeat ("We do not consider the so-called Extreme Pruning strategy … re-randomizing an instance causes re-running the expensive BKZ reduction"). It has no retry success model.
+- **Wunderer's 2018 thesis:** not read. The file supplied (`thesis_published.pdf`) is a different TU Darmstadt thesis (J. Brendel, *Future-Proofing Key Exchange Protocols*, 2019).
 
 **What this shows:**
 1. **Repeated decoding attempts on one LWE instance are dependent.** This held in all 8 settings, 4 of them held out.
 2. **For BKZ-reduced bases the dependence is explained, with no fitted parameter, by the instance's error norm.** The exact fixed-norm law predicts the whole "solved within k attempts" curve and the never-solved share on held-out settings; the estimator's independent model does not.
-3. **For LLL-reduced bases there is further dependence beyond ‖e‖, so attempts are even more correlated.** Its cause is open.
-4. **The estimator's prob.babai is right on average by cancellation, not by design.** At a fixed error norm it is biased upward.
+3. **For LLL-reduced bases there is further dependence beyond ‖e‖, so attempts are even more correlated.** It comes from LLL's weighting toward the secret block (success depends on ‖s‖ and ‖e‖ separately) plus a small same-lattice alignment under permutation-only re-randomisation. With scrambled re-randomisation, the block-multiset law explains it (R11, passed).
+4. **The estimator's prob.babai is right on average over instances, and biased upward for any one instance.** P1 and P2 prove both.
+5. **The same holds, more strongly, for pruned enumeration** (R12, passed): about one instance in six is never solved by re-randomising.
 
 The literature check now includes the full texts of 2025/2195 and Nearest Planes in Practice, plus a full-text search of Wunderer 2019. Wunderer states the property tested here as an assumption ("p(v) is equal to some constant probability p … for all v ∈ S", Assumption 1) and charges repetitions as T_hyb/p_succ. Neither he nor de Perthuis–Trenkić measures it for decoding. Liu–Nguyen 2013 is paywalled and was not read. Details are in `research_notes/novelty_check_phase2.md`.
 
@@ -110,24 +228,30 @@ Read in full: de Perthuis–Trenkić 2025 (uSVP only; fixes the analogous assump
 - Sec. 4.1–4.2 use GNR's error-uniform-on-a-sphere model, with R set to the *expected* error length. They call this "a rough estimate", sample the error distribution instead, and use the fixed-norm law only as a lower bound. They never condition on each instance's own ‖e‖.
 - In the GGH experiments they reduce one basis and say all keys could be recovered "simply by repeating our experiments a small number of times". That claim is not tested.
 
-They neither measure nor model per-instance dependence, so the claim below stands.
+They neither measure nor model per-instance dependence, so the claim below stands. Kirshanova–May–Wiemer 2016 (read) leave re-randomise-and-repeat out entirely.
 
 ## What is new, and what isn't
 
 - **New, to the extent checked:** a direct measurement showing that re-randomized decoding attempts on one LWE instance are significantly dependent, with the dependence tied to ‖e‖. As a result, the estimator's independent-trials amplification overstates multi-attempt success; at one setting the share of instances never solved is 25× the model's prediction.
 - **Not new:** the idea of fixing the vector's length and integrating over it; that is 2025/2195's, for uSVP.
 - **Also new, confirmed by a test fixed in advance (R8) on fresh instances:** for BKZ-reduced bases, conditioning on each instance's own error norm, through the exact joint fixed-norm law, accounts for all of the dependence between repeated attempts; the estimator's constant-p model does not (off in 12 of 16 cells). The fixed-norm computation itself follows the Gama–Nguyen–Regev style of analysis and is not claimed as new. What is new is measuring it against repeated decoding and showing that it is the missing ingredient in the lattice estimator's repetition model. This also explains why the estimator's per-level formula is right on average but biased for any fixed instance.
+- **Also new (8 Nov follow-up):**
+  - Proofs that the per-level product is biased upward per instance and right on average (P1, P2), and that amplify() undercounts (P3).
+  - The same dependence for pruned enumeration (R12).
+  - The LLL mechanism, with a passed test (R11).
+  - A tested estimator option.
+  - The results hold at BKZ-40, Babai n = 120 and enumeration n = 150 (R10), and on real TU Darmstadt challenge instances (R13).
 - **Not shown:**
-  - A model for LLL-reduced bases.
-  - Any change to a published security estimate.
+  - Any change to a published *best* attack estimate.
+  - Results beyond n = 120 for Babai (success is ≈ 0 there on this hardware); n = 150 is covered only for enumeration (R10, passed).
 - **Literature check:**
-  - Full texts read: 2025/2195, "Nearest Planes in Practice", Luan et al. 2023 and Liu–Nguyen 2013.
+  - Full texts read: 2025/2195, "Nearest Planes in Practice", Luan et al. 2023, Liu–Nguyen 2013 and Kirshanova–May–Wiemer 2016.
   - Searched in full text: Wunderer 2019.
-  - Not read: Wunderer's 2018 thesis and Kirshanova–May–Wiemer 2016.
+  - Not read: Wunderer's 2018 thesis, because the wrong file was supplied.
 
 **Next, if pursued:**
-1. Find out why the norm-conditioned sphere formula is about 10% too optimistic per attempt.
-2. Test whether residual dependence beyond ‖e‖ (lattice-level) explains the remaining 26% of the excess variance at LLL η=2.
-3. Check the GPU hybrid attack paper (ePrint 2025/1990) for the same pattern in its predicted versus observed success rates.
+1. Read Wunderer's 2018 thesis.
+2. Check the GPU hybrid attack paper (ePrint 2025/1990) for the same pattern in its predicted versus observed success rates.
+3. Model the MitM step's dependence on σ in the estimator patch.
 
 Files: `retry_study.py` (rules and code), `retry_study_results.json`, `retry_study_log.txt`, `retry_impact.py`.

@@ -1,0 +1,128 @@
+{
+ "40,150,1": {
+  "mean_success": 0.1482421875,
+  "model_mean": 0.14666668875,
+  "successes": 15180,
+  "count_var": 10.7268359375,
+  "var_fixed": 10.187712419127338,
+  "var_independent": 4.00497827715554,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 4,
+    "measured": 0.4528125,
+    "ci": [
+     0.4302676743715732,
+     0.47555259836352537
+    ],
+    "fixed_norm": 0.44270910189401375,
+    "independent": 0.4697571788390379,
+    "fixed_off": false,
+    "independent_off": false
+   },
+   {
+    "k": 16,
+    "measured": 0.8053125,
+    "ci": [
+     0.7866584596284656,
+     0.82270308697954
+    ],
+    "fixed_norm": 0.8174921177331593,
+    "independent": 0.9209504886509711,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.899375,
+    "ci": [
+     0.8848396368112875,
+     0.9122576575234423
+    ],
+    "fixed_norm": 0.9047155529484313,
+    "independent": 0.9937511747554797,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.100625,
+    "ci": [
+     0.08774234247655766,
+     0.11516036318871259
+    ],
+    "fixed_norm": 0.09528444705156872,
+    "independent": 0.006248825244520257,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "40,150,2": {
+  "mean_success": 0.150224609375,
+  "model_mean": 0.148577146875,
+  "successes": 15383,
+  "count_var": 13.286260839843749,
+  "var_fixed": 12.67562808557953,
+  "var_independent": 4.04806330564751,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 4,
+    "measured": 0.4453125,
+    "ci": [
+     0.4228180581503416,
+     0.4680332513108653
+    ],
+    "fixed_norm": 0.43715571794270686,
+    "independent": 0.47448972524510924,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 16,
+    "measured": 0.7809375,
+    "ci": [
+     0.7615330854184341,
+     0.7991793305494235
+    ],
+    "fixed_norm": 0.781211157109534,
+    "independent": 0.9237350750853862,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.8640625,
+    "ci": [
+     0.847701439523668,
+     0.8789169860631553
+    ],
+    "fixed_norm": 0.8623838619637749,
+    "independent": 0.9941836612277684,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.1359375,
+    "ci": [
+     0.12108301393684473,
+     0.15229856047633195
+    ],
+    "fixed_norm": 0.13761613803622502,
+    "independent": 0.005816338772231684,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "verdict": {
+  "independence_rejected_all": true,
+  "off": {
+   "fixed_norm": 0,
+   "independent": 7
+  },
+  "R12_pass": true
+ }
+}

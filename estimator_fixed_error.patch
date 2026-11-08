@@ -1,0 +1,166 @@
+diff --git a/estimator/lwe_primal.py b/estimator/lwe_primal.py
+index 3443542..59292d2 100644
+--- a/estimator/lwe_primal.py
++++ b/estimator/lwe_primal.py
+@@ -19,6 +19,7 @@ from .simulator import normalize as simulator_normalize
+ from .simulator import GSA
+ from .prob import guessing_set_and_hit_probability
+ from .prob import amplify as prob_amplify
++from .prob import amplify_fixed_error as prob_amplify_fixed_error
+ from .prob import babai as prob_babai
+ from .prob import mitm_babai_probability
+ from .io import Logging
+@@ -460,6 +461,8 @@ class PrimalHybrid:
+             "eta": eta,
+             "babai_probability": babai_probability,
+             "mitm_probability": mitm_probability,
++            # profile of the Babai step, for repetition_model="fixed_error"
++            "babai_profile": r if babai else r[: d - eta],
+         }
+ 
+     @staticmethod
+@@ -477,6 +480,7 @@ class PrimalHybrid:
+         search_space=None,
+         hit_probability=None,
+         log_level=5,
++        repetition_model="independent",
+     ):
+         """
+         Cost of the hybrid attack.
+@@ -490,6 +494,10 @@ class PrimalHybrid:
+         :param d: We optionally accept the dimension to pick.
+         :param search_space: the size of the search space in a primal hybrid attack.
+         :param hit_probability: the probability this search space hits the secret.
++        :param repetition_model: ``"independent"`` (default): repetitions are independent trials with one
++            success probability, ``amplify(0.99, p)``. ``"fixed_error"``: repetitions re-randomise the basis
++            but attack the same instance, so the error norm is fixed across them; see
++            :func:`estimator.prob.amplify_fixed_error`.
+ 
+         .. note :: This is the lowest level function that runs no optimization, it merely reports
+            costs.
+@@ -533,6 +541,7 @@ class PrimalHybrid:
+                 d=beta_params["d"],
+                 red_shape_model=red_shape_model,
+                 red_cost_model=red_cost_model,
++                repetition_model=repetition_model,
+             )
+             min_hw = max(0, zeta - params.n + params.Xs.hamming_weight)
+             max_hw = min(params.Xs.hamming_weight, zeta)
+@@ -578,9 +587,18 @@ class PrimalHybrid:
+ 
+         # Repeat whole experiment ~1/prob times
+         if probability and not RR(probability).is_NaN():
+-            ret = ret.repeat(
+-                prob_amplify(0.99, probability),
+-            )
++            if repetition_model == "fixed_error":
++                other = probability / beta_params["babai_probability"]
++                reps = prob_amplify_fixed_error(0.99, beta_params["babai_profile"], params.Xe.stddev, other)
++                if reps == oo:
++                    return Cost(rop=oo)
++                ret = ret.repeat(reps)
++            elif repetition_model == "independent":
++                ret = ret.repeat(
++                    prob_amplify(0.99, probability),
++                )
++            else:
++                raise ValueError(f"unknown repetition_model {repetition_model!r}")
+         else:
+             return Cost(rop=oo)
+         return ret
+@@ -597,12 +615,13 @@ class PrimalHybrid:
+         mitm: bool = True,
+         optimize_d=True,
+         log_level=5,
++        repetition_model="independent",
+         **kwds,
+     ):
+         """
+         This function optimizes costs for a fixed guessing dimension ζ.
+         """
+-        # step 0. establish baseline
++        # step 0. establish baseline (uSVP has no repetitions, so repetition_model is not passed on)
+         baseline_cost = primal_usvp(
+             params,
+             red_shape_model=red_shape_model,
+@@ -623,6 +642,7 @@ class PrimalHybrid:
+             red_shape_model=red_shape_model,
+             red_cost_model=red_cost_model,
+             m=m,
++            repetition_model=repetition_model,
+             **kwds,
+         )
+ 
+diff --git a/estimator/prob.py b/estimator/prob.py
+index 1bf3997..77a8778 100644
+--- a/estimator/prob.py
++++ b/estimator/prob.py
+@@ -127,6 +127,68 @@ def babai(r, norm):
+     return prod(probs)
+ 
+ 
++def amplify_fixed_error(target_success_probability, r, stddev, other_probability=1.0, quantiles=256):
++    """
++    Number of attempts on ONE instance needed to reach ``target_success_probability`` when only the
++    reduced basis is re-randomised between attempts, so the error vector (and its norm) is the same in every
++    attempt.
++
++    Attempts are independent given the error norm: with ``‖e‖² ~ stddev² · χ²_d`` (``d = len(r)``), one
++    attempt succeeds with probability ``other_probability · babai(r, ‖e‖)``, and we return the smallest ``k``
++    with ``E[(1 - other_probability · babai(r, ‖e‖))^k] ≤ 1 - target_success_probability``.
++
++    By Jensen's inequality this is never smaller than ``amplify(target, E[...])``, the independent-trials
++    count. ``babai`` is the per-level product, which is at least the exact fixed-norm success probability
++    (the levels are negatively dependent at a fixed norm), so the result is a lower bound on the attempts
++    under the fixed-norm model: conservative for security estimates.
++
++    :param target_success_probability: target overall success probability < 1.
++    :param r: squared Gram-Schmidt norms of the reduced basis.
++    :param stddev: standard deviation of each error coordinate.
++    :param other_probability: success probability of the other, norm-independent parts of an attempt
++        (e.g. the guessing hit probability).
++    :param quantiles: number of χ² quantiles used for the expectation.
++
++    EXAMPLES::
++
++        >>> from estimator.prob import amplify, amplify_fixed_error
++        >>> r = [4.0**2] * 20 + [2.2**2] * 20
++        >>> k_fixed = amplify_fixed_error(0.99, r, 1.0)
++        >>> k_fixed >= amplify(0.99, babai(r, 40**0.5))
++        True
++
++    """
++    from scipy.special import betainc
++    from scipy.stats import chi2
++    import numpy as np
++
++    d = len(r)
++    rr = np.array([float(x) for x in r])
++    radii2 = float(stddev) ** 2 * chi2.ppf((np.arange(quantiles) + 0.5) / quantiles, d)
++    x = np.minimum(1.0, rr[None, :] / (4.0 * radii2[:, None]))
++    logp = np.log(np.maximum(betainc(0.5, (d - 1) / 2.0, x), 1e-300)).sum(1)
++    p = float(other_probability) * np.exp(logp)
++    if p.max() <= 0:
++        return oo
++    log_fail = np.log1p(-np.minimum(p, 1 - 1e-16))
++
++    def fail(k):
++        return float(np.mean(np.exp(k * log_fail)))
++
++    target = 1 - float(target_success_probability)
++    if fail(1) <= target:
++        return ZZ(1)
++    lo, hi = 1, 2
++    while fail(hi) > target:
++        lo, hi = hi, hi * 2
++        if hi > 2**200:
++            return oo
++    while hi - lo > 1:
++        mid = (lo + hi) // 2
++        lo, hi = (mid, hi) if fail(mid) > target else (lo, mid)
++    return ZZ(hi)
++
++
+ def drop(n, h, k, fail=0, rotations=False):
+     """
+     Probability that ``k`` randomly sampled components have ``fail`` non-zero components amongst

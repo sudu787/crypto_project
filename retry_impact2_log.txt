@@ -1,0 +1,65 @@
+base commit d85763729cf7df72975a7a4328e50917c6118988
+TFHE630: usvp 2^124.5, bdd 2^121.7
+  hybrid babai mitm=False: independent 2^142.2 (beta=335, zeta=104, d=1067, prob=3.76e-05, repetitions=122546)
+                          fixed error 2^143.2 (beta=335, zeta=104, d=1067, prob=3.76e-05, repetitions=248454)
+      hybrid +1.02 bits; best primal estimate 121.7 -> 121.7
+  hybrid babai mitm=True: independent 2^148.6 (beta=335, zeta=208, d=956, prob=3.56e-07, repetitions=12938637)
+                          fixed error 2^148.6 (beta=335, zeta=208, d=956, prob=3.56e-07, repetitions=12945334)
+      hybrid +0.00 bits; best primal estimate 121.7 -> 121.7
+Concrete_TFHE586: usvp 2^127.9, bdd 2^124.9
+  hybrid babai mitm=False: independent 2^146.6 (beta=349, zeta=108, d=971, prob=2.27e-05, repetitions=203292)
+                          fixed error 2^147.8 (beta=349, zeta=108, d=971, prob=2.27e-05, repetitions=460712)
+      hybrid +1.18 bits; best primal estimate 124.9 -> 124.9
+  hybrid babai mitm=True: independent 2^152.4 (beta=342, zeta=213, d=852, prob=9.38e-08, repetitions=49119061)
+                          fixed error 2^152.4 (beta=342, zeta=213, d=852, prob=9.38e-08, repetitions=49173245)
+      hybrid +0.00 bits; best primal estimate 124.9 -> 124.9
+TFHE1024: usvp 2^126.6, bdd 2^124.8
+  hybrid babai mitm=False: independent 2^144.4 (beta=339, zeta=104, d=1855, prob=3.02e-05, repetitions=152265)
+                          fixed error 2^145.1 (beta=339, zeta=105, d=1854, prob=4.06e-05, repetitions=175709)
+      hybrid +0.65 bits; best primal estimate 124.8 -> 124.8
+  hybrid babai mitm=True: independent 2^151.8 (beta=339, zeta=209, d=1746, prob=1.89e-07, repetitions=24340579)
+                          fixed error 2^151.8 (beta=339, zeta=209, d=1746, prob=1.89e-07, repetitions=24349924)
+      hybrid +0.00 bits; best primal estimate 124.8 -> 124.8
+HElib80_1024: usvp 2^71.0, bdd 2^70.1
+  hybrid babai mitm=False: independent 2^70.5 (beta=114, zeta=155, d=1740, prob=0.0833, repetitions=53)
+                          fixed error 2^70.5 (beta=114, zeta=156, d=1739, prob=0.0837, repetitions=53)
+      hybrid +0.01 bits; best primal estimate 70.1 -> 70.1
+  hybrid babai mitm=True: independent 2^71.8 (beta=106, zeta=278, d=1582, prob=0.00969, repetitions=473)
+                          fixed error 2^71.8 (beta=106, zeta=278, d=1582, prob=0.00969, repetitions=473)
+      hybrid +0.00 bits; best primal estimate 70.1 -> 70.1
+HElib120_1024: usvp 2^86.3, bdd 2^85.2
+  hybrid babai mitm=False: independent 2^83.1 (beta=146, zeta=234, d=1579, prob=0.00577, repetitions=796)
+                          fixed error 2^83.1 (beta=146, zeta=234, d=1579, prob=0.00577, repetitions=802)
+      hybrid +0.01 bits; best primal estimate 83.1 -> 83.1
+  hybrid babai mitm=True: independent 2^83.3 (beta=134, zeta=363, d=1410, prob=0.000635, repetitions=7249)
+                          fixed error 2^83.3 (beta=134, zeta=363, d=1410, prob=0.000635, repetitions=7249)
+      hybrid +0.00 bits; best primal estimate 83.3 -> 83.3
+CHHS_1024_25: usvp 2^129.0, bdd 2^127.2
+  hybrid babai mitm=False: independent 2^112.6 (beta=210, zeta=406, d=1227, prob=1.25e-06, repetitions=3674403)
+                          fixed error 2^112.6 (beta=210, zeta=407, d=1226, prob=1.26e-06, repetitions=3772480)
+      hybrid +0.05 bits; best primal estimate 112.6 -> 112.6
+  hybrid babai mitm=True: independent 2^109.3 (beta=198, zeta=528, d=1079, prob=1.6e-06, repetitions=2882844)
+                          fixed error 2^109.3 (beta=198, zeta=528, d=1079, prob=1.6e-06, repetitions=2882844)
+      hybrid +0.00 bits; best primal estimate 109.3 -> 109.3
+SEAL20_1024: usvp 2^71.9, bdd 2^71.2
+  hybrid babai mitm=False: independent 2^82.0 (beta=141, zeta=31, d=2030, prob=0.00754, repetitions=609)
+                          fixed error 2^82.2 (beta=141, zeta=31, d=2030, prob=0.00754, repetitions=685)
+      hybrid +0.17 bits; best primal estimate 71.2 -> 71.2
+  hybrid babai mitm=True: independent 2^95.5 (beta=141, zeta=63, d=1997, prob=7.93e-07, repetitions=5806923)
+                          fixed error 2^95.5 (beta=141, zeta=63, d=1997, prob=7.93e-07, repetitions=5835724)
+      hybrid +0.01 bits; best primal estimate 71.2 -> 71.2
+HESv111024128ternary: usvp 2^128.3, bdd 2^126.6
+  hybrid babai mitm=False: independent 2^168.6 (beta=345, zeta=67, d=1947, prob=6.25e-12, repetitions=736991537090)
+                          fixed error 2^170.2 (beta=345, zeta=67, d=1947, prob=6.25e-12, repetitions=2315536085609)
+      hybrid +1.65 bits; best primal estimate 126.6 -> 126.6
+  hybrid babai mitm=True: independent 2^182.8 (beta=345, zeta=137, d=1875, prob=9.1e-16, repetitions=5063317388464510)
+                          fixed error 2^182.9 (beta=345, zeta=137, d=1875, prob=9.1e-16, repetitions=5611556726191669)
+      hybrid +0.15 bits; best primal estimate 126.6 -> 126.6
+Kyber512: usvp 2^143.8, bdd 2^140.2
+  hybrid babai mitm=False: independent 2^221.9 (beta=407, zeta=52, d=972, prob=2.73e-23, repetitions=168467404390015868118193)
+                          fixed error 2^226.9 (beta=407, zeta=52, d=972, prob=2.73e-23, repetitions=5352564826711377282334721)
+      hybrid +4.99 bits; best primal estimate 140.2 -> 140.2
+  hybrid babai mitm=True: independent 2^262.1 (beta=407, zeta=111, d=911, prob=3.18e-33, repetitions=1446019654490805991876238377418402)
+                          fixed error 2^263.8 (beta=407, zeta=114, d=907, prob=4.79e-32, repetitions=299489243536652290338860746932224)
+      hybrid +1.73 bits; best primal estimate 140.2 -> 140.2
+exit code: 0

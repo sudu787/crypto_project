@@ -1,0 +1,246 @@
+{
+ "20,95,2": {
+  "mean_success": 0.1585107421875,
+  "model_mean": 0.157499470625,
+  "successes": 32463,
+  "count_var": 58.58625302734376,
+  "var_fixed": 56.920877088740426,
+  "var_independent": 8.492376792182064,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 8,
+    "measured": 0.6196875,
+    "ci": [
+     0.5973559260074746,
+     0.6415237795717128
+    ],
+    "fixed_norm": 0.6247625587109479,
+    "independent": 0.7461591815253898,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.8271875,
+    "ci": [
+     0.8092990362191184,
+     0.8437219866044043
+    ],
+    "fixed_norm": 0.8278138385848777,
+    "independent": 0.9958481100109422,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 64,
+    "measured": 0.8596875,
+    "ci": [
+     0.8431274285134512,
+     0.8747591018302688
+    ],
+    "fixed_norm": 0.8593183610555735,
+    "independent": 0.9999827618095187,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.1403125,
+    "ci": [
+     0.1252408981697313,
+     0.15687257148654885
+    ],
+    "fixed_norm": 0.14068163894442648,
+    "independent": 1.723819048123831e-05,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "20,95,3": {
+  "mean_success": 0.1576611328125,
+  "model_mean": 0.15714970749999999,
+  "successes": 32289,
+  "count_var": 63.16278115234374,
+  "var_fixed": 61.909281292721964,
+  "var_independent": 8.477035323690524,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 8,
+    "measured": 0.6159375,
+    "ci": [
+     0.5935724160083525,
+     0.6378228079338891
+    ],
+    "fixed_norm": 0.612206832685679,
+    "independent": 0.7453149017441065,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.801875,
+    "ci": [
+     0.7831088995664344,
+     0.819391872207704
+    ],
+    "fixed_norm": 0.8061115351084654,
+    "independent": 0.9957925967339833,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 64,
+    "measured": 0.83625,
+    "ci": [
+     0.8187072939643234,
+     0.8524012261484852
+    ],
+    "fixed_norm": 0.8367608354404041,
+    "independent": 0.9999822977577572,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.16375,
+    "ci": [
+     0.14759877385151488,
+     0.18129270603567665
+    ],
+    "fixed_norm": 0.16323916455959595,
+    "independent": 1.770224224288785e-05,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "10,85,2": {
+  "mean_success": 0.1547509765625,
+  "model_mean": 0.15654097625,
+  "successes": 31693,
+  "count_var": 63.04235849609375,
+  "var_fixed": 63.053713143051766,
+  "var_independent": 8.450297536300603,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 8,
+    "measured": 0.6025,
+    "ci": [
+     0.5800261748031945,
+     0.624549656606658
+    ],
+    "fixed_norm": 0.6077627358293615,
+    "independent": 0.7438396481333855,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.7996875,
+    "ci": [
+     0.7808511918901522,
+     0.8172836322624346
+    ],
+    "fixed_norm": 0.8017805092254379,
+    "independent": 0.9956942615575152,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 64,
+    "measured": 0.833125,
+    "ci": [
+     0.8154610543365344,
+     0.8494103977454859
+    ],
+    "fixed_norm": 0.8335993605491987,
+    "independent": 0.9999814606164649,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.166875,
+    "ci": [
+     0.15058960225451407,
+     0.18453894566346563
+    ],
+    "fixed_norm": 0.16640063945080133,
+    "independent": 1.853938353509162e-05,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "10,85,3": {
+  "mean_success": 0.1583935546875,
+  "model_mean": 0.1573698659375,
+  "successes": 32439,
+  "count_var": 68.86336708984375,
+  "var_fixed": 65.70926131483277,
+  "var_independent": 8.48669383886805,
+  "perm_p": 9.999000099990002e-05,
+  "cells": [
+   {
+    "k": 8,
+    "measured": 0.6,
+    "ci": [
+     0.5775078819621418,
+     0.6220782950230801
+    ],
+    "fixed_norm": 0.6032095161133553,
+    "independent": 0.7458466197870144,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 32,
+    "measured": 0.7815625,
+    "ci": [
+     0.7621760847258229,
+     0.7997837448481925
+    ],
+    "fixed_norm": 0.7864322649499438,
+    "independent": 0.9958276228282443,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": 64,
+    "measured": 0.8146875,
+    "ci": [
+     0.7963501676293754,
+     0.8317225830709947
+    ],
+    "fixed_norm": 0.815259668573151,
+    "independent": 0.9999825912687366,
+    "fixed_off": false,
+    "independent_off": true
+   },
+   {
+    "k": "never",
+    "measured": 0.1853125,
+    "ci": [
+     0.1682774169290054,
+     0.2036498323706246
+    ],
+    "fixed_norm": 0.18474033142684895,
+    "independent": 1.7408731263388256e-05,
+    "fixed_off": false,
+    "independent_off": true
+   }
+  ]
+ },
+ "verdict": {
+  "independence_rejected_all": true,
+  "off": {
+   "fixed_norm": 0,
+   "independent": 16
+  },
+  "R12_pass": true
+ }
+}
