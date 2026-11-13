@@ -7,3 +7,4 @@ graphify-out/.graphify_python
 graphify-out/.graphify_root
 __pycache__/
 .ipynb_checkpoints/
+.serena/
