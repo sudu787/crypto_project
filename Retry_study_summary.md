@@ -198,7 +198,7 @@ R10 was fixed before its bases were reduced. It used 1,536 fresh BKZ-40 bases (1
 Babai at n ≥ 150 was ≈ 0 in the probes even with BKZ-50, so it could not be tested there.
 
 **R10 passed.**
-- **(a) Babai, n = 120:** the exact law was off in **0 of 8** cells; the independent model was off in 4. The count variance was 17.6 measured, 17.6 exact and 10.6 independent at η=1 (20.6% per attempt). It was 0.55 / 0.53 / 0.48 at η=2 (0.75% per attempt), where 65.2% of instances were never solved in 64, against 64.3% predicted.
+- **(a) Babai, n = 120:** the exact law was off in **0 of 8** cells; the independent model was off in 4. The count variance was 17.6 measured, 17.6 exact and 10.6 independent at η=1 (20.6% per attempt). It was 0.55 / 0.53 / 0.48 at η=2 (0.75% per attempt), where 64.3% of instances were never solved in 64, against 65.2% predicted by the exact law and 61.8% by the independent model.
 - **(b) Enumeration, n = 150:** independence was rejected at both η (p < 10⁻⁴). The fixed-norm law was off in **0 of 8** cells and the independent model in 7. The never-solved share in 32 attempts was 10.1% / 13.6% measured, 9.5% / 13.8% fixed-norm and 0.6% independent.
 
 ### Robustness check (post hoc; `retry_calibration.py`, `retry_bkz10_multiset.py` and their logs)
